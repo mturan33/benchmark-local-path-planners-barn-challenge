@@ -38,8 +38,24 @@ This repository provides a complete experimental framework for benchmarking and 
 
 2. **Install dependencies:**  
    See each workspace's README or the scripts inside the `experiments/` folder for requirements and instructions.
+    pip install gym==0.21.0
+    pip install rospkg
+    pip install rospkg catkin_pkg PyYAML empy defusedxml
+    pip install PyYAML
+    pip install --upgrade pip
+    pip install numpy scipy matplotlib defusedxml pyyaml netifaces
+    pip install numpy
+    pip install scipy torch
+    pip install defusedxml
+    pip install gym
+    pip install gym==0.26.2
+    pip install --upgrade pip setuptools wheel
+    pip install rospkg catkin_pkg PyYAML empy
+    pip install pyyaml
+    sudo python2 -m pip install pyyaml
+    pip install numpy==1.21.6 matplotlib==3.5.3 scipy rospkg pyyaml defusedxml netifaces torch==1.7 torchvision==0.8 tensorboard --only-binary=:all:
 
-3. **Run experiments:**  
+4. **Run experiments:**  
    Example for DWA planner:
     ```bash
     source ~/3v3/venvs/barn_dwa/bin/activate
@@ -49,7 +65,7 @@ This repository provides a complete experimental framework for benchmarking and 
     python3 run_dwa.py --world_idx 0 --gui
     ```
 
-4. **Collect metrics:**  
+5. **Collect metrics:**  
    The logger scripts will automatically generate and append summary CSV files in `experiments/metrics/`.
    Example for DWA planner Logger:
     ```bash
