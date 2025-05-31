@@ -33,7 +33,7 @@ This repository provides a complete experimental framework for benchmarking and 
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/mturan33/benchmark-local-path-planners-barn-challenge.git
+    git clone https://github.com/mturan33/benchmark-local-path-planners-barn-challenge.git 3v3
     ```
 
 2. **Install dependencies:**  
