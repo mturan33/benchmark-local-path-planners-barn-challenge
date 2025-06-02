@@ -6,10 +6,10 @@ This repository provides a complete experimental framework for benchmarking and 
 ## Features
 
 	Algorithm	World	Trial	Total_Time	Path_Length	Deviation_From_Straight	Avg_Velocity	Path_Efficiency	Collision
-	dwa		    0	    1	    93.69		19.3		1.93			        0.21		    0.518		    1
-	dwa		    0	    1	    28.52		6.17		0.617			        0.22		    1.62		    1
-	dwa		    0	    1	    52.69		6.65		0.665			        0.13		    1.504		    1
-	dwa		    0	    1	    31.57		10.51		1.051			        0.33		    0.951		    0
+	dwa		0	1	93.69		19.3		1.93			0.21		0.518		1
+	dwa		0	1	28.52		6.17		0.617			0.22		1.62		1
+	dwa		0	1	52.69		6.65		0.665			0.13		1.504		1
+	dwa		0	1	31.57		10.51		1.051			0.33		0.951		0
 
 - Reproducible experiment scripts for classical planners (DWA, EBand, TEB, etc.) and modern RL-based planners (SAC, LfH, E2E, etc.)
 - Unified logging and metrics collection (path length, arrival time, collision, efficiency, etc.)
