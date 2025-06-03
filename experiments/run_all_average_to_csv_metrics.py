@@ -4,7 +4,6 @@ import os
 import subprocess
 import random
 import time
-import signal
 import shutil
 
 ALGORITHMS = {

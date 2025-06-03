@@ -38,7 +38,7 @@ class MetricsLogger:
         self.goal_sub = rospy.Subscriber("/move_base_simple/goal", PoseStamped, self.goal_callback)
 
         # Central metrics directory
-        self.log_dir = os.path.expanduser(f"~/3v3/experiments/metrics")
+        self.log_dir = os.path.expanduser("~/3v3/experiments/metrics")
         os.makedirs(self.log_dir, exist_ok=True)
         self.log_file = os.path.join(self.log_dir, f"metrics_log_{self.algo}.csv")
         self.init_csv()

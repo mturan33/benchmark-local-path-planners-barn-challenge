@@ -3,7 +3,6 @@
 import os
 import subprocess
 import random
-import time
 
 ALGORITHMS = {
     "dwa": {
@@ -58,7 +57,6 @@ def run_test(algo, config):
     # Script ve çalışma dizini
     ws_path = os.path.join(BASE_PATH, config["ws"])
     script_dir = os.path.join(ws_path, "src", "the-barn-challenge")
-    script_path = os.path.join(script_dir, config["script"])
     result_file = os.path.join(RESULTS_PATH, f"{algo}_out_world_{world_idx}.txt")
 
     cmd = f"""
