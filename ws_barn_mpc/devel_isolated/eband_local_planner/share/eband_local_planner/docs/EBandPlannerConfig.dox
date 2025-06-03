@@ -1,0 +1,38 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~xy_goal_tolerance" : \b [double] Distance tolerance for reaching the goal pose min: 0.0, default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~yaw_goal_tolerance" : \b [double] Orientation tolerance for reaching the desired goal pose min: 0.0, default: 0.05, max: std::numeric_limits<double>::infinity()
+- \b "~rot_stopped_vel" : \b [double] Angular velocity lower bound that determines if the robot should stop to avoid limit-cycles or locks min: 0.0, default: 0.01, max: std::numeric_limits<double>::infinity()
+- \b "~trans_stopped_vel" : \b [double] Linear velocity lower bound that determines if the robot should stop to avoid limit-cycles or locks min: 0.0, default: 0.01, max: std::numeric_limits<double>::infinity()
+- \b "~marker_lifetime" : \b [double] Lifetime of eband visualization markers min: 0.0, default: 0.5, max: std::numeric_limits<double>::infinity()
+- \b "~eband_min_relative_overlap" : \b [double] Min distance that denotes connectivity between consecutive bubbles min: 0.0, default: 0.7, max: std::numeric_limits<double>::infinity()
+- \b "~eband_tiny_bubble_distance" : \b [double] Bubble geometric bound regarding tiny bubble distance min: 0.0, default: 0.01, max: std::numeric_limits<double>::infinity()
+- \b "~eband_tiny_bubble_expansion" : \b [double] Bubble geometric bound regarding tiny bubble expansion min: 0.0, default: 0.01, max: std::numeric_limits<double>::infinity()
+- \b "~eband_internal_force_gain" : \b [double] Force gain of forces between consecutive bubbles that tend to stretch the elastic band min: 0.0, default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~eband_external_force_gain" : \b [double] Force gain of forces that tend to move the bubbles away from obstacles min: 0.0, default: 2.0, max: std::numeric_limits<double>::infinity()
+- \b "~num_iterations_eband_optimization" : \b [int] Number of iterations for eband optimization min: 1, default: 3, max: 2147483647
+- \b "~eband_equilibrium_approx_max_recursion_depth" : \b [int] Number of iterations for reaching the equilibrium between internal and external forces min: 1, default: 4, max: 2147483647
+- \b "~eband_equilibrium_relative_overshoot" : \b [double] Maximum relative equlibrium overshoot min: 0.0, default: 0.75, max: std::numeric_limits<double>::infinity()
+- \b "~eband_significant_force_lower_bound" : \b [double] Minimum magnitude of force that is considered significant and used in the calculations min: 0.0, default: 0.15, max: std::numeric_limits<double>::infinity()
+- \b "~costmap_weight" : \b [double] Costmap weight factor used in the calculation of distance to obstacles min: 0.0, default: 10.0, max: std::numeric_limits<double>::infinity()
+- \b "~max_vel_lin" : \b [double] Maximum linear velocity min: 0.0, default: 0.75, max: std::numeric_limits<double>::infinity()
+- \b "~max_vel_th" : \b [double] Maximum angular velocity min: 0.0, default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~min_vel_lin" : \b [double] Minimum linear velocity min: 0.0, default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~min_vel_th" : \b [double] Minimum angular velocity min: 0.0, default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~min_in_place_vel_th" : \b [double] Minimum in-place angular velocity min: 0.0, default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~in_place_trans_vel" : \b [double] Minimum in place linear velocity min: 0.0, default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~k_prop" : \b [double] Proportional gain of the PID controller min: 0.0, default: 4.0, max: std::numeric_limits<double>::infinity()
+- \b "~k_damp" : \b [double] Damping gain of the PID controller min: 0.0, default: 3.5, max: std::numeric_limits<double>::infinity()
+- \b "~Ctrl_Rate" : \b [double] Control rate min: 0.0, default: 10.0, max: std::numeric_limits<double>::infinity()
+- \b "~max_acceleration" : \b [double] Maximum allowable acceleration min: 0.0, default: 0.5, max: std::numeric_limits<double>::infinity()
+- \b "~virtual_mass" : \b [double] Virtual mass min: 0.0, default: 0.75, max: std::numeric_limits<double>::infinity()
+- \b "~max_translational_acceleration" : \b [double] Maximum linear acceleration min: 0.0, default: 0.5, max: std::numeric_limits<double>::infinity()
+- \b "~max_rotational_acceleration" : \b [double] Maximum angular acceleration min: 0.0, default: 1.5, max: std::numeric_limits<double>::infinity()
+- \b "~rotation_correction_threshold" : \b [double] Rotation correction threshold min: 0.0, default: 0.5, max: std::numeric_limits<double>::infinity()
+- \b "~differential_drive" : \b [bool] Denotes whether to use the differential drive hack min: False, default: True, max: True
+- \b "~bubble_velocity_multiplier" : \b [double] Multiplier of bubble radius min: 0.0, default: 2.0, max: std::numeric_limits<double>::infinity()
+- \b "~rotation_threshold_multiplier" : \b [double] Multiplier of rotation threshold min: 0.0, default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~disallow_hysteresis" : \b [bool] Determines whether to try getting closer to the goal, in case of going past the tolerance min: False, default: False, max: True
+
