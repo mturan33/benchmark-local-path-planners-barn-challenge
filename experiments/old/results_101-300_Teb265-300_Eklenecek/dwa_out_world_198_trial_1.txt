@@ -1,0 +1,254 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[33m[ WARN] [1749756203.127932938, 0.173000000]: Failed to meet update rate! Took 0.17300000000000001488[0m
+[33m[ WARN] [1749756203.128404686, 0.173000000]: Failed to meet update rate! Took 0.15299999999999999711[0m
+[0m[ INFO] [1749756201.922217117]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1749756201.923624749]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1749756202.947949584]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1749756202.956878260, 0.007000000]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [true] with [false].
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [false] with [true].
+[31m[ERROR] [1749756203.554469203, 0.212000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_left_wheel[0m
+[31m[ERROR] [1749756203.554952272, 0.212000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_right_wheel[0m
+[31m[ERROR] [1749756203.555288430, 0.212000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_left_wheel[0m
+[31m[ERROR] [1749756203.555495803, 0.212000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_right_wheel[0m
+🔁 Terminal çıktısı hem terminale hem dosyaya kaydediliyor: /home/turan/3v3/experiments/terminal_logs/run_dwa_w198.txt
+>>>>>>>>>>>>>>>>>> Loading Gazebo Simulation with BARN/world_198.world <<<<<<<<<<<<<<<<<<
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-13506.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_DWA.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:42887/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_base/TrajectoryPlannerROS/acc_lim_theta: 3.0
+ * /move_base/TrajectoryPlannerROS/acc_lim_x: 3.0
+ * /move_base/TrajectoryPlannerROS/angular_sim_granularity: 0.02
+ * /move_base/TrajectoryPlannerROS/controller_frequency: 20.0
+ * /move_base/TrajectoryPlannerROS/dwa: True
+ * /move_base/TrajectoryPlannerROS/escape_reset_dist: 0.1
+ * /move_base/TrajectoryPlannerROS/escape_reset_theta: 0.1
+ * /move_base/TrajectoryPlannerROS/escape_vel: -0.5
+ * /move_base/TrajectoryPlannerROS/gdist_scale: 1.0
+ * /move_base/TrajectoryPlannerROS/heading_lookahead: 0.325
+ * /move_base/TrajectoryPlannerROS/heading_scoring: False
+ * /move_base/TrajectoryPlannerROS/heading_scoring_timestep: 0.8
+ * /move_base/TrajectoryPlannerROS/holonomic_robot: False
+ * /move_base/TrajectoryPlannerROS/latch_xy_goal_tolerance: True
+ * /move_base/TrajectoryPlannerROS/max_vel_theta: 1.0
+ * /move_base/TrajectoryPlannerROS/max_vel_x: 1.0
+ * /move_base/TrajectoryPlannerROS/meter_scoring: True
+ * /move_base/TrajectoryPlannerROS/min_in_place_vel_theta: 0.314
+ * /move_base/TrajectoryPlannerROS/min_vel_theta: -1.0
+ * /move_base/TrajectoryPlannerROS/min_vel_x: 0.1
+ * /move_base/TrajectoryPlannerROS/occdist_scale: 0.1
+ * /move_base/TrajectoryPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/TrajectoryPlannerROS/pdist_scale: 0.75
+ * /move_base/TrajectoryPlannerROS/publish_cost_grid_pc: True
+ * /move_base/TrajectoryPlannerROS/sim_granularity: 0.025
+ * /move_base/TrajectoryPlannerROS/sim_time: 2.0
+ * /move_base/TrajectoryPlannerROS/simple_attractor: False
+ * /move_base/TrajectoryPlannerROS/vtheta_samples: 40
+ * /move_base/TrajectoryPlannerROS/vx_samples: 20
+ * /move_base/TrajectoryPlannerROS/xy_goal_tolerance: 0.25
+ * /move_base/TrajectoryPlannerROS/yaw_goal_tolerance: 0.157
+ * /move_base/base_global_planner: navfn/NavfnROS
+ * /move_base/base_local_planner: base_local_planne...
+ * /move_base/clearing_rotation_allowed: True
+ * /move_base/controller_frequency: 20.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/global_costmap/footprint_padding: 0.05
+ * /move_base/global_costmap/global_frame: odom
+ * /move_base/global_costmap/height: 40.0
+ * /move_base/global_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/meter_scoring: True
+ * /move_base/global_costmap/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacles_layer/scan/marking: True
+ * /move_base/global_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/global_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/global_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/global_costmap/origin_x: -20.0
+ * /move_base/global_costmap/origin_y: -20.0
+ * /move_base/global_costmap/origin_z: 0.0
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 5
+ * /move_base/global_costmap/publish_voxel_map: False
+ * /move_base/global_costmap/raytrace_range: 3.0
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/rolling_window: False
+ * /move_ba[33m[ WARN] [1749756207.757157095, 4.375000000]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749756207.757673087, 4.375000000]: global_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749756207.780547786, 4.398000000]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749756207.780668404, 4.398000000]: local_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749756218.091235356, 14.132000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0530 seconds[0m
+Time: 0.01 (s), x: -2.25 (m), y: 3.11 (m)Time: 0.12 (s), x: -2.25 (m), y: 3.17 (m)Time: 0.22 (s), x: -2.25 (m), y: 3.24 (m)Time: 0.33 (s), x: -2.25 (m), y: 3.33 (m)Time: 0.44 (s), x: -2.25 (m), y: 3.43 (m)Time: 0.54 (s), x: -2.25 (m), y: 3.53 (m)Time: 0.65 (s), x: -2.25 (m), y: 3.63 (m)Time: 0.75 (s), x: -2.25 (m), y: 3.73 (m)Time: 0.86 (s), x: -2.25 (m), y: 3.84 (m)Time: 0.97 (s), x: -2.25 (m), y: 3.94 (m)Time: 1.07 (s), x: -2.25 (m), y: 4.05 (m)Time: 1.18 (s), x: -2.25 (m), y: 4.15 (m)Time: 1.29 (s), x: -2.24 (m), y: 4.25 (m)Time: 1.39 (s), x: -2.24 (m), y: 4.34 (m)Time: 1.50 (s), x: -2.23 (m), y: 4.43 (m)Time: 1.60 (s), x: -2.23 (m), y: 4.51 (m)Time: 1.71 (s), x: -2.22 (m), y: 4.59 (m)Time: 1.82 (s), x: -2.21 (m), y: 4.67 (m)Time: 1.92 (s), x: -2.20 (m), y: 4.74 (m)Time: 2.03 (s), x: -2.20 (m), y: 4.81 (m)Time: 2.14 (s), x: -2.19 (m), y: 4.87 (m)Time: 2.25 (s), x: -2.18 (m), y: 4.93 (m)Time: 2.35 (s), x: -2.18 (m), y: 4.99 (m)Time: 2.46 (s), x: -2.17 (m), y: 5.04 (m)Time: 2.57 (s), x: -2.16 (m), y: 5.09 (m)Time: 2.67 (s), x: -2.15 (m), y: 5.14 (m)Time: 2.78 (s), x: -2.15 (m), y: 5.18 (m)Time: 2.89 (s), x: -2.14 (m), y: 5.23 (m)Time: 3.00 (s), x: -2.14 (m), y: 5.27 (m)Time: 3.11 (s), x: -2.13 (m), y: 5.31 (m)Time: 3.21 (s), x: -2.12 (m), y: 5.34 (m)Time: 3.32 (s), x: -2.12 (m), y: 5.38 (m)Time: 3.43 (s), x: -2.11 (m), y: 5.41 (m)Time: 3.54 (s), x: -2.11 (m), y: 5.44 (m)Time: 3.64 (s), x: -2.10 (m), y: 5.47 (m)Time: 3.74 (s), x: -2.10 (m), y: 5.50 (m)Time: 3.85 (s), x: -2.09 (m), y: 5.53 (m)Time: 3.96 (s), x: -2.09 (m), y: 5.56 (m)Time: 4.07 (s), x: -2.09 (m), y: 5.58 (m)Time: 4.17 (s), x: -2.08 (m), y: 5.60 (m)Time: 4.28 (s), x: -2.08 (m), y: 5.63 (m)Time: 4.39 (s), x: -2.08 (m), y: 5.64 (m)Time: 4.50 (s), x: -2.07 (m), y: 5.66 (m)Time: 4.61 (s), x: -2.07 (m), y: 5.68 (m)Time: 4.72 (s), x: -2.06 (m), y: 5.70 (m)Time: 4.82 (s), x: -2.06 (m), y: 5.72 (m)Time: 4.93 (s), x: -2.06 (m), y: 5.73 (m)Time: 5.04 (s), x: -2.05 (m), y: 5.75 (m)Time: 5.15 (s), x: -2.05 (m), y: 5.77 (m)Time: 5.25 (s), x: -2.05 (m), y: 5.78 (m)Time: 5.36 (s), x: -2.04 (m), y: 5.80 (m)Time: 5.47 (s), x: -2.04 (m), y: 5.81 (m)Time: 5.58 (s), x: -2.04 (m), y: 5.82 (m)Time: 5.69 (s), x: -2.04 (m), y: 5.83 (m)Time: 5.79 (s), x: -2.04 (m), y: 5.85 (m)Time: 5.90 (s), x: -2.03 (m), y: 5.86 (m)Time: 6.01 (s), x: -2.03 (m), y: 5.88 (m)Time: 6.12 (s), x: -2.03 (m), y: 5.90 (m)Time: 6.23 (s), x: -2.03 (m), y: 5.92 (m)Time: 6.33 (s), x: -2.03 (m), y: 5.94 (m)Time: 6.44 (s), x: -2.03 (m), y: 5.95 (m)Time: 6.55 (s), x: -2.03 (m), y: 5.96 (m)Time: 6.66 (s), x: -2.03 (m), y: 5.97 (m)Time: 6.77 (s), x: -2.02 (m), y: 5.99 (m)Time: 6.88 (s), x: -2.02 (m), y: 6.01 (m)Time: 6.98 (s), x: -2.02 (m), y: 6.02 (m)Time: 7.09 (s), x: -2.01 (m), y: 6.04 (m)Time: 7.20 (s), x: -2.01 (m), y: 6.05 (m)Time: 7.31 (s), x: -2.01 (m), y: 6.07 (m)Time: 7.41 (s), x: -2.01 (m), y: 6.08 (m)Time: 7.52 (s), x: -2.01 (m), y: 6.10 (m)Time: 7.63 (s), x: -2.01 (m), y: 6.11 (m)Time: 7.74 (s), x: -2.01 (m), y: 6.12 (m)Time: 7.85 (s), x: -2.01 (m), y: 6.14 (m)Time: 7.95 (s), x: -2.02 (m), y: 6.15 (m)Time: 8.06 (s), x: -2.02 (m), y: 6.16 (m)Time: 8.17 (s), x: -2.03 (m), y: 6.18 (m)Time: 8.28 (s), x: -2.03 (m), y: 6.19 (m)Time: 8.39 (s), x: -2.05 (m), y: 6.23 (m)Time: 8.49 (s), x: -2.07 (m), y: 6.27 (m)Time: 8.59 (s), x: -2.09 (m), y: 6.33 (m)Time: 8.70 (s), x: -2.11 (m), y: 6.38 (m)Time: 8.80 (s), x: -2.13 (m), y: 6.44 (m)Time: 8.91 (s), x: -2.15 (m), y: 6.51 (m)Time: 9.01 (s), x: -2.18 (m), y: 6.60 (m)Time: 9.11 (s), x: -2.22 (m), y: 6.69 (m)Time: 9.22 (s), x: -2.25 (m), y: 6.78 (m)Time: 9.32 (s), x: -2.28 (m), y: 6.86 (m)Time: 9.43 (s), x: -2.30 (m), y: 6.94 (m)Time: 9.54 (s), x: -2.33 (m), y: 7.02 (m)Time: 9.64 (s), x: -2.36 (m), y: 7.09 (m)Time: 9.75 (s), x: -2.38 (m), y: 7.16 (m)Time: 9.86 (s), x: -2.40 (m), y: 7.22 (m)Time: 9.97 (s), x: -2.42 (m), y: 7.28 (m)Time: 10.07 (s), x: -2.44 (m), y: 7.34 (m)Time: 10.18 (s), x: -2.46 (m), y: 7.39 (m)Time: 10.29 (s), x: -2.48 (m), y: 7.44 (m)Time: 10.39 (s), x: -2.49 (m), y: 7.49 (m)Time: 10.49 (s), x: -2.50 (m), y: 7.53 (m)Time: 10.59 (s), x: -2.52 (m), y: 7.58 (m)Time: 10.70 (s), x: -2.53 (m), y: 7.62 (m)Time: 10.80 (s), x: -2.54 (m), y: 7.66 (m)Time: 10.91 (s), x: -2.56 (m), y: 7.70 (m)Time: 11.01 (s), x: -2.57 (m), y: 7.73 (m)Time: 11.11 (s), x: -2.58 (m), y: 7.76 (m)Time: 11.21 (s), x: -2.59 (m), y: 7.79 (m)Time: 11.32 (s), x: -2.60 (m), y: 7.82 (m)Time: 11.42 (s), x: -2.60 (m), y: 7.85 (m)Time: 11.52 (s), x: -2.61 (m), y: 7.88 (m)Time: 11.63 (s), x: -2.62 (m), y: 7.90 (m)Time: 11.73 (s), x: -2.63 (m), y: 7.93 (m)Time: 11.84 (s), x: -2.64 (m), y: 7.95 (m)Time: 11.94 (s), x: -2.64 (m), y: 7.97 (m)Time: 12.05 (s), x: -2.65 (m), y: 7.99 (m)Time: 12.16 (s), x: -2.65 (m), y: 8.01 (m)Time: 12.26 (s), x: -2.66 (m), y: 8.03 (m)Time: 12.37 (s), x: -2.67 (m), y: 8.05 (m)Time: 12.47 (s), x: -2.67 (m), y: 8.06 (m)Time: 12.58 (s), x: -2.67 (m), y: 8.08 (m)Time: 12.69 (s), x: -2.68 (m), y: 8.09 (m)Time: 12.79 (s), x: -2.68 (m), y: 8.11 (m)Time: 12.90 (s), x: -2.69 (m), y: 8.12 (m)Time: 13.00 (s), x: -2.69 (m), y: 8.14 (m)Time: 13.10 (s), x: -2.69 (m), y: 8.15 (m)Time: 13.21 (s), x: -2.70 (m), y: 8.16 (m)Time: 13.31 (s), x: -2.70 (m), y: 8.18 (m)Time: 13.42 (s), x: -2.70 (m), y: 8.19 (m)Time: 13.52 (s), x: -2.71 (m), y: 8.20 (m)Time: 13.62 (s), x: -2.71 (m), y: 8.21 (m)Time: 13.73 (s), x: -2.71 (m), y: 8.23 (m)Time: 13.84 (s), x: -2.72 (m), y: 8.24 (m)Time: 13.94 (s), x: -2.72 (m), y: 8.25 (m)Time: 14.04 (s), x: -2.72 (m), y: 8.25 (m)Time: 14.15 (s), x: -2.72 (m), y: 8.27 (m)Time: 14.25 (s), x: -2.73 (m), y: 8.28 (m)Time: 14.35 (s), x: -2.73 (m), y: 8.29 (m)Time: 14.45 (s), x: -2.73 (m), y: 8.30 (m)Time: 14.55 (s), x: -2.74 (m), y: 8.32 (m)Time: 14.66 (s), x: -2.74 (m), y: 8.33 (m)Time: 14.77 (s), x: -2.75 (m), y: 8.34 (m)Time: 14.88 (s), x: -2.75 (m), y: 8.36 (m)Time: 14.98 (s), x: -2.76 (m), y: 8.37 (m)Time: 15.08 (s), x: -2.76 (m), y: 8.39 (m)Time: 15.18 (s), x: -2.78 (m), y: 8.42 (m)Time: 15.28 (s), x: -2.79 (m), y: 8.47 (m)Time: 15.38 (s), x: -2.80 (m), y: 8.52 (m)Time: 15.48 (s), x: -2.80 (m), y: 8.57 (m)Time: 15.59 (s), x: -2.79 (m), y: 8.65 (m)Time: 15.70 (s), x: -2.78 (m), y: 8.74 (m)Time: 15.80 (s), x: -2.77 (m), y: 8.83 (m)Time: 15.90 (s), x: -2.75 (m), y: 8.93 (m)Time: 16.00 (s), x: -2.74 (m), y: 8.99 (m)Time: 16.11 (s), x: -2.73 (m), y: 9.02 (m)Time: 16.21 (s), x: -2.72 (m), y: 9.03 (m)Time: 16.32 (s), x: -2.72 (m), y: 9.03 (m)Time: 16.42 (s), x: -2.73 (m), y: 9.01 (m)Time: 16.52 (s), x: -2.73 (m), y: 8.96 (m)Time: 16.63 (s), x: -2.73 (m), y: 8.91 (m)Time: 16.73 (s), x: -2.73 (m), y: 8.89 (m)Time: 16.83 (s), x: -2.73 (m), y: 8.90 (m)Time: 16.94 (s), x: -2.73 (m), y: 8.93 (m)Time: 17.04 (s), x: -2.72 (m), y: 8.97 (m)Time: 17.15 (s), x: -2.72 (m), y: 9.03 (m)Time: 17.25 (s), x: -2.72 (m), y: 9.10 (m)Time: 17.35 (s), x: -2.71 (m), y: 9.18 (m)Time: 17.45 (s), x: -2.70 (m), y: 9.28 (m)Time: 17.55 (s), x: -2.69 (m), y: 9.38 (m)Time: 17.66 (s), x: -2.68 (m), y: 9.48 (m)Time: 17.76 (s), x: -2.67 (m), y: 9.58 (m)Time: 17.86 (s), x: -2.66 (m), y: 9.68 (m)Time: 17.96 (s), x: -2.65 (m), y: 9.78 (m)Time: 18.06 (s), x: -2.64 (m), y: 9.88 (m)Time: 18.17 (s), x: -2.62 (m), y: 9.99 (m)Time: 18.27 (s), x: -2.61 (m), y: 10.09 (m)Time: 18.37 (s), x: -2.60 (m), y: 10.19 (m)Time: 18.48 (s), x: -2.58 (m), y: 10.30 (m)Time: 18.58 (s), x: -2.57 (m), y: 10.40 (m)Time: 18.68 (s), x: -2.56 (m), y: 10.49 (m)Time: 18.79 (s), x: -2.54 (m), y: 10.60 (m)Time: 18.89 (s), x: -2.53 (m), y: 10.70 (m)Time: 18.99 (s), x: -2.52 (m), y: 10.80 (m)Time: 19.09 (s), x: -2.50 (m), y: 10.91 (m)Time: 19.19 (s), x: -2.49 (m), y: 11.00 (m)Time: 19.30 (s), x: -2.48 (m), y: 11.11 (m)Time: 19.40 (s), x: -2.46 (m), y: 11.21 (m)Time: 19.50 (s), x: -2.45 (m), y: 11.31 (m)Time: 19.60 (s), x: -2.44 (m), y: 11.41 (m)Time: 19.71 (s), x: -2.42 (m), y: 11.51 (m)Time: 19.82 (s), x: -2.41 (m), y: 11.60 (m)Time: 19.92 (s), x: -2.40 (m), y: 11.68 (m)Time: 20.02 (s), x: -2.39 (m), y: 11.76 (m)Time: 20.13 (s), x: -2.38 (m), y: 11.84 (m)Time: 20.23 (s), x: -2.37 (m), y: 11.91 (m)[31m[collision_publisher_node-8] escalating to SIGTERM[0m
+[31m[gazebo-1] escalating to SIGTERM[0m
+[31m[controller_spawner-3] escalating to SIGTERM[0m
+[WARN] [1749756245.328280, 25.710000]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-13065.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:43653/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ekf_localization/base_link_frame: base_link
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: False
+ * /ekf_localization/odom0: /jackal_velocity_...
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/predict_to_current_time: True
+ * /ekf_localization/world_frame: odom
+ * /gazebo/enable_ros_network: True
+ * /jackal_joint_publisher/publish_rate: 50
+ * /jackal_joint_publisher/type: joint_state_contr...
+ * /jackal_velocity_controller/angular/z/has_acceleration_limits: True
+ * /jackal_velocity_controller/angular/z/has_velocity_limits: True
+ * /jackal_velocity_controller/angular/z/max_acceleration: 25.0
+ * /jackal_velocity_controller/angular/z/max_velocity: 4.0
+ * /jackal_velocity_controller/cmd_vel_timeout: 0.25
+ * /jackal_velocity_controller/enable_odom_tf: False
+ * /jackal_velocity_controller/k_l: 0.1
+ * /jackal_velocity_controller/k_r: 0.1
+ * /jackal_velocity_controller/left_wheel: ['front_left_whee...
+ * /jackal_velocity_controller/linear/x/has_acceleration_limits: True
+ * /jackal_velocity_controller/linear/x/has_velocity_limits: True
+ * /jackal_velocity_controller/linear/x/max_acceleration: 20.0
+ * /jackal_velocity_controller/linear/x/max_velocity: 2.0
+ * /jackal_velocity_controller/pose_covariance_diagonal: [0.001, 0.001, 10...
+ * /jackal_velocity_controller/publish_rate: 50
+ * /jackal_velocity_controller/right_wheel: ['front_right_whe...
+ * /jackal_velocity_controller/twist_covariance_diagonal: [0.001, 0.001, 0....
+ * /jackal_velocity_controller/type: diff_drive_contro...
+ * /jackal_velocity_controller/wheel_radius_multiplier: 1.0
+ * /jackal_velocity_controller/wheel_separation_multiplier: 1.5
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /twist_mux/locks: [{'topic': 'e_sto...
+ * /twist_mux/topics: [{'topic': 'joy_t...
+ * /use_sim_time: True
+
+NODES
+  /
+    collision_publisher_node (jackal_helper/collision_publisher_node)
+    controller_spawner (controller_manager/spawner)
+    ekf_localization (robot_localization/ekf_localization_node)
+    gazebo (gazebo_ros/gzserver)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    twist_marker_server (interactive_marker_twist_server/marker_server)
+    twist_mux (twist_mux/twist_mux)
+    urdf_spawner (gazebo_ros/spawn_model)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [13133][0m
+[1mprocess[robot_state_publisher-2]: started with pid [13137][0m
+[1mprocess[controller_spawner-3]: started with pid [13139][0m
+[1mprocess[ekf_localization-4]: started with pid [13140][0m
+[1mprocess[twist_mux-5]: started with pid [13145][0m
+[1mprocess[twist_marker_server-6]: started with pid [13148][0m
+[1mprocess[urdf_spawner-7]: started with pid [13156][0m
+[1mprocess[collision_publisher_node-8]: started with pid [13164][0m
+[1m[urdf_spawner-7] process has finished cleanly
+log file: /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/urdf_spawner-7*.log[0m
+[collision_publisher_node-8] killing on exit
+[twist_marker_server-6] killing on exit
+[twist_mux-5] killing on exit
+[ekf_localization-4] killing on exit
+[controller_spawner-3] killing on exit
+[robot_state_publisher-2] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[0m[ INFO] [1749756207.757944413, 4.376000000]: global_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749756207.760913837, 4.378000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749756207.766315673, 4.384000000]: global_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749756207.780918076, 4.398000000]: local_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749756207.782698419, 4.400000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749756207.789069196, 4.407000000]: local_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749756207.803457323, 4.421000000]: Created local_planner base_local_planner/TrajectoryPlannerROS[0m
+[0m[ INFO] [1749756207.806606844, 4.424000000]: Sim period is set to 0.05[0m
+[0m[ INFO] [1749756207.903508291, 4.521000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749756207.905369099, 4.523000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749756207.956418856, 4.574000000]: odom received![0m
+se/global_costmap/static_map: True
+ * /move_base/global_costmap/transform_tolerance: 0.5
+ * /move_base/global_costmap/update_frequency: 10
+ * /move_base/global_costmap/width: 40.0
+ * /move_base/global_costmap/z_resolution: 1
+ * /move_base/global_costmap/z_voxels: 2
+ * /move_base/local_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/local_costmap/footprint_padding: 0.05
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 10.0
+ * /move_base/local_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/meter_scoring: True
+ * /move_base/local_costmap/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacles_layer/scan/marking: True
+ * /move_base/local_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/local_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/local_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/local_costmap/origin_z: 0.0
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 5.0
+ * /move_base/local_costmap/publish_voxel_map: False
+ * /move_base/local_costmap/raytrace_range: 3.0
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 20.0
+ * /move_base/local_costmap/width: 10.0
+ * /move_base/local_costmap/z_resolution: 1
+ * /move_base/local_costmap/z_voxels: 2
+ * /move_base/oscillation_distance: 0.5
+ * /move_base/oscillation_timeout: 0.0
+ * /move_base/planner_frequency: 20.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: True
+ * /move_base/shutdown_costmaps: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    move_base (move_base/move_base)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_DWA.launch http://localhost:11311
+[1mprocess[move_base-1]: started with pid [13540][0m
+[move_base-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Time: 20.34 (s), x: -2.36 (m), y: 11.98 (m)Time: 20.45 (s), x: -2.36 (m), y: 12.05 (m)>>>>>>>>>>>>>>>>>> Test finished! <<<<<<<<<<<<<<<<<<

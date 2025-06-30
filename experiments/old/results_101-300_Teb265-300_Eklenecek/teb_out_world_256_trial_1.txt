@@ -1,0 +1,408 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[0m[ INFO] [1749851989.349569030]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1749851989.351037125]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1749851990.960747049]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1749851991.120715305, 0.065000000]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [true] with [false].
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [false] with [true].
+[31m[ERROR] [1749851991.645711322, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_left_wheel[0m
+[31m[ERROR] [1749851991.646205501, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_right_wheel[0m
+[31m[ERROR] [1749851991.646773528, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_left_wheel[0m
+[31m[ERROR] [1749851991.647254165, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_right_wheel[0m
+[33m[ WARN] [1749851991.681919958, 0.198000000]: Failed to meet update rate! Took 0.19800000000000000933[0m
+[33m[ WARN] [1749851991.682583158, 0.198000000]: Failed to meet update rate! Took 0.17800000000000001932[0m
+🔁 Terminal çıktısı hem terminale hem dosyaya kaydediliyor: /home/turan/3v3/experiments/terminal_logs/run_teb_w256.txt
+>>>>>>>>>>>>>>>>>> Loading Gazebo Simulation with BARN/world_256.world <<<<<<<<<<<<<<<<<<
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-16068.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_teb.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:33525/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_base/TebLocalPlannerROS/acc_lim_theta: 3.5
+ * /move_base/TebLocalPlannerROS/acc_lim_x: 3.0
+ * /move_base/TebLocalPlannerROS/allow_init_with_backwards_motion: True
+ * /move_base/TebLocalPlannerROS/costmap_obstacles_behind_robot_dist: 0.5
+ * /move_base/TebLocalPlannerROS/disable_optimizations: False
+ * /move_base/TebLocalPlannerROS/dt_hysteresis: 0.1
+ * /move_base/TebLocalPlannerROS/dt_ref: 0.2
+ * /move_base/TebLocalPlannerROS/footprint_model/type: polygon
+ * /move_base/TebLocalPlannerROS/footprint_model/vertices: [[-0.21, -0.165],...
+ * /move_base/TebLocalPlannerROS/free_goal_vel: False
+ * /move_base/TebLocalPlannerROS/global_plan_overwrite_orientation: True
+ * /move_base/TebLocalPlannerROS/global_plan_prune_distance: 1.5
+ * /move_base/TebLocalPlannerROS/global_plan_viapoint_sep: 0.4
+ * /move_base/TebLocalPlannerROS/include_costmap_obstacles: True
+ * /move_base/TebLocalPlannerROS/inflation_dist: 0.2
+ * /move_base/TebLocalPlannerROS/map_frame: odom
+ * /move_base/TebLocalPlannerROS/max_global_plan_lookahead_dist: 3.0
+ * /move_base/TebLocalPlannerROS/max_samples: 500
+ * /move_base/TebLocalPlannerROS/max_vel_theta: 2.2
+ * /move_base/TebLocalPlannerROS/max_vel_x: 1.5
+ * /move_base/TebLocalPlannerROS/max_vel_x_backwards: 0.2
+ * /move_base/TebLocalPlannerROS/min_obstacle_dist: 0.15
+ * /move_base/TebLocalPlannerROS/no_inner_iterations: 10
+ * /move_base/TebLocalPlannerROS/no_outer_iterations: 4
+ * /move_base/TebLocalPlannerROS/obstacle_poses_affected: 50
+ * /move_base/TebLocalPlannerROS/odom_topic: odometry/filtered
+ * /move_base/TebLocalPlannerROS/optimization_activate: True
+ * /move_base/TebLocalPlannerROS/optimization_verbose: False
+ * /move_base/TebLocalPlannerROS/oscillation_recovery: False
+ * /move_base/TebLocalPlannerROS/penalty_epsilon: 0.1
+ * /move_base/TebLocalPlannerROS/publish_feedback: True
+ * /move_base/TebLocalPlannerROS/publish_via_points: True
+ * /move_base/TebLocalPlannerROS/switching_blocking_period: 1.0
+ * /move_base/TebLocalPlannerROS/teb_autosize: True
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_x: 1
+ * /move_base/TebLocalPlannerROS/weight_kinematics_forward_drive: 0.0
+ * /move_base/TebLocalPlannerROS/weight_kinematics_nh: 300
+ * /move_base/TebLocalPlannerROS/weight_max_vel_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_max_vel_x: 2
+ * /move_base/TebLocalPlannerROS/weight_obstacle: 15
+ * /move_base/TebLocalPlannerROS/weight_optimaltime: 3.0
+ * /move_base/TebLocalPlannerROS/weight_shortest_path: 0.2
+ * /move_base/TebLocalPlannerROS/xy_goal_tolerance: 0.25
+ * /move_base/TebLocalPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/base_global_planner: navfn/NavfnROS
+ * /move_base/base_local_planner: teb_local_planner...
+ * /move_base/clearing_rotation_allowed: True
+ * /move_base/controller_frequency: 20.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/controller_patience: 2.0
+ * /move_base/global_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/global_costmap/footprint_padding: 0.05
+ * /move_base/global_costmap/global_frame: odom
+ * /move_base/global_costmap/height: 40.0
+ * /move_base/global_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/meter_scoring: True
+ * /move_base/global_costmap/obstacle_range: 5.5
+ * /move_base/global_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacles_layer/scan/marking: True
+ * /mo[33m[ WARN] [1749851995.199397495, 3.700000000]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749851995.200057826, 3.701000000]: global_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749851995.234609859, 3.732000000]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749851995.234928483, 3.736000000]: local_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749851996.584796617, 4.947000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0417 seconds[0m
+[33m[ WARN] [1749851996.912317004, 5.234000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+[33m[ WARN] [1749851996.912512235, 5.235000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0630 seconds[0m
+[33m[ WARN] [1749851996.961510076, 5.273000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0740 seconds[0m
+[33m[ WARN] [1749851996.961726954, 5.273000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0677 seconds[0m
+[33m[ WARN] [1749851997.032012030, 5.334000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+[33m[ WARN] [1749851997.032245443, 5.335000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0620 seconds[0m
+[33m[ WARN] [1749851997.137284480, 5.423000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1240 seconds[0m
+[33m[ WARN] [1749851997.137448206, 5.423000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1167 seconds[0m
+[33m[ WARN] [1749851997.178476583, 5.458000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749851997.295270276, 5.562000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0390 seconds[0m
+[33m[ WARN] [1749851997.395662824, 5.647000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0740 seconds[0m
+[33m[ WARN] [1749851997.395857502, 5.647000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0573 seconds[0m
+[33m[ WARN] [1749851997.445632143, 5.689000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0660 seconds[0m
+[33m[ WARN] [1749851997.445798094, 5.689000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0660 seconds[0m
+[33m[ WARN] [1749851997.547675208, 5.779000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1060 seconds[0m
+[33m[ WARN] [1749851997.547839795, 5.779000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1227 seconds[0m
+[33m[ WARN] [1749851997.620711208, 5.839000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749851997.620965797, 5.839000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749851997.701672928, 5.908000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0790 seconds[0m
+[33m[ WARN] [1749851997.701830224, 5.908000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0957 seconds[0m
+[33m[ WARN] [1749851997.776152066, 5.975000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0960 seconds[0m
+[33m[ WARN] [1749851997.776342021, 5.975000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0670 seconds[0m
+[33m[ WARN] [1749851997.868551123, 6.053000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1240 seconds[0m
+[33m[ WARN] [1749851997.868790410, 6.054000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0790 seconds[0m
+[33m[ WARN] [1749851997.988179648, 6.159000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1060 seconds[0m
+[33m[ WARN] [1749851997.988360324, 6.160000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1060 seconds[0m
+[33m[ WARN] [1749851998.169831730, 6.301000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1420 seconds[0m
+[33m[ WARN] [1749851998.170008361, 6.301000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1410 seconds[0m
+[33m[ WARN] [1749851998.336647599, 6.445000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1440 seconds[0m
+[33m[ WARN] [1749851998.336806063, 6.445000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1440 seconds[0m
+[33m[ WARN] [1749851998.467678793, 6.560000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1150 seconds[0m
+[33m[ WARN] [1749851998.467852251, 6.560000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1150 seconds[0m
+[33m[ WARN] [1749851998.672638628, 6.742000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1820 seconds[0m
+[33m[ WARN] [1749851998.672823566, 6.742000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1820 seconds[0m
+[33m[ WARN] [1749851998.829318070, 6.878000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1360 seconds[0m
+[33m[ WARN] [1749851998.829490383, 6.878000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1360 seconds[0m
+[33m[ WARN] [1749851999.025246723, 7.039000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1600 seconds[0m
+[33m[ WARN] [1749851999.025384386, 7.039000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1610 seconds[0m
+[33m[ WARN] [1749851999.208813102, 7.197000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1590 seconds[0m
+[33m[ WARN] [1749851999.209075044, 7.198000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1590 seconds[0m
+[33m[ WARN] [1749851999.464687006, 7.412000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2150 seconds[0m
+[33m[ WARN] [1749851999.464850458, 7.412000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2140 seconds[0m
+[33m[ WARN] [1749851999.684042540, 7.593000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1810 seconds[0m
+[33m[ WARN] [1749851999.684237093, 7.593000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1810 seconds[0m
+[33m[ WARN] [1749851999.855977713, 7.747000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1540 seconds[0m
+[33m[ WARN] [1749851999.856179458, 7.747000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1540 seconds[0m
+[33m[ WARN] [1749852000.048130850, 7.916000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1690 seconds[0m
+[33m[ WARN] [1749852000.048307616, 7.916000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1690 seconds[0m
+[33m[ WARN] [1749852000.272097742, 8.104000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1880 seconds[0m
+[33m[ WARN] [1749852000.272271611, 8.104000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1880 seconds[0m
+[33m[ WARN] [1749852000.468466069, 8.267000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1630 seconds[0m
+[33m[ WARN] [1749852000.468688385, 8.268000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1640 seconds[0m
+[33m[ WARN] [1749852000.654098184, 8.425000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1580 seconds[0m
+[33m[ WARN] [1749852000.654309023, 8.425000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1570 seconds[0m
+[33m[ WARN] [1749852000.859573499, 8.601000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1760 seconds[0m
+[33m[ WARN] [1749852000.859824551, 8.602000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1770 seconds[0m
+[33m[ WARN] [1749852001.098846389, 8.803000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2020 seconds[0m
+[33m[ WARN] [1749852001.099131321, 8.803000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2010 seconds[0m
+[33m[ WARN] [1749852001.389005273, 9.033000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2300 seconds[0m
+[33m[ WARN] [1749852001.389279971, 9.033000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2300 seconds[0m
+[33m[ WARN] [1749852001.577969245, 9.196000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1630 seconds[0m
+[33m[ WARN] [1749852001.578144447, 9.197000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1640 seconds[0m
+[33m[ WARN] [1749852001.771280202, 9.357000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1610 seconds[0m
+[33m[ WARN] [1749852001.771536752, 9.357000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1600 seconds[0m
+[33m[ WARN] [1749852002.019657708, 9.565000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2080 seconds[0m
+[33m[ WARN] [1749852002.019825020, 9.565000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2080 seconds[0m
+[33m[ WARN] [1749852002.201129305, 9.723000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1580 seconds[0m
+[33m[ WARN] [1749852002.201330399, 9.723000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1580 seconds[0m
+[33m[ WARN] [1749852002.365326451, 9.863000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749852002.365513145, 9.863000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749852002.500627762, 9.979000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1160 seconds[0m
+[33m[ WARN] [1749852002.500860165, 9.980000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1170 seconds[0m
+[33m[ WARN] [1749852002.603464201, 10.064000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+[33m[ WARN] [1749852002.603637108, 10.064000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0840 seconds[0m
+[33m[ WARN] [1749852002.705502262, 10.156000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1270 seconds[0m
+[33m[ WARN] [1749852002.705694942, 10.156000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0920 seconds[0m
+[33m[ WARN] [1749852002.821300176, 10.259000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1030 seconds[0m
+[33m[ WARN] [1749852002.821507619, 10.260000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749852002.907700072, 10.336000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0770 seconds[0m
+[33m[ WARN] [1749852002.907882311, 10.336000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0760 seconds[0m
+[33m[ WARN] [1749852003.009982799, 10.424000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1150 seconds[0m
+[33m[ WARN] [1749852003.010182414, 10.424000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0880 seconds[0m
+[33m[ WARN] [1749852003.110761462, 10.515000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749852003.110950589, 10.515000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749852003.182650896, 10.580000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1060 seconds[0m
+[33m[ WARN] [1749852003.182983399, 10.580000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0650 seconds[0m
+[33m[ WARN] [1749852003.263543699, 10.649000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749852003.263787349, 10.650000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1017 seconds[0m
+[33m[ WARN] [1749852003.327518549, 10.706000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0760 seconds[0m
+[33m[ WARN] [1749852003.327711407, 10.706000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749852003.413976087, 10.781000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1000 seconds[0m
+[33m[ WARN] [1749852003.414258036, 10.781000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0977 seconds[0m
+[33m[ WARN] [1749852003.498541042, 10.850000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1200 seconds[0m
+[33m[ WARN] [1749852003.498789160, 10.850000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749852003.566020135, 10.906000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749852003.566300753, 10.906000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749852003.643997072, 10.972000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0720 seconds[0m
+[33m[ WARN] [1749852003.644235254, 10.972000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0887 seconds[0m
+[33m[ WARN] [1749852003.760984061, 11.068000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1180 seconds[0m
+[33m[ WARN] [1749852003.761239452, 11.068000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0960 seconds[0m
+[33m[ WARN] [1749852003.825237455, 11.116000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0480 seconds[0m
+[33m[ WARN] [1749852003.899776891, 11.178000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749852003.900063363, 11.179000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0443 seconds[0m
+[33m[ WARN] [1749852003.969521773, 11.237000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749852003.969793648, 11.237000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749852004.059799857, 11.312000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0940 seconds[0m
+[33m[ WARN] [1749852004.060079569, 11.313000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0760 seconds[0m
+[33m[ WARN] [1749852004.115205899, 11.362000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0940 seconds[0m
+[33m[ WARN] [1749852004.115468787, 11.362000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0490 seconds[0m
+[33m[ WARN] [1749852004.164542388, 11.406000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0880 seconds[0m
+[33m[ WARN] [1749852004.164800965, 11.406000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0597 seconds[0m
+[33m[ WARN] [1749852004.211229497, 11.446000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0780 seconds[0m
+[33m[ WARN] [1749852004.211499143, 11.446000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0663 seconds[0m
+[33m[ WARN] [1749852004.255510493, 11.482000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0630 seconds[0m
+[33m[ WARN] [1749852004.255733760, 11.482000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749852005.579668889, 12.669000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0510 seconds[0m
+[33m[ WARN] [1749852005.867691971, 12.928000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749852005.867856645, 12.929000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0470 seconds[0m
+[33m[ WARN] [1749852005.905642117, 12.962000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0467 seconds[0m
+[33m[ WARN] [1749852005.995996735, 13.038000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0700 seconds[0m
+[33m[ WARN] [1749852005.996182453, 13.038000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749852006.044021729, 13.077000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0590 seconds[0m
+[33m[ WARN] [1749852006.044295775, 13.077000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0617 seconds[0m
+[33m[ WARN] [1749852006.093869001, 13.118000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0693 seconds[0m
+[33m[ WARN] [1749852006.139688247, 13.156000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749852006.216703035, 13.224000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749852006.216870069, 13.224000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0393 seconds[0m
+[33m[ WARN] [1749852006.371056809, 13.363000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0450 seconds[0m
+[31m[collision_publisher_node-8] escalating to SIGTERM[0m
+[31m[gazebo-1] escalating to SIGTERM[0m
+[31m[controller_spawner-3] escalating to SIGTERM[0m
+[WARN] [1749852025.397071, 17.035000]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-15676.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:42125/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ekf_localization/base_link_frame: base_link
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: False
+ * /ekf_localization/odom0: /jackal_velocity_...
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/predict_to_current_time: True
+ * /ekf_localization/world_frame: odom
+ * /gazebo/enable_ros_network: True
+ * /jackal_joint_publisher/publish_rate: 50
+ * /jackal_joint_publisher/type: joint_state_contr...
+ * /jackal_velocity_controller/angular/z/has_acceleration_limits: True
+ * /jackal_velocity_controller/angular/z/has_velocity_limits: True
+ * /jackal_velocity_controller/angular/z/max_acceleration: 25.0
+ * /jackal_velocity_controller/angular/z/max_velocity: 4.0
+ * /jackal_velocity_controller/cmd_vel_timeout: 0.25
+ * /jackal_velocity_controller/enable_odom_tf: False
+ * /jackal_velocity_controller/k_l: 0.1
+ * /jackal_velocity_controller/k_r: 0.1
+ * /jackal_velocity_controller/left_wheel: ['front_left_whee...
+ * /jackal_velocity_controller/linear/x/has_acceleration_limits: True
+ * /jackal_velocity_controller/linear/x/has_velocity_limits: True
+ * /jackal_velocity_controller/linear/x/max_acceleration: 20.0
+ * /jackal_velocity_controller/linear/x/max_velocity: 2.0
+ * /jackal_velocity_controller/pose_covariance_diagonal: [0.001, 0.001, 10...
+ * /jackal_velocity_controller/publish_rate: 50
+ * /jackal_velocity_controller/right_wheel: ['front_right_whe...
+ * /jackal_velocity_controller/twist_covariance_diagonal: [0.001, 0.001, 0....
+ * /jackal_velocity_controller/type: diff_drive_contro...
+ * /jackal_velocity_controller/wheel_radius_multiplier: 1.0
+ * /jackal_velocity_controller/wheel_separation_multiplier: 1.5
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /twist_mux/locks: [{'topic': 'e_sto...
+ * /twist_mux/topics: [{'topic': 'joy_t...
+ * /use_sim_time: True
+
+NODES
+  /
+    collision_publisher_node (jackal_helper/collision_publisher_node)
+    controller_spawner (controller_manager/spawner)
+    ekf_localization (robot_localization/ekf_localization_node)
+    gazebo (gazebo_ros/gzserver)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    twist_marker_server (interactive_marker_twist_server/marker_server)
+    twist_mux (twist_mux/twist_mux)
+    urdf_spawner (gazebo_ros/spawn_model)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [15725][0m
+[1mprocess[robot_state_publisher-2]: started with pid [15730][0m
+[1mprocess[controller_spawner-3]: started with pid [15731][0m
+[1mprocess[ekf_localization-4]: started with pid [15732][0m
+[1mprocess[twist_mux-5]: started with pid [15737][0m
+[1mprocess[twist_marker_server-6]: started with pid [15740][0m
+[1mprocess[urdf_spawner-7]: started with pid [15748][0m
+[1mprocess[collision_publisher_node-8]: started with pid [15761][0m
+[1m[urdf_spawner-7] process has finished cleanly
+log file: /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/urdf_spawner-7*.log[0m
+[collision_publisher_node-8] killing on exit
+[twist_marker_server-6] killing on exit
+[twist_mux-5] killing on exit
+[ekf_localization-4] killing on exit
+[controller_spawner-3] killing on exit
+[robot_state_publisher-2] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[0m[ INFO] [1749851995.200494130, 3.702000000]: global_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749851995.204081246, 3.705000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749851995.211419138, 3.712000000]: global_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749851995.235300248, 3.736000000]: local_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749851995.237506890, 3.738000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749851995.251528890, 3.752000000]: local_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749851995.279239080, 3.780000000]: Created local_planner teb_local_planner/TebLocalPlannerROS[0m
+[0m[ INFO] [1749851995.325162482, 3.826000000]: Footprint model 'polygon' loaded for trajectory optimization.[0m
+[0m[ INFO] [1749851995.325210584, 3.826000000]: Parallel planning in distinctive topologies enabled.[0m
+[0m[ INFO] [1749851995.325229154, 3.826000000]: No costmap conversion plugin specified. All occupied costmap cells are treaten as point obstacles.[0m
+[0m[ INFO] [1749851995.409153137, 3.910000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749851995.411397407, 3.912000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749851995.457821830, 3.958000000]: odom received![0m
+ve_base/global_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/global_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/global_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/global_costmap/origin_x: -20.0
+ * /move_base/global_costmap/origin_y: -20.0
+ * /move_base/global_costmap/origin_z: 0.0
+ * /move_base/global_costmap/oscillation_distance: 0.2
+ * /move_base/global_costmap/oscillation_timeout: 3.0
+ * /move_base/global_costmap/planner_patience: 3.0
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 5
+ * /move_base/global_costmap/publish_voxel_map: False
+ * /move_base/global_costmap/raytrace_range: 7.0
+ * /move_base/global_costmap/resolution: 0.1
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/rolling_window: True
+ * /move_base/global_costmap/static_map: False
+ * /move_base/global_costmap/transform_tolerance: 0.2
+ * /move_base/global_costmap/update_frequency: 30
+ * /move_base/global_costmap/width: 40.0
+ * /move_base/global_costmap/z_resolution: 1
+ * /move_base/global_costmap/z_voxels: 2
+ * /move_base/local_costmap/controller_patience: 2.0
+ * /move_base/local_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/local_costmap/footprint_padding: 0.05
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 40.0
+ * /move_base/local_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/meter_scoring: True
+ * /move_base/local_costmap/obstacle_range: 5.5
+ * /move_base/local_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacles_layer/scan/marking: True
+ * /move_base/local_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/local_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/local_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/local_costmap/origin_x: -20.0
+ * /move_base/local_costmap/origin_y: -20.0
+ * /move_base/local_costmap/origin_z: 0.0
+ * /move_base/local_costmap/oscillation_distance: 0.2
+ * /move_base/local_costmap/oscillation_timeout: 3.0
+ * /move_base/local_costmap/planner_patience: 3.0
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 5
+ * /move_base/local_costmap/publish_voxel_map: False
+ * /move_base/local_costmap/raytrace_range: 7.0
+ * /move_base/local_costmap/resolution: 0.1
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.2
+ * /move_base/local_costmap/update_frequency: 30
+ * /move_base/local_costmap/width: 40.0
+ * /move_base/local_costmap/z_resolution: 1
+ * /move_base/local_costmap/z_voxels: 2
+ * /move_base/oscillation_distance: 0.5
+ * /move_base/oscillation_timeout: 0.0
+ * /move_base/planner_frequency: 20.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: True
+ * /move_base/shutdown_costmaps: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    move_base (move_base/move_base)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_teb.launch http://localhost:11311
+[1mprocess[move_base-1]: started with pid [16102][0m
+[move_base-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Time: 0.01 (s), x: -2.25 (m), y: 3.11 (m)Time: 0.11 (s), x: -2.25 (m), y: 3.21 (m)Time: 0.22 (s), x: -2.25 (m), y: 3.35 (m)Time: 0.33 (s), x: -2.25 (m), y: 3.51 (m)Time: 0.44 (s), x: -2.25 (m), y: 3.67 (m)Time: 0.54 (s), x: -2.27 (m), y: 3.82 (m)Time: 0.64 (s), x: -2.29 (m), y: 3.98 (m)Time: 0.75 (s), x: -2.31 (m), y: 4.13 (m)Time: 0.85 (s), x: -2.32 (m), y: 4.28 (m)Time: 0.95 (s), x: -2.33 (m), y: 4.44 (m)Time: 1.06 (s), x: -2.32 (m), y: 4.59 (m)Time: 1.17 (s), x: -2.31 (m), y: 4.76 (m)Time: 1.27 (s), x: -2.29 (m), y: 4.90 (m)Time: 1.37 (s), x: -2.25 (m), y: 5.03 (m)Time: 1.47 (s), x: -2.23 (m), y: 5.09 (m)Time: 1.58 (s), x: -2.20 (m), y: 5.17 (m)Time: 1.68 (s), x: -2.16 (m), y: 5.27 (m)Time: 1.79 (s), x: -2.13 (m), y: 5.36 (m)Time: 1.90 (s), x: -2.11 (m), y: 5.43 (m)Time: 2.00 (s), x: -2.09 (m), y: 5.48 (m)Time: 2.10 (s), x: -2.08 (m), y: 5.51 (m)Time: 2.21 (s), x: -2.08 (m), y: 5.51 (m)Time: 2.31 (s), x: -2.07 (m), y: 5.50 (m)Time: 2.42 (s), x: -2.06 (m), y: 5.48 (m)Time: 2.52 (s), x: -2.05 (m), y: 5.46 (m)Time: 2.63 (s), x: -2.04 (m), y: 5.44 (m)Time: 2.74 (s), x: -2.04 (m), y: 5.41 (m)Time: 2.85 (s), x: -2.05 (m), y: 5.38 (m)Time: 2.95 (s), x: -2.05 (m), y: 5.36 (m)Time: 3.06 (s), x: -2.06 (m), y: 5.34 (m)Time: 3.16 (s), x: -2.06 (m), y: 5.32 (m)Time: 3.26 (s), x: -2.07 (m), y: 5.30 (m)Time: 3.36 (s), x: -2.07 (m), y: 5.28 (m)Time: 3.47 (s), x: -2.07 (m), y: 5.26 (m)Time: 3.58 (s), x: -2.07 (m), y: 5.24 (m)Time: 3.68 (s), x: -2.08 (m), y: 5.22 (m)Time: 3.79 (s), x: -2.08 (m), y: 5.21 (m)Time: 3.89 (s), x: -2.08 (m), y: 5.19 (m)Time: 3.99 (s), x: -2.09 (m), y: 5.17 (m)Time: 4.10 (s), x: -2.10 (m), y: 5.15 (m)Time: 4.20 (s), x: -2.12 (m), y: 5.14 (m)Time: 4.31 (s), x: -2.13 (m), y: 5.12 (m)Time: 4.42 (s), x: -2.14 (m), y: 5.10 (m)Time: 4.52 (s), x: -2.15 (m), y: 5.08 (m)Time: 4.63 (s), x: -2.16 (m), y: 5.05 (m)Time: 4.74 (s), x: -2.17 (m), y: 5.03 (m)Time: 4.84 (s), x: -2.17 (m), y: 5.01 (m)Time: 4.95 (s), x: -2.18 (m), y: 4.99 (m)Time: 5.05 (s), x: -2.18 (m), y: 4.96 (m)Time: 5.16 (s), x: -2.18 (m), y: 4.93 (m)Time: 5.26 (s), x: -2.19 (m), y: 4.90 (m)Time: 5.37 (s), x: -2.19 (m), y: 4.88 (m)Time: 5.48 (s), x: -2.19 (m), y: 4.90 (m)Time: 5.59 (s), x: -2.18 (m), y: 4.94 (m)Time: 5.69 (s), x: -2.17 (m), y: 4.97 (m)Time: 5.79 (s), x: -2.17 (m), y: 5.04 (m)Time: 5.89 (s), x: -2.16 (m), y: 5.12 (m)Time: 5.99 (s), x: -2.16 (m), y: 5.24 (m)Time: 6.10 (s), x: -2.16 (m), y: 5.39 (m)Time: 6.20 (s), x: -2.15 (m), y: 5.54 (m)Time: 6.31 (s), x: -2.14 (m), y: 5.71 (m)Time: 6.41 (s), x: -2.13 (m), y: 5.86 (m)Time: 6.52 (s), x: -2.12 (m), y: 6.02 (m)Time: 6.62 (s), x: -2.09 (m), y: 6.17 (m)Time: 6.72 (s), x: -2.05 (m), y: 6.32 (m)Time: 6.83 (s), x: -2.01 (m), y: 6.47 (m)Time: 6.94 (s), x: -1.95 (m), y: 6.61 (m)Time: 7.04 (s), x: -1.89 (m), y: 6.76 (m)Time: 7.15 (s), x: -1.83 (m), y: 6.91 (m)Time: 7.25 (s), x: -1.77 (m), y: 7.05 (m)Time: 7.36 (s), x: -1.70 (m), y: 7.19 (m)Time: 7.46 (s), x: -1.62 (m), y: 7.31 (m)Time: 7.56 (s), x: -1.55 (m), y: 7.43 (m)Time: 7.67 (s), x: -1.47 (m), y: 7.54 (m)Time: 7.77 (s), x: -1.40 (m), y: 7.67 (m)Time: 7.87 (s), x: -1.34 (m), y: 7.77 (m)Time: 7.97 (s), x: -1.30 (m), y: 7.89 (m)Time: 8.08 (s), x: -1.28 (m), y: 8.02 (m)Time: 8.18 (s), x: -1.28 (m), y: 8.13 (m)Time: 8.28 (s), x: -1.29 (m), y: 8.24 (m)Time: 8.38 (s), x: -1.31 (m), y: 8.33 (m)Time: 8.48 (s), x: -1.32 (m), y: 8.36 (m)Time: 8.59 (s), x: -1.33 (m), y: 8.37 (m)Time: 8.69 (s), x: -1.36 (m), y: 8.42 (m)Time: 8.80 (s), x: -1.42 (m), y: 8.51 (m)Time: 8.91 (s), x: -1.47 (m), y: 8.59 (m)Time: 9.01 (s), x: -1.51 (m), y: 8.63 (m)Time: 9.11 (s), x: -1.55 (m), y: 8.67 (m)Time: 9.22 (s), x: -1.58 (m), y: 8.75 (m)Time: 9.32 (s), x: -1.60 (m), y: 8.85 (m)Time: 9.42 (s), x: -1.61 (m), y: 8.96 (m)Time: 9.53 (s), x: -1.61 (m), y: 9.09 (m)Time: 9.63 (s), x: -1.60 (m), y: 9.25 (m)Time: 9.74 (s), x: -1.57 (m), y: 9.40 (m)Time: 9.84 (s), x: -1.55 (m), y: 9.56 (m)Time: 9.95 (s), x: -1.53 (m), y: 9.71 (m)Time: 10.06 (s), x: -1.54 (m), y: 9.87 (m)Time: 10.16 (s), x: -1.57 (m), y: 10.02 (m)Time: 10.27 (s), x: -1.60 (m), y: 10.14 (m)Time: 10.37 (s), x: -1.62 (m), y: 10.20 (m)Time: 10.48 (s), x: -1.61 (m), y: 10.21 (m)Time: 10.59 (s), x: -1.60 (m), y: 10.20 (m)Time: 10.69 (s), x: -1.60 (m), y: 10.21 (m)Time: 10.80 (s), x: -1.63 (m), y: 10.23 (m)Time: 10.91 (s), x: -1.66 (m), y: 10.27 (m)Time: 11.01 (s), x: -1.70 (m), y: 10.30 (m)Time: 11.12 (s), x: -1.75 (m), y: 10.37 (m)Time: 11.22 (s), x: -1.81 (m), y: 10.44 (m)Time: 11.33 (s), x: -1.87 (m), y: 10.52 (m)Time: 11.43 (s), x: -1.94 (m), y: 10.61 (m)Time: 11.53 (s), x: -2.00 (m), y: 10.72 (m)Time: 11.64 (s), x: -2.07 (m), y: 10.85 (m)Time: 11.75 (s), x: -2.14 (m), y: 10.98 (m)Time: 11.85 (s), x: -2.19 (m), y: 11.12 (m)Time: 11.96 (s), x: -2.21 (m), y: 11.24 (m)Time: 12.06 (s), x: -2.21 (m), y: 11.38 (m)Time: 12.17 (s), x: -2.21 (m), y: 11.53 (m)Time: 12.28 (s), x: -2.22 (m), y: 11.69 (m)Time: 12.38 (s), x: -2.23 (m), y: 11.85 (m)Time: 12.49 (s), x: -2.26 (m), y: 11.99 (m)Time: 12.60 (s), x: -2.28 (m), y: 12.14 (m)>>>>>>>>>>>>>>>>>> Test finished! <<<<<<<<<<<<<<<<<<

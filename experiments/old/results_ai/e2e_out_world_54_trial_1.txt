@@ -1,0 +1,101 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[0m[ INFO] [1749986654.943911064]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1749986654.947320760]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1749986655.896298931]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1749986655.906466224, 0.001000000]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [true] with [false].
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [false] with [true].
+[31m[ERROR] [1749986656.556673800, 0.250000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_left_wheel[0m
+[31m[ERROR] [1749986656.557063187, 0.250000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_right_wheel[0m
+[31m[ERROR] [1749986656.557413160, 0.250000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_left_wheel[0m
+[31m[ERROR] [1749986656.557671602, 0.250000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_right_wheel[0m
+[33m[ WARN] [1749986656.588092696, 0.251000000]: Failed to meet update rate! Took 0.25100000000000000089[0m
+[33m[ WARN] [1749986656.589122544, 0.252000000]: Failed to meet update rate! Took 0.23200000000000001177[0m
+🔁 Terminal çıktısı hem terminale hem dosyaya kaydediliyor: /home/turan/3v3/experiments/terminal_logs/run_e2e_w54.txt
+>>>>>>>>>>>>>>>>>> Loading Gazebo Simulation with BARN/world_54.world <<<<<<<<<<<<<<<<<<
+/home/turan/.local/lib/python3.6/site-packages/gym/core.py:27: UserWarning: [33mWARN: Gym minimally supports python 3.6 as the python foundation not longer supports the version, please update your version to 3.7+[0m
+  "Gym minimally supports python 3.6 as the python foundation not longer supports the version, please update your version to 3.7+"
+... logging to /home/turan/.ros/log/82157b38-496a-11f0-a147-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-31087.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_e2e/src/the-barn-challenge/jackal_helper/launch/move_base_DWA.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:33519/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_base/TrajectoryPlannerROS/acc_lim_theta: 20.0
+ * /move_base/TrajectoryPlannerROS/acc_lim_x: 10.0
+ * /move_base/TrajectoryPlannerROS/angular_sim_granularity: 0.02
+ * /move_base/TrajectoryPlannerROS/controller_frequency: 20.0
+ * /move_base/TrajectoryPlannerROS/dwa: True
+ * /move_base/TrajectoryPlannerROS/escape_reset_dist: 0.1
+ * /move_base/TrajectoryPlannerROS/escape_reset_theta: 0.1
+ * /move_base/TrajectoryPlannerROS/escape_vel: -0.5
+ * /move_base/TrajectoryPlannerROS/gdist_scale: 1.0
+ * /move_base/TrajectoryPlannerROS/heading_lookahead: 0.325
+ * /move_base/TrajectoryPlannerROS/heading_scoring: False
+ * /move_base/TrajectoryPlannerROS/heading_scoring_timestep: 0.8
+ * /move_base/TrajectoryPlannerROS/holonomic_robot: False
+ * /move_base/TrajectoryPlannerROS/latch_xy_goal_tolerance: False
+ * /move_base/TrajectoryPlannerROS/max_vel_theta: 1.57
+ * /move_base/TrajectoryPlannerROS/max_vel_x: 0.5
+ * /move_base/TrajectoryPlannerROS/meter_scoring: True
+ * /move_base/TrajectoryPlannerROS/min_in_place_vel_theta: 0.314
+ * /move_base/TrajectoryPlannerROS/min_vel_theta: -1.57
+ * /move_base/TrajectoryPlannerROS/min_vel_x: 0.1
+ * /move_base/TrajectoryPlannerROS/occdist_scale: 0.1
+ * /move_base/TrajectoryPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/TrajectoryPlannerROS/pdist_scale: 0.75
+ * /move_base/TrajectoryPlannerROS/publish_cost_grid_pc: True
+ * /move_base/TrajectoryPlannerROS/sim_granularity: 0.02
+ * /move_base/TrajectoryPlannerROS/sim_time: 2.0
+ * /move_base/TrajectoryPlannerROS/simple_attractor: False
+ * /move_base/TrajectoryPlannerROS/vtheta_samples: 20
+ * /move_base/TrajectoryPlannerROS/vx_samples: 6
+ * /move_base/TrajectoryPlannerROS/xy_goal_tolerance: 0.25
+ * /move_base/TrajectoryPlannerROS/yaw_goal_tolerance: 0.157
+ * /move_base/base_global_planner: navfn/NavfnROS
+ * /move_base/base_local_planner: base_local_planne...
+ * /move_base/clearing_rotation_allowed: True
+ * /move_base/controller_frequency: 20.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/global_costmap/footprint_padding: 0.1
+ * /move_base/global_costmap/global_frame: odom
+ * /move_base/global_costmap/height: 40.0
+ * /move_base/global_costmap/inflater_layer/inflation_radius: 0.3
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/meter_scoring: True
+ * /move_base/global_costmap/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacles_layer/scan/marking: True
+ * /move_base/global_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/global_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/global_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/global_costmap/origin_x: -20.0
+ * /move_base/global_costmap/origin_y: -20.0
+ * /move_base/global_costmap/origin_z: 0.0
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 5
+ * /move_base/global_costmap/publish_voxel_map: False
+ * /move_base/global_costmap/raytrace_range: 3.0
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/rolling_window: False
+ * /move_base/global_costmap/static_m[31m[ERROR] [1749986662.198985108]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[31m[ERROR] [1749986662.201150184]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[33m[ WARN] [1749986662.369522379, 5.599000000]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749986662.371665336, 5.601000000]: global_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749986662.539927073, 5.771000000]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749986662.542826755, 5.774000000]: local_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749986680.935661076, 20.478000000]: Failed to meet update rate! Took 0.066000000000000003109[0m
+[33m[ WARN] [1749986680.935879148, 20.478000000]: Failed to meet update rate! Took 0.046000000000000006162[0m
+Time: 0.01 (s), x: -2.00 (m), y: 3.12 (m)Time: 0.12 (s), x: -2.00 (m), y: 3.20 (m)Time: 0.22 (s), x: -2.01 (m), y: 3.31 (m)Time: 0.32 (s), x: -2.02 (m), y: 3.42 (m)Time: 0.43 (s), x: -2.04 (m), y: 3.56 (m)Time: 0.54 (s), x: -2.06 (m), y: 3.69 (m)Time: 0.64 (s), x: -2.09 (m), y: 3.83 (m)Time: 0.74 (s), x: -2.14 (m), y: 3.98 (m)Time: 0.84 (s), x: -2.23 (m), y: 4.13 (m)Time: 0.95 (s), x: -2.36 (m), y: 4.28 (m)Time: 1.05 (s), x: -2.46 (m), y: 4.36 (m)Time: 1.16 (s), x: -2.52 (m), y: 4.39 (m)Time: 1.27 (s), x: -2.55 (m), y: 4.43 (m)Time: 1.37 (s), x: -2.55 (m), y: 4.48 (m)Time: 1.47 (s), x: -2.53 (m), y: 4.54 (m)Time: 1.57 (s), x: -2.51 (m), y: 4.59 (m)Time: 1.68 (s), x: -2.49 (m), y: 4.63 (m)Time: 1.79 (s), x: -2.46 (m), y: 4.66 (m)Time: 1.90 (s), x: -2.46 (m), y: 4.67 (m)Time: 2.01 (s), x: -2.47 (m), y: 4.67 (m)Time: 2.11 (s), x: -2.46 (m), y: 4.68 (m)Time: 2.22 (s), x: -2.45 (m), y: 4.70 (m)Time: 2.32 (s), x: -2.44 (m), y: 4.73 (m)Time: 2.43 (s), x: -2.42 (m), y: 4.78 (m)Time: 2.53 (s), x: -2.41 (m), y: 4.82 (m)Time: 2.63 (s), x: -2.40 (m), y: 4.89 (m)Time: 2.74 (s), x: -2.39 (m), y: 4.96 (m)Time: 2.84 (s), x: -2.38 (m), y: 5.01 (m)Time: 2.94 (s), x: -2.38 (m), y: 5.02 (m)Time: 3.04 (s), x: -2.37 (m), y: 4.99 (m)Time: 3.15 (s), x: -2.35 (m), y: 4.93 (m)Time: 3.25 (s), x: -2.32 (m), y: 4.82 (m)Time: 3.36 (s), x: -2.28 (m), y: 4.69 (m)Time: 3.47 (s), x: -2.23 (m), y: 4.53 (m)Time: 3.57 (s), x: -2.19 (m), y: 4.41 (m)Time: 3.67 (s), x: -2.17 (m), y: 4.32 (m)Time: 3.78 (s), x: -2.17 (m), y: 4.29 (m)Time: 3.88 (s), x: -2.17 (m), y: 4.29 (m)Time: 3.98 (s), x: -2.16 (m), y: 4.32 (m)Time: 4.08 (s), x: -2.15 (m), y: 4.35 (m)Time: 4.19 (s), x: -2.14 (m), y: 4.38 (m)Time: 4.30 (s), x: -2.14 (m), y: 4.38 (m)Time: 4.40 (s), x: -2.14 (m), y: 4.38 (m)Time: 4.51 (s), x: -2.14 (m), y: 4.40 (m)Time: 4.62 (s), x: -2.14 (m), y: 4.42 (m)Time: 4.72 (s), x: -2.13 (m), y: 4.47 (m)Time: 4.82 (s), x: -2.12 (m), y: 4.52 (m)Time: 4.93 (s), x: -2.10 (m), y: 4.57 (m)Time: 5.03 (s), x: -2.09 (m), y: 4.61 (m)Time: 5.14 (s), x: -2.08 (m), y: 4.64 (m)Time: 5.25 (s), x: -2.08 (m), y: 4.67 (m)Time: 5.36 (s), x: -2.08 (m), y: 4.68 (m)Time: 5.46 (s), x: -2.08 (m), y: 4.68 (m)Time: 5.58 (s), x: -2.08 (m), y: 4.66 (m)Time: 5.68 (s), x: -2.08 (m), y: 4.64 (m)Time: 5.78 (s), x: -2.09 (m), y: 4.61 (m)Time: 5.89 (s), x: -2.09 (m), y: 4.58 (m)Time: 5.99 (s), x: -2.10 (m), y: 4.54 (m)Time: 6.09 (s), x: -2.11 (m), y: 4.52 (m)Time: 6.20 (s), x: -2.12 (m), y: 4.50 (m)Time: 6.30 (s), x: -2.12 (m), y: 4.49 (m)Time: 6.40 (s), x: -2.11 (m), y: 4.49 (m)Time: 6.51 (s), x: -2.09 (m), y: 4.53 (m)Time: 6.61 (s), x: -2.05 (m), y: 4.58 (m)Time: 6.72 (s), x: -2.02 (m), y: 4.64 (m)Time: 6.82 (s), x: -1.98 (m), y: 4.69 (m)Time: 6.93 (s), x: -1.94 (m), y: 4.75 (m)Time: 7.04 (s), x: -1.91 (m), y: 4.80 (m)Time: 7.14 (s), x: -1.89 (m), y: 4.83 (m)Time: 7.24 (s), x: -1.87 (m), y: 4.86 (m)Time: 7.34 (s), x: -1.85 (m), y: 4.88 (m)Time: 7.44 (s), x: -1.84 (m), y: 4.91 (m)Time: 7.55 (s), x: -1.82 (m), y: 4.92 (m)Time: 7.66 (s), x: -1.81 (m), y: 4.93 (m)Time: 7.76 (s), x: -1.79 (m), y: 4.94 (m)Time: 7.86 (s), x: -1.77 (m), y: 4.94 (m)Time: 7.96 (s), x: -1.75 (m), y: 4.95 (m)Time: 8.07 (s), x: -1.74 (m), y: 4.95 (m)Time: 8.18 (s), x: -1.75 (m), y: 4.95 (m)Time: 8.28 (s), x: -1.76 (m), y: 4.95 (m)Time: 8.39 (s), x: -1.80 (m), y: 4.92 (m)Time: 8.50 (s), x: -1.86 (m), y: 4.88 (m)Time: 8.61 (s), x: -1.95 (m), y: 4.83 (m)Time: 8.72 (s), x: -2.03 (m), y: 4.77 (m)Time: 8.82 (s), x: -2.13 (m), y: 4.71 (m)Time: 8.93 (s), x: -2.23 (m), y: 4.66 (m)Time: 9.03 (s), x: -2.30 (m), y: 4.63 (m)Time: 9.14 (s), x: -2.33 (m), y: 4.62 (m)Time: 9.25 (s), x: -2.35 (m), y: 4.62 (m)Time: 9.36 (s), x: -2.36 (m), y: 4.62 (m)Time: 9.46 (s), x: -2.40 (m), y: 4.63 (m)Time: 9.56 (s), x: -2.44 (m), y: 4.65 (m)Time: 9.67 (s), x: -2.51 (m), y: 4.67 (m)Time: 9.77 (s), x: -2.59 (m), y: 4.70 (m)Time: 9.87 (s), x: -2.68 (m), y: 4.72 (m)Time: 9.98 (s), x: -2.75 (m), y: 4.74 (m)Time: 10.08 (s), x: -2.79 (m), y: 4.75 (m)Time: 10.19 (s), x: -2.82 (m), y: 4.74 (m)Time: 10.33 (s), x: -2.85 (m), y: 4.70 (m)Time: 10.43 (s), x: -2.87 (m), y: 4.65 (m)Time: 10.54 (s), x: -2.88 (m), y: 4.63 (m)Time: 10.64 (s), x: -2.88 (m), y: 4.64 (m)Time: 10.74 (s), x: -2.86 (m), y: 4.68 (m)Time: 10.84 (s), x: -2.84 (m), y: 4.75 (m)Time: 10.94 (s), x: -2.80 (m), y: 4.82 (m)Time: 11.05 (s), x: -2.78 (m), y: 4.85 (m)Time: 11.16 (s), x: -2.77 (m), y: 4.87 (m)Time: 11.26 (s), x: -2.75 (m), y: 4.88 (m)Time: 11.36 (s), x: -2.75 (m), y: 4.92 (m)Time: 11.47 (s), x: -2.76 (m), y: 4.99 (m)Time: 11.58 (s), x: -2.78 (m), y: 5.11 (m)Time: 11.68 (s), x: -2.81 (m), y: 5.25 (m)Time: 11.79 (s), x: -2.84 (m), y: 5.43 (m)Time: 11.89 (s), x: -2.88 (m), y: 5.61 (m)Time: 11.99 (s), x: -2.92 (m), y: 5.81 (m)Time: 12.10 (s), x: -2.95 (m), y: 6.00 (m)Time: 12.20 (s), x: -2.99 (m), y: 6.22 (m)Time: 12.30 (s), x: -3.03 (m), y: 6.41 (m)Time: 12.41 (s), x: -3.10 (m), y: 6.64 (m)Time: 12.51 (s), x: -3.17 (m), y: 6.84 (m)Time: 12.62 (s), x: -3.25 (m), y: 7.02 (m)Time: 12.72 (s), x: -3.32 (m), y: 7.16 (m)Time: 12.82 (s), x: -3.40 (m), y: 7.33 (m)Time: 12.92 (s), x: -3.45 (m), y: 7.44 (m)Time: 13.03 (s), x: -3.48 (m), y: 7.53 (m)Time: 13.13 (s), x: -3.49 (m), y: 7.55 (m)Time: 13.25 (s), x: -3.49 (m), y: 7.55 (m)>>>>>>>>>>>>>>>>>> Test finished! <<<<<<<<<<<<<<<<<<

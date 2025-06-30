@@ -1,0 +1,367 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[0m[ INFO] [1749608298.075618947]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1749608298.077086607]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1749608299.591787538]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1749608299.607169590, 0.005000000]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [true] with [false].
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [false] with [true].
+[31m[ERROR] [1749608300.373111406, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_left_wheel[0m
+[31m[ERROR] [1749608300.374254628, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_right_wheel[0m
+[31m[ERROR] [1749608300.375568676, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_left_wheel[0m
+[31m[ERROR] [1749608300.376340639, 0.197000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_right_wheel[0m
+[33m[ WARN] [1749608300.469810141, 0.198000000]: Failed to meet update rate! Took 0.19800000000000000933[0m
+[33m[ WARN] [1749608300.471069736, 0.198000000]: Failed to meet update rate! Took 0.17800000000000001932[0m
+🔁 Terminal çıktısı hem terminale hem dosyaya kaydediliyor: /home/turan/3v3/experiments/terminal_logs/run_fastdwa_w59.txt
+>>>>>>>>>>>>>>>>>> Loading Gazebo Simulation with BARN/world_59.world <<<<<<<<<<<<<<<<<<
+... logging to /home/turan/.ros/log/7b367984-464a-11f0-9557-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-29670.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_fastdwa/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_DWA.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:46667/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_base/TrajectoryPlannerROS/acc_lim_theta: 20.0
+ * /move_base/TrajectoryPlannerROS/acc_lim_x: 10.0
+ * /move_base/TrajectoryPlannerROS/angular_sim_granularity: 0.02
+ * /move_base/TrajectoryPlannerROS/controller_frequency: 20.0
+ * /move_base/TrajectoryPlannerROS/dwa: True
+ * /move_base/TrajectoryPlannerROS/escape_reset_dist: 0.1
+ * /move_base/TrajectoryPlannerROS/escape_reset_theta: 0.1
+ * /move_base/TrajectoryPlannerROS/escape_vel: -0.5
+ * /move_base/TrajectoryPlannerROS/gdist_scale: 1.0
+ * /move_base/TrajectoryPlannerROS/heading_lookahead: 0.325
+ * /move_base/TrajectoryPlannerROS/heading_scoring: False
+ * /move_base/TrajectoryPlannerROS/heading_scoring_timestep: 0.8
+ * /move_base/TrajectoryPlannerROS/holonomic_robot: False
+ * /move_base/TrajectoryPlannerROS/latch_xy_goal_tolerance: True
+ * /move_base/TrajectoryPlannerROS/max_vel_theta: 1.57
+ * /move_base/TrajectoryPlannerROS/max_vel_x: 1
+ * /move_base/TrajectoryPlannerROS/meter_scoring: True
+ * /move_base/TrajectoryPlannerROS/min_in_place_vel_theta: 0.314
+ * /move_base/TrajectoryPlannerROS/min_vel_theta: -1.57
+ * /move_base/TrajectoryPlannerROS/min_vel_x: 0.1
+ * /move_base/TrajectoryPlannerROS/occdist_scale: 0.1
+ * /move_base/TrajectoryPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/TrajectoryPlannerROS/pdist_scale: 0.75
+ * /move_base/TrajectoryPlannerROS/publish_cost_grid_pc: True
+ * /move_base/TrajectoryPlannerROS/sim_granularity: 0.02
+ * /move_base/TrajectoryPlannerROS/sim_time: 2.0
+ * /move_base/TrajectoryPlannerROS/simple_attractor: False
+ * /move_base/TrajectoryPlannerROS/vtheta_samples: 20
+ * /move_base/TrajectoryPlannerROS/vx_samples: 12
+ * /move_base/TrajectoryPlannerROS/xy_goal_tolerance: 0.5
+ * /move_base/TrajectoryPlannerROS/yaw_goal_tolerance: 0.3
+ * /move_base/base_global_planner: navfn/NavfnROS
+ * /move_base/base_local_planner: base_local_planne...
+ * /move_base/clearing_rotation_allowed: True
+ * /move_base/controller_frequency: 20.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/global_costmap/footprint_padding: 0.1
+ * /move_base/global_costmap/global_frame: odom
+ * /move_base/global_costmap/height: 40.0
+ * /move_base/global_costmap/inflater_layer/inflation_radius: 0.3
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/meter_scoring: True
+ * /move_base/global_costmap/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacles_layer/scan/marking: True
+ * /move_base/global_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/global_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/global_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/global_costmap/origin_x: -20.0
+ * /move_base/global_costmap/origin_y: -20.0
+ * /move_base/global_costmap/origin_z: 0.0
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 5
+ * /move_base/global_costmap/publish_voxel_map: False
+ * /move_base/global_costmap/raytrace_range: 3.0
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/rolling_window: False
+ * /move_base/global_[33m[ WARN] [1749608303.302777371, 3.020000000]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749608303.304130359, 3.021000000]: global_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749608303.352389515, 3.063000000]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749608303.352653939, 3.064000000]: local_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749608322.817786365, 20.041000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+Time: 0.01 (s), x: -2.00 (m), y: 3.11 (m)Time: 0.12 (s), x: -2.00 (m), y: 3.20 (m)Time: 0.22 (s), x: -2.00 (m), y: 3.30 (m)Time: 0.33 (s), x: -2.00 (m), y: 3.40 (m)Time: 0.43 (s), x: -1.99 (m), y: 3.51 (m)Time: 0.54 (s), x: -1.98 (m), y: 3.60 (m)Time: 0.65 (s), x: -1.98 (m), y: 3.69 (m)Time: 0.75 (s), x: -1.99 (m), y: 3.78 (m)Time: 0.86 (s), x: -2.00 (m), y: 3.87 (m)Time: 0.96 (s), x: -2.01 (m), y: 3.95 (m)Time: 1.06 (s), x: -2.02 (m), y: 4.03 (m)Time: 1.17 (s), x: -2.04 (m), y: 4.09 (m)Time: 1.27 (s), x: -2.06 (m), y: 4.16 (m)Time: 1.37 (s), x: -2.08 (m), y: 4.23 (m)Time: 1.47 (s), x: -2.09 (m), y: 4.29 (m)Time: 1.58 (s), x: -2.11 (m), y: 4.34 (m)Time: 1.68 (s), x: -2.13 (m), y: 4.38 (m)Time: 1.78 (s), x: -2.14 (m), y: 4.42 (m)Time: 1.88 (s), x: -2.16 (m), y: 4.47 (m)Time: 1.99 (s), x: -2.18 (m), y: 4.51 (m)Time: 2.09 (s), x: -2.19 (m), y: 4.54 (m)Time: 2.19 (s), x: -2.20 (m), y: 4.57 (m)Time: 2.30 (s), x: -2.22 (m), y: 4.60 (m)Time: 2.40 (s), x: -2.23 (m), y: 4.62 (m)Time: 2.50 (s), x: -2.24 (m), y: 4.65 (m)Time: 2.61 (s), x: -2.25 (m), y: 4.67 (m)Time: 2.71 (s), x: -2.26 (m), y: 4.70 (m)Time: 2.81 (s), x: -2.28 (m), y: 4.73 (m)Time: 2.92 (s), x: -2.29 (m), y: 4.75 (m)Time: 3.02 (s), x: -2.30 (m), y: 4.77 (m)Time: 3.12 (s), x: -2.32 (m), y: 4.79 (m)Time: 3.23 (s), x: -2.33 (m), y: 4.80 (m)Time: 3.33 (s), x: -2.35 (m), y: 4.83 (m)Time: 3.44 (s), x: -2.37 (m), y: 4.85 (m)Time: 3.54 (s), x: -2.38 (m), y: 4.86 (m)Time: 3.64 (s), x: -2.39 (m), y: 4.88 (m)Time: 3.75 (s), x: -2.40 (m), y: 4.89 (m)Time: 3.85 (s), x: -2.40 (m), y: 4.90 (m)Time: 3.95 (s), x: -2.41 (m), y: 4.91 (m)Time: 4.06 (s), x: -2.43 (m), y: 4.93 (m)Time: 4.16 (s), x: -2.45 (m), y: 4.95 (m)Time: 4.26 (s), x: -2.46 (m), y: 4.96 (m)Time: 4.37 (s), x: -2.47 (m), y: 4.97 (m)Time: 4.47 (s), x: -2.48 (m), y: 4.98 (m)Time: 4.57 (s), x: -2.48 (m), y: 4.99 (m)Time: 4.68 (s), x: -2.49 (m), y: 5.00 (m)Time: 4.78 (s), x: -2.50 (m), y: 5.01 (m)Time: 4.89 (s), x: -2.51 (m), y: 5.02 (m)Time: 5.00 (s), x: -2.52 (m), y: 5.03 (m)Time: 5.10 (s), x: -2.53 (m), y: 5.04 (m)Time: 5.21 (s), x: -2.54 (m), y: 5.05 (m)Time: 5.32 (s), x: -2.55 (m), y: 5.06 (m)Time: 5.42 (s), x: -2.56 (m), y: 5.07 (m)Time: 5.53 (s), x: -2.57 (m), y: 5.08 (m)Time: 5.63 (s), x: -2.57 (m), y: 5.09 (m)Time: 5.74 (s), x: -2.59 (m), y: 5.11 (m)Time: 5.84 (s), x: -2.61 (m), y: 5.12 (m)Time: 5.95 (s), x: -2.62 (m), y: 5.14 (m)Time: 6.05 (s), x: -2.64 (m), y: 5.15 (m)Time: 6.16 (s), x: -2.65 (m), y: 5.16 (m)Time: 6.27 (s), x: -2.66 (m), y: 5.18 (m)Time: 6.37 (s), x: -2.67 (m), y: 5.19 (m)Time: 6.47 (s), x: -2.68 (m), y: 5.20 (m)Time: 6.57 (s), x: -2.69 (m), y: 5.21 (m)Time: 6.67 (s), x: -2.70 (m), y: 5.22 (m)Time: 6.77 (s), x: -2.71 (m), y: 5.23 (m)Time: 6.88 (s), x: -2.71 (m), y: 5.24 (m)Time: 6.98 (s), x: -2.72 (m), y: 5.25 (m)Time: 7.09 (s), x: -2.72 (m), y: 5.26 (m)Time: 7.19 (s), x: -2.73 (m), y: 5.27 (m)Time: 7.29 (s), x: -2.74 (m), y: 5.28 (m)Time: 7.40 (s), x: -2.74 (m), y: 5.29 (m)Time: 7.50 (s), x: -2.75 (m), y: 5.30 (m)Time: 7.60 (s), x: -2.75 (m), y: 5.31 (m)Time: 7.70 (s), x: -2.76 (m), y: 5.32 (m)Time: 7.81 (s), x: -2.76 (m), y: 5.33 (m)Time: 7.91 (s), x: -2.77 (m), y: 5.33 (m)Time: 8.01 (s), x: -2.77 (m), y: 5.35 (m)Time: 8.12 (s), x: -2.78 (m), y: 5.37 (m)Time: 8.22 (s), x: -2.79 (m), y: 5.37 (m)Time: 8.32 (s), x: -2.78 (m), y: 5.38 (m)Time: 8.43 (s), x: -2.78 (m), y: 5.38 (m)Time: 8.53 (s), x: -2.78 (m), y: 5.39 (m)Time: 8.63 (s), x: -2.80 (m), y: 5.41 (m)Time: 8.74 (s), x: -2.82 (m), y: 5.44 (m)Time: 8.84 (s), x: -2.84 (m), y: 5.45 (m)Time: 8.95 (s), x: -2.85 (m), y: 5.47 (m)Time: 9.05 (s), x: -2.85 (m), y: 5.48 (m)Time: 9.15 (s), x: -2.86 (m), y: 5.49 (m)Time: 9.26 (s), x: -2.87 (m), y: 5.50 (m)Time: 9.36 (s), x: -2.88 (m), y: 5.52 (m)Time: 9.46 (s), x: -2.89 (m), y: 5.55 (m)Time: 9.57 (s), x: -2.91 (m), y: 5.58 (m)Time: 9.67 (s), x: -2.92 (m), y: 5.60 (m)Time: 9.77 (s), x: -2.92 (m), y: 5.64 (m)Time: 9.88 (s), x: -2.91 (m), y: 5.67 (m)Time: 9.98 (s), x: -2.91 (m), y: 5.68 (m)Time: 10.08 (s), x: -2.91 (m), y: 5.69 (m)Time: 10.18 (s), x: -2.91 (m), y: 5.70 (m)Time: 10.29 (s), x: -2.91 (m), y: 5.71 (m)Time: 10.40 (s), x: -2.92 (m), y: 5.72 (m)Time: 10.51 (s), x: -2.92 (m), y: 5.73 (m)Time: 10.61 (s), x: -2.92 (m), y: 5.73 (m)Time: 10.71 (s), x: -2.93 (m), y: 5.74 (m)Time: 10.82 (s), x: -2.93 (m), y: 5.75 (m)Time: 10.92 (s), x: -2.92 (m), y: 5.80 (m)Time: 11.03 (s), x: -2.91 (m), y: 5.83 (m)Time: 11.13 (s), x: -2.91 (m), y: 5.84 (m)Time: 11.23 (s), x: -2.92 (m), y: 5.84 (m)Time: 11.34 (s), x: -2.92 (m), y: 5.84 (m)Time: 11.44 (s), x: -2.94 (m), y: 5.81 (m)Time: 11.55 (s), x: -2.94 (m), y: 5.81 (m)Time: 11.65 (s), x: -2.95 (m), y: 5.80 (m)Time: 11.75 (s), x: -2.95 (m), y: 5.79 (m)Time: 11.86 (s), x: -2.95 (m), y: 5.80 (m)Time: 11.96 (s), x: -2.96 (m), y: 5.79 (m)Time: 12.07 (s), x: -2.96 (m), y: 5.79 (m)Time: 12.17 (s), x: -2.95 (m), y: 5.80 (m)Time: 12.27 (s), x: -2.95 (m), y: 5.80 (m)Time: 12.38 (s), x: -2.96 (m), y: 5.78 (m)Time: 12.48 (s), x: -2.98 (m), y: 5.75 (m)Time: 12.58 (s), x: -2.98 (m), y: 5.74 (m)Time: 12.69 (s), x: -3.00 (m), y: 5.70 (m)Time: 12.79 (s), x: -3.02 (m), y: 5.67 (m)Time: 12.89 (s), x: -3.03 (m), y: 5.65 (m)Time: 13.00 (s), x: -3.03 (m), y: 5.64 (m)Time: 13.10 (s), x: -3.04 (m), y: 5.64 (m)Time: 13.21 (s), x: -3.04 (m), y: 5.63 (m)Time: 13.31 (s), x: -3.07 (m), y: 5.60 (m)Time: 13.41 (s), x: -3.09 (m), y: 5.56 (m)Time: 13.51 (s), x: -3.11 (m), y: 5.53 (m)Time: 13.62 (s), x: -3.12 (m), y: 5.51 (m)Time: 13.72 (s), x: -3.12 (m), y: 5.50 (m)Time: 13.82 (s), x: -3.13 (m), y: 5.49 (m)Time: 13.93 (s), x: -3.13 (m), y: 5.49 (m)Time: 14.03 (s), x: -3.13 (m), y: 5.50 (m)Time: 14.13 (s), x: -3.13 (m), y: 5.51 (m)Time: 14.23 (s), x: -3.10 (m), y: 5.55 (m)Time: 14.34 (s), x: -3.05 (m), y: 5.61 (m)Time: 14.45 (s), x: -3.00 (m), y: 5.68 (m)Time: 14.55 (s), x: -2.95 (m), y: 5.75 (m)Time: 14.65 (s), x: -2.90 (m), y: 5.82 (m)Time: 14.75 (s), x: -2.84 (m), y: 5.90 (m)Time: 14.86 (s), x: -2.79 (m), y: 5.98 (m)Time: 14.96 (s), x: -2.74 (m), y: 6.07 (m)Time: 15.06 (s), x: -2.71 (m), y: 6.15 (m)Time: 15.16 (s), x: -2.68 (m), y: 6.23 (m)Time: 15.27 (s), x: -2.65 (m), y: 6.32 (m)Time: 15.37 (s), x: -2.63 (m), y: 6.41 (m)Time: 15.47 (s), x: -2.61 (m), y: 6.49 (m)Time: 15.57 (s), x: -2.59 (m), y: 6.58 (m)Time: 15.68 (s), x: -2.58 (m), y: 6.66 (m)Time: 15.78 (s), x: -2.57 (m), y: 6.73 (m)Time: 15.88 (s), x: -2.56 (m), y: 6.80 (m)Time: 15.99 (s), x: -2.55 (m), y: 6.88 (m)Time: 16.09 (s), x: -2.55 (m), y: 6.97 (m)Time: 16.19 (s), x: -2.54 (m), y: 7.03 (m)Time: 16.30 (s), x: -2.53 (m), y: 7.08 (m)Time: 16.40 (s), x: -2.53 (m), y: 7.11 (m)Time: 16.50 (s), x: -2.53 (m), y: 7.12 (m)Time: 16.60 (s), x: -2.53 (m), y: 7.15 (m)Time: 16.70 (s), x: -2.53 (m), y: 7.17 (m)Time: 16.81 (s), x: -2.53 (m), y: 7.19 (m)Time: 16.92 (s), x: -2.53 (m), y: 7.22 (m)Time: 17.03 (s), x: -2.53 (m), y: 7.24 (m)Time: 17.13 (s), x: -2.53 (m), y: 7.27 (m)Time: 17.23 (s), x: -2.53 (m), y: 7.30 (m)Time: 17.33 (s), x: -2.54 (m), y: 7.32 (m)Time: 17.44 (s), x: -2.54 (m), y: 7.34 (m)Time: 17.55 (s), x: -2.54 (m), y: 7.36 (m)Time: 17.65 (s), x: -2.54 (m), y: 7.38 (m)Time: 17.75 (s), x: -2.54 (m), y: 7.40 (m)Time: 17.86 (s), x: -2.54 (m), y: 7.41 (m)Time: 17.96 (s), x: -2.54 (m), y: 7.43 (m)Time: 18.06 (s), x: -2.54 (m), y: 7.44 (m)Time: 18.17 (s), x: -2.55 (m), y: 7.46 (m)Time: 18.28 (s), x: -2.55 (m), y: 7.48 (m)Time: 18.39 (s), x: -2.55 (m), y: 7.49 (m)Time: 18.49 (s), x: -2.55 (m), y: 7.50 (m)Time: 18.60 (s), x: -2.55 (m), y: 7.52 (m)Time: 18.70 (s), x: -2.55 (m), y: 7.53 (m)Time: 18.81 (s), x: -2.55 (m), y: 7.54 (m)Time: 18.91 (s), x: -2.55 (m), y: 7.55 (m)Time: 19.02 (s), x: -2.55 (m), y: 7.56 (m)Time: 19.13 (s), x: -2.55 (m), y: 7.57 (m)Time: 19.23 (s), x: -2.55 (m), y: 7.58 (m)Time: 19.33 (s), x: -2.55 (m), y: 7.59 (m)Time: 19.43 (s), x: -2.54 (m), y: 7.60 (m)Time: 19.54 (s), x: -2.55 (m), y: 7.61 (m)Time: 19.64 (s), x: -2.55 (m), y: 7.61 (m)Time: 19.74 (s), x: -2.55 (m), y: 7.61 (m)Time: 19.85 (s), x: -2.56 (m), y: 7.61 (m)Time: 19.95 (s), x: -2.56 (m), y: 7.61 (m)[33m[ WARN] [1749608346.493892617, 40.841000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+[33m[ WARN] [1749608346.691197996, 40.992000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0860 seconds[0m
+[33m[ WARN] [1749608346.881149808, 41.145000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0890 seconds[0m
+[33m[ WARN] [1749608347.103747416, 41.309000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1030 seconds[0m
+[33m[ WARN] [1749608347.297377409, 41.464000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1050 seconds[0m
+[33m[ WARN] [1749608347.508607893, 41.623000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0590 seconds[0m
+[33m[ WARN] [1749608347.709014907, 41.775000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0610 seconds[0m
+[33m[ WARN] [1749608347.962869324, 41.977000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0630 seconds[0m
+[33m[ WARN] [1749608348.244204257, 42.192000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0780 seconds[0m
+[33m[ WARN] [1749608348.525520777, 42.400000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0860 seconds[0m
+[33m[ WARN] [1749608348.738469463, 42.561000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0970 seconds[0m
+[33m[ WARN] [1749608349.009518437, 42.772000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1080 seconds[0m
+[33m[ WARN] [1749608349.252589015, 42.943000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0710 seconds[0m
+[33m[ WARN] [1749608349.513138095, 43.148000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0760 seconds[0m
+[33m[ WARN] [1749608349.778563226, 43.352000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0800 seconds[0m
+Time: 20.05 (s), x: -2.56 (m), y: 7.61 (m)Time: 20.16 (s), x: -2.57 (m), y: 7.62 (m)Time: 20.26 (s), x: -2.56 (m), y: 7.62 (m)Time: 20.37 (s), x: -2.56 (m), y: 7.63 (m)Time: 20.47 (s), x: -2.56 (m), y: 7.64 (m)Time: 20.57 (s), x: -2.56 (m), y: 7.65 (m)Time: 20.68 (s), x: -2.56 (m), y: 7.66 (m)Time: 20.79 (s), x: -2.55 (m), y: 7.67 (m)Time: 20.89 (s), x: -2.55 (m), y: 7.67 (m)Time: 21.00 (s), x: -2.55 (m), y: 7.68 (m)Time: 21.10 (s), x: -2.55 (m), y: 7.69 (m)Time: 21.20 (s), x: -2.56 (m), y: 7.69 (m)Time: 21.31 (s), x: -2.56 (m), y: 7.70 (m)Time: 21.41 (s), x: -2.57 (m), y: 7.70 (m)Time: 21.52 (s), x: -2.57 (m), y: 7.70 (m)Time: 21.62 (s), x: -2.58 (m), y: 7.70 (m)Time: 21.73 (s), x: -2.58 (m), y: 7.71 (m)Time: 21.83 (s), x: -2.58 (m), y: 7.71 (m)Time: 21.94 (s), x: -2.57 (m), y: 7.73 (m)Time: 22.05 (s), x: -2.56 (m), y: 7.75 (m)Time: 22.15 (s), x: -2.54 (m), y: 7.77 (m)Time: 22.26 (s), x: -2.52 (m), y: 7.78 (m)Time: 22.37 (s), x: -2.50 (m), y: 7.80 (m)Time: 22.48 (s), x: -2.49 (m), y: 7.82 (m)Time: 22.58 (s), x: -2.48 (m), y: 7.84 (m)Time: 22.68 (s), x: -2.47 (m), y: 7.86 (m)Time: 22.79 (s), x: -2.47 (m), y: 7.88 (m)Time: 22.89 (s), x: -2.47 (m), y: 7.90 (m)Time: 23.00 (s), x: -2.46 (m), y: 7.92 (m)Time: 23.10 (s), x: -2.46 (m), y: 7.93 (m)Time: 23.21 (s), x: -2.46 (m), y: 7.94 (m)Time: 23.31 (s), x: -2.46 (m), y: 7.96 (m)Time: 23.42 (s), x: -2.47 (m), y: 7.97 (m)Time: 23.52 (s), x: -2.48 (m), y: 7.99 (m)Time: 23.62 (s), x: -2.48 (m), y: 8.00 (m)Time: 23.73 (s), x: -2.49 (m), y: 8.01 (m)Time: 23.84 (s), x: -2.48 (m), y: 8.00 (m)Time: 23.94 (s), x: -2.48 (m), y: 8.00 (m)Time: 24.04 (s), x: -2.48 (m), y: 8.01 (m)Time: 24.15 (s), x: -2.47 (m), y: 8.01 (m)Time: 24.25 (s), x: -2.50 (m), y: 8.03 (m)Time: 24.36 (s), x: -2.56 (m), y: 8.06 (m)Time: 24.46 (s), x: -2.63 (m), y: 8.11 (m)Time: 24.56 (s), x: -2.71 (m), y: 8.15 (m)Time: 24.67 (s), x: -2.75 (m), y: 8.18 (m)Time: 24.77 (s), x: -2.75 (m), y: 8.17 (m)Time: 24.88 (s), x: -2.70 (m), y: 8.15 (m)Time: 24.98 (s), x: -2.66 (m), y: 8.12 (m)Time: 25.09 (s), x: -2.62 (m), y: 8.09 (m)Time: 25.19 (s), x: -2.61 (m), y: 8.09 (m)Time: 25.30 (s), x: -2.62 (m), y: 8.09 (m)Time: 25.40 (s), x: -2.63 (m), y: 8.10 (m)Time: 25.51 (s), x: -2.64 (m), y: 8.11 (m)Time: 25.61 (s), x: -2.65 (m), y: 8.11 (m)Time: 25.72 (s), x: -2.64 (m), y: 8.11 (m)Time: 25.82 (s), x: -2.63 (m), y: 8.10 (m)Time: 25.93 (s), x: -2.61 (m), y: 8.09 (m)Time: 26.03 (s), x: -2.57 (m), y: 8.07 (m)Time: 26.14 (s), x: -2.57 (m), y: 8.07 (m)Time: 26.24 (s), x: -2.60 (m), y: 8.09 (m)Time: 26.34 (s), x: -2.67 (m), y: 8.13 (m)Time: 26.45 (s), x: -2.74 (m), y: 8.17 (m)Time: 26.55 (s), x: -2.80 (m), y: 8.21 (m)Time: 26.66 (s), x: -2.84 (m), y: 8.23 (m)Time: 26.77 (s), x: -2.84 (m), y: 8.23 (m)Time: 26.87 (s), x: -2.80 (m), y: 8.21 (m)Time: 26.97 (s), x: -2.75 (m), y: 8.18 (m)Time: 27.08 (s), x: -2.71 (m), y: 8.15 (m)Time: 27.18 (s), x: -2.67 (m), y: 8.13 (m)Time: 27.29 (s), x: -2.64 (m), y: 8.11 (m)Time: 27.39 (s), x: -2.60 (m), y: 8.08 (m)Time: 27.50 (s), x: -2.58 (m), y: 8.07 (m)Time: 27.60 (s), x: -2.57 (m), y: 8.07 (m)Time: 27.70 (s), x: -2.56 (m), y: 8.06 (m)Time: 27.81 (s), x: -2.55 (m), y: 8.06 (m)Time: 27.92 (s), x: -2.56 (m), y: 8.07 (m)Time: 28.02 (s), x: -2.57 (m), y: 8.07 (m)Time: 28.12 (s), x: -2.57 (m), y: 8.08 (m)Time: 28.22 (s), x: -2.57 (m), y: 8.08 (m)Time: 28.33 (s), x: -2.58 (m), y: 8.09 (m)Time: 28.44 (s), x: -2.59 (m), y: 8.09 (m)Time: 28.54 (s), x: -2.56 (m), y: 8.09 (m)Time: 28.64 (s), x: -2.53 (m), y: 8.08 (m)Time: 28.75 (s), x: -2.52 (m), y: 8.08 (m)Time: 28.85 (s), x: -2.53 (m), y: 8.08 (m)Time: 28.95 (s), x: -2.54 (m), y: 8.08 (m)Time: 29.06 (s), x: -2.56 (m), y: 8.09 (m)Time: 29.16 (s), x: -2.58 (m), y: 8.09 (m)Time: 29.27 (s), x: -2.61 (m), y: 8.10 (m)Time: 29.37 (s), x: -2.62 (m), y: 8.11 (m)Time: 29.48 (s), x: -2.61 (m), y: 8.11 (m)Time: 29.58 (s), x: -2.56 (m), y: 8.09 (m)Time: 29.68 (s), x: -2.52 (m), y: 8.08 (m)Time: 29.78 (s), x: -2.49 (m), y: 8.07 (m)Time: 29.88 (s), x: -2.49 (m), y: 8.07 (m)Time: 29.98 (s), x: -2.50 (m), y: 8.07 (m)Time: 30.09 (s), x: -2.51 (m), y: 8.08 (m)Time: 30.20 (s), x: -2.53 (m), y: 8.08 (m)Time: 30.30 (s), x: -2.54 (m), y: 8.08 (m)Time: 30.40 (s), x: -2.55 (m), y: 8.08 (m)Time: 30.50 (s), x: -2.55 (m), y: 8.09 (m)Time: 30.60 (s), x: -2.56 (m), y: 8.09 (m)Time: 30.70 (s), x: -2.57 (m), y: 8.09 (m)Time: 30.80 (s), x: -2.58 (m), y: 8.10 (m)Time: 30.91 (s), x: -2.59 (m), y: 8.10 (m)Time: 31.01 (s), x: -2.60 (m), y: 8.10 (m)Time: 31.12 (s), x: -2.61 (m), y: 8.10 (m)Time: 31.22 (s), x: -2.59 (m), y: 8.10 (m)Time: 31.33 (s), x: -2.54 (m), y: 8.09 (m)Time: 31.43 (s), x: -2.49 (m), y: 8.08 (m)Time: 31.53 (s), x: -2.47 (m), y: 8.06 (m)Time: 31.64 (s), x: -2.47 (m), y: 8.06 (m)Time: 31.74 (s), x: -2.47 (m), y: 8.06 (m)Time: 31.84 (s), x: -2.48 (m), y: 8.06 (m)Time: 31.95 (s), x: -2.49 (m), y: 8.06 (m)Time: 32.05 (s), x: -2.50 (m), y: 8.06 (m)Time: 32.16 (s), x: -2.51 (m), y: 8.06 (m)Time: 32.26 (s), x: -2.52 (m), y: 8.06 (m)Time: 32.36 (s), x: -2.53 (m), y: 8.06 (m)Time: 32.47 (s), x: -2.54 (m), y: 8.06 (m)Time: 32.57 (s), x: -2.55 (m), y: 8.06 (m)Time: 32.67 (s), x: -2.56 (m), y: 8.06 (m)Time: 32.78 (s), x: -2.57 (m), y: 8.06 (m)Time: 32.88 (s), x: -2.57 (m), y: 8.07 (m)Time: 32.98 (s), x: -2.58 (m), y: 8.07 (m)Time: 33.09 (s), x: -2.59 (m), y: 8.07 (m)Time: 33.19 (s), x: -2.61 (m), y: 8.07 (m)Time: 33.29 (s), x: -2.62 (m), y: 8.07 (m)Time: 33.40 (s), x: -2.62 (m), y: 8.08 (m)Time: 33.50 (s), x: -2.59 (m), y: 8.08 (m)Time: 33.60 (s), x: -2.54 (m), y: 8.08 (m)Time: 33.71 (s), x: -2.49 (m), y: 8.07 (m)Time: 33.81 (s), x: -2.48 (m), y: 8.06 (m)Time: 33.91 (s), x: -2.48 (m), y: 8.06 (m)Time: 34.02 (s), x: -2.49 (m), y: 8.06 (m)Time: 34.12 (s), x: -2.50 (m), y: 8.06 (m)Time: 34.22 (s), x: -2.51 (m), y: 8.05 (m)Time: 34.32 (s), x: -2.52 (m), y: 8.05 (m)Time: 34.43 (s), x: -2.53 (m), y: 8.05 (m)Time: 34.53 (s), x: -2.53 (m), y: 8.05 (m)Time: 34.63 (s), x: -2.54 (m), y: 8.05 (m)Time: 34.73 (s), x: -2.55 (m), y: 8.05 (m)Time: 34.84 (s), x: -2.56 (m), y: 8.05 (m)Time: 34.94 (s), x: -2.57 (m), y: 8.05 (m)Time: 35.04 (s), x: -2.58 (m), y: 8.05 (m)Time: 35.14 (s), x: -2.58 (m), y: 8.05 (m)Time: 35.25 (s), x: -2.59 (m), y: 8.04 (m)Time: 35.35 (s), x: -2.59 (m), y: 8.04 (m)Time: 35.45 (s), x: -2.59 (m), y: 8.03 (m)Time: 35.56 (s), x: -2.60 (m), y: 8.03 (m)Time: 35.66 (s), x: -2.61 (m), y: 8.03 (m)Time: 35.77 (s), x: -2.62 (m), y: 8.03 (m)Time: 35.87 (s), x: -2.62 (m), y: 8.03 (m)Time: 35.97 (s), x: -2.63 (m), y: 8.03 (m)Time: 36.08 (s), x: -2.62 (m), y: 8.03 (m)Time: 36.18 (s), x: -2.61 (m), y: 8.03 (m)Time: 36.29 (s), x: -2.61 (m), y: 8.03 (m)Time: 36.39 (s), x: -2.58 (m), y: 8.01 (m)Time: 36.49 (s), x: -2.54 (m), y: 8.00 (m)Time: 36.60 (s), x: -2.49 (m), y: 7.98 (m)Time: 36.70 (s), x: -2.46 (m), y: 7.97 (m)Time: 36.80 (s), x: -2.44 (m), y: 7.97 (m)Time: 36.91 (s), x: -2.43 (m), y: 7.96 (m)Time: 37.01 (s), x: -2.42 (m), y: 7.96 (m)Time: 37.12 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.22 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.32 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.43 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.53 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.64 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.74 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.84 (s), x: -2.41 (m), y: 7.96 (m)Time: 37.94 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.05 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.15 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.25 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.35 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.46 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.56 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.66 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.76 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.87 (s), x: -2.41 (m), y: 7.96 (m)Time: 38.98 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.08 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.18 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.28 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.38 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.48 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.58 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.68 (s), x: -2.41 (m), y: 7.96 (m)Time: 39.79 (s), x: -2.41 (m), y: 7.96 (m)[33m[ WARN] [1749608350.052338653, 43.558000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0860 seconds[0m
+[33m[ WARN] [1749608355.840040145, 48.361000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0890 seconds[0m
+[33m[ WARN] [1749608356.241812412, 48.661000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1090 seconds[0m
+[33m[ WARN] [1749608356.243467233, 48.663000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749608356.486044050, 48.857000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+[33m[ WARN] [1749608356.758570187, 49.063000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749608357.029787936, 49.272000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1000 seconds[0m
+[33m[ WARN] [1749608357.320899047, 49.502000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1300 seconds[0m
+[33m[ WARN] [1749608357.534733205, 49.662000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749608357.736348274, 49.816000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0640 seconds[0m
+[33m[ WARN] [1749608357.997877363, 50.021000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749608358.524026046, 50.459000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749608358.713235470, 50.586000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0840 seconds[0m
+[33m[ WARN] [1749608358.950993246, 50.760000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1080 seconds[0m
+[33m[ WARN] [1749608359.117993821, 50.881000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1290 seconds[0m
+[33m[ WARN] [1749608359.179454631, 50.922000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1120 seconds[0m
+[33m[ WARN] [1749608359.345590916, 51.040000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1880 seconds[0m
+[33m[ WARN] [1749608359.427891143, 51.096000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0740 seconds[0m
+[33m[ WARN] [1749608359.448222127, 51.116000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1640 seconds[0m
+[33m[ WARN] [1749608359.551125783, 51.196000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1440 seconds[0m
+[33m[ WARN] [1749608359.637786838, 51.256000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0840 seconds[0m
+[33m[ WARN] [1749608359.657135848, 51.271000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1190 seconds[0m
+[33m[ WARN] [1749608359.861032903, 51.405000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1530 seconds[0m
+[33m[ WARN] [1749608359.866315848, 51.410000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0880 seconds[0m
+[33m[ WARN] [1749608359.955043150, 51.472000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1200 seconds[0m
+[33m[ WARN] [1749608360.167839715, 51.621000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0990 seconds[0m
+[33m[ WARN] [1749608360.169177612, 51.623000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0510 seconds[0m
+[33m[ WARN] [1749608360.449892237, 51.832000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1100 seconds[0m
+[33m[ WARN] [1749608360.652622665, 51.981000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0990 seconds[0m
+[33m[ WARN] [1749608360.885344173, 52.147000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1150 seconds[0m
+[33m[ WARN] [1749608361.187558937, 52.363000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1160 seconds[0m
+[33m[ WARN] [1749608361.459582051, 52.565000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749608361.684936470, 52.725000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0620 seconds[0m
+[33m[ WARN] [1749608361.891364834, 52.877000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0640 seconds[0m
+[33m[ WARN] [1749608362.102473033, 53.037000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0740 seconds[0m
+[33m[ WARN] [1749608362.304672343, 53.190000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0770 seconds[0m
+[33m[ WARN] [1749608362.534726471, 53.354000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749608362.746342674, 53.512000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0990 seconds[0m
+[33m[ WARN] [1749608363.025996161, 53.727000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1140 seconds[0m
+[33m[ WARN] [1749608363.237568934, 53.881000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749608363.500087771, 54.085000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749608363.590499567, 54.156000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749608363.699226820, 54.236000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1010 seconds[0m
+[33m[ WARN] [1749608363.973014215, 54.443000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749608364.197154558, 54.605000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0690 seconds[0m
+[33m[ WARN] [1749608364.487238710, 54.822000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0860 seconds[0m
+[33m[ WARN] [1749608364.683949200, 54.976000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0900 seconds[0m
+[33m[ WARN] [1749608364.902989607, 55.138000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1020 seconds[0m
+[33m[ WARN] [1749608365.140611524, 55.298000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749608367.935365405, 57.539000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0510 seconds[0m
+[33m[ WARN] [1749608368.139808305, 57.699000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0610 seconds[0m
+[33m[ WARN] [1749608368.394623565, 57.890000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749608368.619642118, 58.061000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0730 seconds[0m
+[33m[ WARN] [1749608368.774815538, 58.179000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1270 seconds[0m
+[33m[ WARN] [1749608368.852004273, 58.225000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0870 seconds[0m
+[33m[ WARN] [1749608369.049014178, 58.372000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0840 seconds[0m
+[33m[ WARN] [1749608369.241627464, 58.523000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0850 seconds[0m
+[33m[ WARN] [1749608369.467426925, 58.704000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0660 seconds[0m
+[33m[ WARN] [1749608369.655219366, 58.861000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0730 seconds[0m
+[33m[ WARN] [1749608369.871996452, 59.025000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0870 seconds[0m
+[33m[ WARN] [1749608370.075666652, 59.180000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0920 seconds[0m
+[33m[ WARN] [1749608370.281629298, 59.337000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0990 seconds[0m
+[33m[ WARN] [1749608370.549970732, 59.532000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0940 seconds[0m
+[33m[ WARN] [1749608370.824568761, 59.742000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749608371.040766073, 59.902000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1100 seconds[0m
+[33m[ WARN] [1749608371.256807567, 60.063000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0610 seconds[0m
+[33m[ WARN] [1749608371.473649640, 60.223000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0710 seconds[0m
+[33m[ WARN] [1749608371.932265827, 60.594000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0920 seconds[0m
+[33m[ WARN] [1749608372.131256963, 60.756000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749608373.020450576, 61.408000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749608373.276651568, 61.607000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0510 seconds[0m
+[33m[ WARN] [1749608373.491985641, 61.771000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0650 seconds[0m
+[33m[ WARN] [1749608373.768286661, 61.978000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0720 seconds[0m
+[33m[ WARN] [1749608373.987148822, 62.140000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0840 seconds[0m
+[33m[ WARN] [1749608374.276161894, 62.351000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0950 seconds[0m
+[33m[ WARN] [1749608374.494399163, 62.512000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1060 seconds[0m
+[33m[ WARN] [1749608374.683177813, 62.661000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0990 seconds[0m
+[33m[ WARN] [1749608374.891505733, 62.820000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1080 seconds[0m
+[33m[ WARN] [1749608375.125699555, 62.991000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1210 seconds[0m
+[33m[ WARN] [1749608375.350131001, 63.160000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1190 seconds[0m
+Time: 39.90 (s), x: -2.41 (m), y: 7.96 (m)Time: 40.00 (s), x: -2.41 (m), y: 7.96 (m)Time: 40.11 (s), x: -2.42 (m), y: 7.96 (m)Time: 40.21 (s), x: -2.44 (m), y: 7.97 (m)Time: 40.32 (s), x: -2.46 (m), y: 7.97 (m)Time: 40.42 (s), x: -2.49 (m), y: 7.98 (m)Time: 40.53 (s), x: -2.52 (m), y: 7.99 (m)Time: 40.63 (s), x: -2.55 (m), y: 8.00 (m)Time: 40.73 (s), x: -2.57 (m), y: 8.00 (m)Time: 40.84 (s), x: -2.60 (m), y: 8.01 (m)Time: 40.94 (s), x: -2.62 (m), y: 8.01 (m)Time: 41.04 (s), x: -2.64 (m), y: 8.00 (m)Time: 41.14 (s), x: -2.66 (m), y: 8.00 (m)Time: 41.24 (s), x: -2.68 (m), y: 8.00 (m)Time: 41.35 (s), x: -2.70 (m), y: 7.99 (m)Time: 41.45 (s), x: -2.71 (m), y: 7.99 (m)Time: 41.56 (s), x: -2.71 (m), y: 7.99 (m)Time: 41.66 (s), x: -2.71 (m), y: 8.00 (m)Time: 41.76 (s), x: -2.69 (m), y: 8.01 (m)Time: 41.86 (s), x: -2.69 (m), y: 8.01 (m)Time: 41.96 (s), x: -2.68 (m), y: 8.02 (m)Time: 42.06 (s), x: -2.68 (m), y: 8.03 (m)Time: 42.16 (s), x: -2.67 (m), y: 8.03 (m)Time: 42.27 (s), x: -2.67 (m), y: 8.03 (m)Time: 42.37 (s), x: -2.67 (m), y: 8.04 (m)Time: 42.47 (s), x: -2.68 (m), y: 8.04 (m)Time: 42.58 (s), x: -2.69 (m), y: 8.02 (m)Time: 42.68 (s), x: -2.71 (m), y: 7.99 (m)Time: 42.79 (s), x: -2.73 (m), y: 7.97 (m)Time: 42.89 (s), x: -2.75 (m), y: 7.95 (m)Time: 42.99 (s), x: -2.77 (m), y: 7.93 (m)Time: 43.09 (s), x: -2.80 (m), y: 7.89 (m)Time: 43.20 (s), x: -2.82 (m), y: 7.87 (m)Time: 43.30 (s), x: -2.84 (m), y: 7.84 (m)Time: 43.40 (s), x: -2.86 (m), y: 7.81 (m)Time: 43.50 (s), x: -2.88 (m), y: 7.79 (m)Time: 43.60 (s), x: -2.89 (m), y: 7.76 (m)Time: 43.70 (s), x: -2.92 (m), y: 7.73 (m)Time: 43.80 (s), x: -2.94 (m), y: 7.70 (m)Time: 43.90 (s), x: -2.97 (m), y: 7.67 (m)Time: 44.01 (s), x: -2.99 (m), y: 7.64 (m)Time: 44.11 (s), x: -3.02 (m), y: 7.62 (m)Time: 44.21 (s), x: -3.05 (m), y: 7.60 (m)Time: 44.31 (s), x: -3.09 (m), y: 7.58 (m)Time: 44.42 (s), x: -3.14 (m), y: 7.57 (m)Time: 44.53 (s), x: -3.18 (m), y: 7.55 (m)Time: 44.63 (s), x: -3.23 (m), y: 7.54 (m)Time: 44.74 (s), x: -3.27 (m), y: 7.53 (m)Time: 44.85 (s), x: -3.28 (m), y: 7.52 (m)Time: 44.95 (s), x: -3.29 (m), y: 7.52 (m)Time: 45.05 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.16 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.26 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.37 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.47 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.57 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.67 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.78 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.89 (s), x: -3.30 (m), y: 7.52 (m)Time: 45.99 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.09 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.19 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.30 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.40 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.50 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.61 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.71 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.81 (s), x: -3.30 (m), y: 7.52 (m)Time: 46.91 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.02 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.12 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.23 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.33 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.43 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.54 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.65 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.75 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.85 (s), x: -3.30 (m), y: 7.52 (m)Time: 47.95 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.05 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.35 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.45 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.55 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.66 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.76 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.86 (s), x: -3.30 (m), y: 7.52 (m)Time: 48.96 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.07 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.17 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.28 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.38 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.48 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.59 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.69 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.80 (s), x: -3.30 (m), y: 7.52 (m)Time: 49.90 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.00 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.11 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.22 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.32 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.42 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.52 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.63 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.73 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.83 (s), x: -3.30 (m), y: 7.52 (m)Time: 50.94 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.04 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.35 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.45 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.55 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.66 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.76 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.86 (s), x: -3.30 (m), y: 7.52 (m)Time: 51.97 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.07 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.17 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.27 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.38 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.48 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.59 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.70 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.80 (s), x: -3.30 (m), y: 7.52 (m)Time: 52.91 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.01 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.12 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.22 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.33 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.43 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.53 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.63 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.74 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.84 (s), x: -3.30 (m), y: 7.52 (m)Time: 53.95 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.05 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.36 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.46 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.56 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.67 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.77 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.87 (s), x: -3.30 (m), y: 7.52 (m)Time: 54.98 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.08 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.19 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.29 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.40 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.50 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.61 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.71 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.81 (s), x: -3.30 (m), y: 7.52 (m)Time: 55.91 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.01 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.11 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.22 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.32 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.42 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.52 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.62 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.73 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.83 (s), x: -3.30 (m), y: 7.52 (m)Time: 56.93 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.03 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.13 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.23 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.34 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.44 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.55 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.66 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.76 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.86 (s), x: -3.30 (m), y: 7.52 (m)Time: 57.96 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.06 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.16 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.27 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.38 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.48 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.58 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.68 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.79 (s), x: -3.30 (m), y: 7.52 (m)Time: 58.89 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.00 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.10 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.21 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.31 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.41 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.52 (s), x: -3.30 (m), y: 7.52 (m)[33m[ WARN] [1749608375.483199335, 63.255000000]: Map update loop missed its desired rate of 10.0000Hz... the loop actually took 0.1030 seconds[0m
+[33m[ WARN] [1749608375.562930980, 63.310000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1000 seconds[0m
+[33m[ WARN] [1749608375.564084895, 63.311000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0510 seconds[0m
+[33m[ WARN] [1749608375.813524000, 63.478000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1180 seconds[0m
+[33m[ WARN] [1749608376.043128945, 63.641000000]: Clearing both costmaps to unstuck robot (3.00m).[0m
+[33m[ WARN] [1749608376.044253256, 63.642000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1140 seconds[0m
+[33m[ WARN] [1749608376.314317569, 63.845000000]: Rotate recovery behavior started.[0m
+[31m[ERROR] [1749608376.314638618, 63.845000000]: Rotate recovery can't rotate in place because there is a potential collision. Cost: -1.00[0m
+[33m[ WARN] [1749608376.315137840, 63.845000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1030 seconds[0m
+[33m[ WARN] [1749608376.508975528, 63.987000000]: Clearing both costmaps to unstuck robot (1.84m).[0m
+[33m[ WARN] [1749608376.509810175, 63.988000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.0930 seconds[0m
+[33m[ WARN] [1749608376.739721948, 64.164000000]: Rotate recovery behavior started.[0m
+[31m[ERROR] [1749608376.739876310, 64.164000000]: Rotate recovery can't rotate in place because there is a potential collision. Cost: -1.00[0m
+[33m[ WARN] [1749608376.741052271, 64.165000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1200 seconds[0m
+[31m[ERROR] [1749608377.020468763, 64.370000000]: Aborting because a valid control could not be found. Even after executing all recovery behaviors[0m
+[33m[ WARN] [1749608377.021136324, 64.371000000]: Map update loop missed its desired rate of 20.0000Hz... the loop actually took 0.1060 seconds[0m
+Time: 59.62 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.72 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.83 (s), x: -3.30 (m), y: 7.52 (m)Time: 59.93 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.04 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.35 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.46 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.57 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.67 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.78 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.88 (s), x: -3.30 (m), y: 7.52 (m)Time: 60.98 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.09 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.19 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.29 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.39 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.49 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.59 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.70 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.80 (s), x: -3.30 (m), y: 7.52 (m)Time: 61.90 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.00 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.11 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.21 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.32 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.42 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.52 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.62 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.73 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.84 (s), x: -3.30 (m), y: 7.52 (m)Time: 62.94 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.04 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.35 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.46 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.56 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.66 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.76 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.87 (s), x: -3.30 (m), y: 7.52 (m)Time: 63.97 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.07 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.18 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.28 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.39 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.49 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.59 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.70 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.80 (s), x: -3.30 (m), y: 7.52 (m)Time: 64.91 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.01 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.12 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.23 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.33 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.44 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.55 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.65 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.75 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.86 (s), x: -3.30 (m), y: 7.52 (m)Time: 65.96 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.07 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.17 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.28 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.39 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.49 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.60 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.70 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.80 (s), x: -3.30 (m), y: 7.52 (m)Time: 66.90 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.01 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.12 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.22 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.33 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.43 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.53 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.64 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.74 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.85 (s), x: -3.30 (m), y: 7.52 (m)Time: 67.95 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.06 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.17 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.27 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.38 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.48 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.58 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.68 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.79 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.89 (s), x: -3.30 (m), y: 7.52 (m)Time: 68.99 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.09 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.20 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.30 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.40 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.50 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.60 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.71 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.81 (s), x: -3.30 (m), y: 7.52 (m)Time: 69.92 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.02 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.12 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.22 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.32 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.42 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.53 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.63 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.73 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.83 (s), x: -3.30 (m), y: 7.52 (m)Time: 70.93 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.03 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.14 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.24 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.34 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.44 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.54 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.64 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.75 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.85 (s), x: -3.30 (m), y: 7.52 (m)Time: 71.95 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.05 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.16 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.26 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.36 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.46 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.57 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.67 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.77 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.88 (s), x: -3.30 (m), y: 7.52 (m)Time: 72.98 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.08 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.19 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.29 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.39 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.49 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.60 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.71 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.82 (s), x: -3.30 (m), y: 7.52 (m)Time: 73.92 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.02 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.13 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.23 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.34 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.44 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.54 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.64 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.74 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.84 (s), x: -3.30 (m), y: 7.52 (m)Time: 74.94 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.04 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.35 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.45 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.56 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.67 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.77 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.87 (s), x: -3.30 (m), y: 7.52 (m)Time: 75.97 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.08 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.18 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.28 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.38 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.48 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.59 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.69 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.80 (s), x: -3.30 (m), y: 7.52 (m)Time: 76.90 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.00 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.11 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.21 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.32 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.42 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.52 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.63 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.73 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.84 (s), x: -3.30 (m), y: 7.52 (m)Time: 77.94 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.04 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.15 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.25 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.35 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.46 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.56 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.66 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.77 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.87 (s), x: -3.30 (m), y: 7.52 (m)Time: 78.97 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.08 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.18 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.29 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.39 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.49 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.59 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.70 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.81 (s), x: -3.29 (m), y: 7.52 (m)Time: 79.91 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.01 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.12 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.22 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.32 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.42 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.53 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.63 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.73 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.83 (s), x: -3.29 (m), y: 7.52 (m)Time: 80.93 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.04 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.14 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.24 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.35 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.46 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.56 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.66 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.77 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.87 (s), x: -3.29 (m), y: 7.52 (m)Time: 81.97 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.08 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.18 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.28 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.38 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.49 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.59 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.69 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.79 (s), x: -3.29 (m), y: 7.52 (m)Time: 82.90 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.00 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.11 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.21 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.31 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.41 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.52 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.62 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.72 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.82 (s), x: -3.29 (m), y: 7.52 (m)Time: 83.92 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.02 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.12 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.22 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.33 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.43 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.53 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.63 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.73 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.84 (s), x: -3.29 (m), y: 7.52 (m)Time: 84.94 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.04 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.15 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.26 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.36 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.46 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.56 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.67 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.78 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.88 (s), x: -3.29 (m), y: 7.52 (m)Time: 85.99 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.10 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.21 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.31 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.41 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.52 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.62 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.73 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.83 (s), x: -3.29 (m), y: 7.52 (m)Time: 86.93 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.04 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.14 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.24 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.34 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.45 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.55 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.65 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.76 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.86 (s), x: -3.29 (m), y: 7.52 (m)Time: 87.96 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.07 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.17 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.27 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.38 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.48 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.59 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.70 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.80 (s), x: -3.29 (m), y: 7.52 (m)Time: 88.90 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.00 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.11 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.21 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.31 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.41 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.52 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.62 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.72 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.83 (s), x: -3.29 (m), y: 7.52 (m)Time: 89.93 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.04 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.15 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.26 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.36 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.46 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.56 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.67 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.77 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.88 (s), x: -3.29 (m), y: 7.52 (m)Time: 90.98 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.09 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.19 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.30 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.40 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.51 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.62 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.72 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.83 (s), x: -3.29 (m), y: 7.52 (m)Time: 91.93 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.04 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.14 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.25 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.36 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.46 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.57 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.68 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.78 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.89 (s), x: -3.29 (m), y: 7.52 (m)Time: 92.99 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.09 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.19 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.30 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.40 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.50 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.60 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.70 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.80 (s), x: -3.29 (m), y: 7.52 (m)Time: 93.91 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.02 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.12 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.22 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.33 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.43 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.54 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.64 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.74 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.84 (s), x: -3.29 (m), y: 7.52 (m)Time: 94.94 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.05 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.15 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.26 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.36 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.46 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.56 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.67 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.78 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.88 (s), x: -3.29 (m), y: 7.52 (m)Time: 95.99 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.10 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.20 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.30 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.40 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.50 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.61 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.71 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.81 (s), x: -3.29 (m), y: 7.52 (m)Time: 96.92 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.03 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.13 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.24 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.35 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.45 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.56 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.67 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.77 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.88 (s), x: -3.29 (m), y: 7.52 (m)Time: 97.98 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.09 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.19 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.29 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.40 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.50 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.61 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.71 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.82 (s), x: -3.29 (m), y: 7.52 (m)Time: 98.93 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.03 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.13 (s), x: -3.29 (m), y: 7.52 (m)... logging to /home/turan/.ros/log/7b367984-464a-11f0-9557-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-29277.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_fastdwa/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:35431/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ekf_localization/base_link_frame: base_link
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: False
+ * /ekf_localization/odom0: /jackal_velocity_...
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/predict_to_current_time: True
+ * /ekf_localization/world_frame: odom
+ * /gazebo/enable_ros_network: True
+ * /jackal_joint_publisher/publish_rate: 50
+ * /jackal_joint_publisher/type: joint_state_contr...
+ * /jackal_velocity_controller/angular/z/has_acceleration_limits: True
+ * /jackal_velocity_controller/angular/z/has_velocity_limits: True
+ * /jackal_velocity_controller/angular/z/max_acceleration: 25.0
+ * /jackal_velocity_controller/angular/z/max_velocity: 4.0
+ * /jackal_velocity_controller/cmd_vel_timeout: 0.25
+ * /jackal_velocity_controller/enable_odom_tf: False
+ * /jackal_velocity_controller/k_l: 0.1
+ * /jackal_velocity_controller/k_r: 0.1
+ * /jackal_velocity_controller/left_wheel: ['front_left_whee...
+ * /jackal_velocity_controller/linear/x/has_acceleration_limits: True
+ * /jackal_velocity_controller/linear/x/has_velocity_limits: True
+ * /jackal_velocity_controller/linear/x/max_acceleration: 20.0
+ * /jackal_velocity_controller/linear/x/max_velocity: 2.0
+ * /jackal_velocity_controller/pose_covariance_diagonal: [0.001, 0.001, 10...
+ * /jackal_velocity_controller/publish_cmd: True
+ * /jackal_velocity_controller/publish_rate: 50
+ * /jackal_velocity_controller/right_wheel: ['front_right_whe...
+ * /jackal_velocity_controller/twist_covariance_diagonal: [0.001, 0.001, 0....
+ * /jackal_velocity_controller/type: diff_drive_contro...
+ * /jackal_velocity_controller/wheel_radius_multiplier: 1.0
+ * /jackal_velocity_controller/wheel_separation_multiplier: 1.5
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /twist_marker_server/link_name: base_link
+ * /twist_mux/locks: [{'topic': 'e_sto...
+ * /twist_mux/topics: [{'topic': 'joy_t...
+ * /use_sim_time: True
+
+NODES
+  /
+    collision_publisher_node (jackal_helper/collision_publisher_node)
+    controller_spawner (controller_manager/spawner)
+    ekf_localization (robot_localization/ekf_localization_node)
+    gazebo (gazebo_ros/gzserver)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    twist_marker_server (interactive_marker_twist_server/marker_server)
+    twist_mux (twist_mux/twist_mux)
+    urdf_spawner (gazebo_ros/spawn_model)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_fastdwa/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [29346][0m
+[1mprocess[robot_state_publisher-2]: started with pid [29351][0m
+[1mprocess[controller_spawner-3]: started with pid [29352][0m
+[1mprocess[ekf_localization-4]: started with pid [29353][0m
+[1mprocess[twist_mux-5]: started with pid [29358][0m
+[1mprocess[twist_marker_server-6]: started with pid [29359][0m
+[1mprocess[urdf_spawner-7]: started with pid [29369][0m
+[1mprocess[collision_publisher_node-8]: started with pid [29374][0m
+[1m[urdf_spawner-7] process has finished cleanly
+log file: /home/turan/.ros/log/7b367984-464a-11f0-9557-845cf33563a8/urdf_spawner-7*.log[0m
+[collision_publisher_node-8] killing on exit
+[twist_marker_server-6] killing on exit
+[twist_mux-5] killing on exit
+[ekf_localization-4] killing on exit
+[controller_spawner-3] killing on exit
+[robot_state_publisher-2] killing on exit
+[g[0m[ INFO] [1749608303.304807232, 3.022000000]: global_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749608303.310241082, 3.027000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749608303.321914524, 3.038000000]: global_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749608303.353347911, 3.064000000]: local_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749608303.357293963, 3.068000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749608303.369435645, 3.081000000]: local_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749608303.401905388, 3.115000000]: Created local_planner base_local_planner/TrajectoryPlannerROS[0m
+[0m[ INFO] [1749608303.407851428, 3.121000000]: Sim period is set to 0.05[0m
+[0m[ INFO] [1749608303.560311662, 3.269000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749608303.563908702, 3.273000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749608303.612467108, 3.318000000]: odom received![0m
+costmap/static_map: True
+ * /move_base/global_costmap/transform_tolerance: 0.5
+ * /move_base/global_costmap/update_frequency: 10
+ * /move_base/global_costmap/width: 40.0
+ * /move_base/global_costmap/z_resolution: 1
+ * /move_base/global_costmap/z_voxels: 2
+ * /move_base/local_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/local_costmap/footprint_padding: 0.1
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 10.0
+ * /move_base/local_costmap/inflater_layer/inflation_radius: 0.3
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/meter_scoring: True
+ * /move_base/local_costmap/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacles_layer/scan/marking: True
+ * /move_base/local_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/local_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/local_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/local_costmap/origin_z: 0.0
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 5.0
+ * /move_base/local_costmap/publish_voxel_map: False
+ * /move_base/local_costmap/raytrace_range: 3.0
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 20.0
+ * /move_base/local_costmap/width: 10.0
+ * /move_base/local_costmap/z_resolution: 1
+ * /move_base/local_costmap/z_voxels: 2
+ * /move_base/oscillation_distance: 0.5
+ * /move_base/oscillation_timeout: 0.0
+ * /move_base/planner_frequency: 20.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: True
+ * /move_base/shutdown_costmaps: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    move_base (move_base/move_base)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_fastdwa/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_DWA.launch http://localhost:11311
+[1mprocess[move_base-1]: started with pid [29713][0m
+[move_base-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[31m[collision_publisher_node-8] escalating to SIGTERM[0m
+[31m[gazebo-1] escalating to SIGTERM[0m
+[31m[controller_spawner-3] escalating to SIGTERM[0m
+[WARN] [1749608439.062809, 103.936000]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
+azebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Time: 99.23 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.34 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.44 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.55 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.65 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.75 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.86 (s), x: -3.29 (m), y: 7.52 (m)Time: 99.96 (s), x: -3.29 (m), y: 7.52 (m)Time: 100.06 (s), x: -3.29 (m), y: 7.52 (m)>>>>>>>>>>>>>>>>>> Test finished! <<<<<<<<<<<<<<<<<<
