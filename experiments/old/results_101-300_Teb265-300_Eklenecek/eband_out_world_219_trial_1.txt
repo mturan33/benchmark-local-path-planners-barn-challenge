@@ -1,0 +1,334 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[33m[ WARN] [1749834990.133082723, 0.285000000]: Failed to meet update rate! Took 0.28500000000000003109[0m
+[33m[ WARN] [1749834990.133727846, 0.286000000]: Failed to meet update rate! Took 0.26600000000000001421[0m
+[0m[ INFO] [1749834988.595415647]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1749834988.597537639]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1749834989.833691794]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1749834989.851810314, 0.009000000]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [true] with [false].
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [false] with [true].
+[31m[ERROR] [1749834990.679483165, 0.397000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_left_wheel[0m
+[31m[ERROR] [1749834990.679905590, 0.397000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_right_wheel[0m
+[31m[ERROR] [1749834990.680274166, 0.397000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_left_wheel[0m
+[31m[ERROR] [1749834990.680508317, 0.397000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_right_wheel[0m
+🔁 Terminal çıktısı hem terminale hem dosyaya kaydediliyor: /home/turan/3v3/experiments/terminal_logs/run_eband_w219.txt
+>>>>>>>>>>>>>>>>>> Loading Gazebo Simulation with BARN/world_219.world <<<<<<<<<<<<<<<<<<
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-28864.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_eband.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:40405/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_base/EBandPlannerROS/bubble_velocity_multiplier: 2.0
+ * /move_base/EBandPlannerROS/disallow_hysteresis: False
+ * /move_base/EBandPlannerROS/eband_equilibrium_approx_max_recursion_depth: 4
+ * /move_base/EBandPlannerROS/eband_min_relative_overlap: 0.7
+ * /move_base/EBandPlannerROS/eband_significance_threshold: 0.05
+ * /move_base/EBandPlannerROS/holonomic_robot: False
+ * /move_base/EBandPlannerROS/max_vel_lin: 0.6
+ * /move_base/EBandPlannerROS/max_vel_theta: 1.0
+ * /move_base/EBandPlannerROS/min_vel_lin: 0.05
+ * /move_base/EBandPlannerROS/min_vel_theta: 0.1
+ * /move_base/EBandPlannerROS/rot_stopped_vel: 0.01
+ * /move_base/EBandPlannerROS/rotation_correction_threshold: 0.1
+ * /move_base/EBandPlannerROS/trans_stopped_vel: 0.01
+ * /move_base/EBandPlannerROS/xy_goal_tolerance: 0.25
+ * /move_base/EBandPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/base_global_planner: navfn/NavfnROS
+ * /move_base/base_local_planner: eband_local_plann...
+ * /move_base/clearing_rotation_allowed: True
+ * /move_base/controller_frequency: 20.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/global_costmap/footprint_padding: 0.05
+ * /move_base/global_costmap/global_frame: odom
+ * /move_base/global_costmap/height: 40.0
+ * /move_base/global_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/meter_scoring: True
+ * /move_base/global_costmap/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacles_layer/scan/marking: True
+ * /move_base/global_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/global_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/global_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/global_costmap/origin_x: -20.0
+ * /move_base/global_costmap/origin_y: -20.0
+ * /move_base/global_costmap/origin_z: 0.0
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 5
+ * /move_base/global_costmap/publish_voxel_map: False
+ * /move_base/global_costmap/raytrace_range: 3.0
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/rolling_window: False
+ * /move_base/global_costmap/static_map: True
+ * /move_base/global_costmap/transform_tolerance: 0.5
+ * /move_base/global_costmap/update_frequency: 10
+ * /move_base/global_costmap/width: 40.0
+ * /move_base/global_costmap/z_resolution: 1
+ * /move_base/global_costmap/z_voxels: 2
+ * /move_base/local_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/local_costmap/footprint_padding: 0.05
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 10.0
+ * /move_base/local_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/meter_scoring: True
+ * /move_base/local_costmap/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/local_costma[33m[ WARN] [1749834994.273057238, 3.928000000]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749834994.273698536, 3.929000000]: global_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749834994.300497740, 3.956000000]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749834994.300751551, 3.956000000]: local_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749834998.248439915, 7.629000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 92 of 203 in collision. Plan invalid[0m
+[33m[ WARN] [1749834998.248474585, 7.629000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749834998.301582369, 7.679000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 92 of 203 in collision. Plan invalid[0m
+[33m[ WARN] [1749834998.301609581, 7.679000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749834999.485138747, 8.780000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 96 of 207 in collision. Plan invalid[0m
+[33m[ WARN] [1749834999.485169877, 8.780000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749834999.488747283, 8.783000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749834999.593693413, 8.880000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 94 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749834999.593728548, 8.880000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835000.824734349, 10.029000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 103 of 215 in collision. Plan invalid[0m
+[33m[ WARN] [1749835000.824760945, 10.029000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835000.877814565, 10.080000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 99 of 215 in collision. Plan invalid[0m
+[33m[ WARN] [1749835000.877840733, 10.080000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835000.881338091, 10.083000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835000.988024363, 10.179000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 99 of 217 in collision. Plan invalid[0m
+[33m[ WARN] [1749835000.988063576, 10.179000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835001.475306482, 10.629000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 60 of 207 in collision. Plan invalid[0m
+[33m[ WARN] [1749835001.475339734, 10.629000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835001.528762002, 10.680000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 60 of 207 in collision. Plan invalid[0m
+[33m[ WARN] [1749835001.528793509, 10.680000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835001.744349405, 10.879000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 61 of 209 in collision. Plan invalid[0m
+[33m[ WARN] [1749835001.744386364, 10.879000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835001.750453081, 10.885000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835001.799355084, 10.929000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 60 of 209 in collision. Plan invalid[0m
+[33m[ WARN] [1749835001.799383147, 10.929000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835001.804502347, 10.934000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835001.852255785, 10.979000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 60 of 209 in collision. Plan invalid[0m
+[33m[ WARN] [1749835001.852283254, 10.979000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.227139966, 11.329000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 65 of 210 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.227170958, 11.329000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.281269719, 11.379000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 65 of 210 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.281316639, 11.380000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.285207565, 11.383000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835002.335074933, 11.429000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 58 of 210 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.335102672, 11.429000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.388802907, 11.479000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 63 of 209 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.388834121, 11.479000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.551534252, 11.629000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 64 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.551563085, 11.629000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.604656823, 11.679000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 64 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.604687728, 11.679000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.658898660, 11.730000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 64 of 213 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.658928859, 11.730000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.662565194, 11.733000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835002.711548474, 11.780000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 63 of 212 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.711587752, 11.780000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.766159338, 11.830000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 63 of 212 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.766199790, 11.830000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.770271326, 11.834000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835002.819173372, 11.879000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 63 of 213 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.819211358, 11.879000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.823050989, 11.883000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835002.982953165, 12.029000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 64 of 212 in collision. Plan invalid[0m
+[33m[ WARN] [1749835002.982990610, 12.029000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835002.987846503, 12.034000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835003.090654910, 12.129000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 58 of 212 in collision. Plan invalid[0m
+[33m[ WARN] [1749835003.090691597, 12.129000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835003.249567059, 12.280000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 61 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835003.249606322, 12.280000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835003.252915805, 12.283000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835003.303857793, 12.330000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 61 of 212 in collision. Plan invalid[0m
+[33m[ WARN] [1749835003.303887063, 12.330000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835003.356387154, 12.379000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 54 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835003.356418254, 12.379000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835003.842932924, 12.829000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 55 of 210 in collision. Plan invalid[0m
+[33m[ WARN] [1749835003.842981369, 12.830000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835004.270615117, 13.229000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 56 of 213 in collision. Plan invalid[0m
+[33m[ WARN] [1749835004.270655610, 13.229000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835004.325745120, 13.280000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 53 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835004.325779916, 13.280000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835004.329342427, 13.283000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835004.378203254, 13.329000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 47 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835004.378242251, 13.329000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835004.432762156, 13.379000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 47 of 211 in collision. Plan invalid[0m
+[33m[ WARN] [1749835004.432793968, 13.379000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835004.647835364, 13.579000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 48 of 212 in collision. Plan invalid[0m
+[33m[ WARN] [1749835004.647866562, 13.579000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.346861913, 14.229000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 40 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.346892103, 14.229000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.400392912, 14.279000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 40 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.400421964, 14.279000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.453994019, 14.329000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 40 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.454021272, 14.329000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.508714849, 14.380000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 40 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.508754414, 14.380000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.513056778, 14.384000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835005.561935634, 14.429000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 40 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.561966965, 14.429000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.616968416, 14.479000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 36 of 208 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.616997634, 14.479000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835005.992981208, 14.829000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 36 of 206 in collision. Plan invalid[0m
+[33m[ WARN] [1749835005.993008851, 14.829000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835006.049412826, 14.880000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 34 of 204 in collision. Plan invalid[0m
+[33m[ WARN] [1749835006.049441948, 14.880000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835006.052910795, 14.883000000]: Optimization failed - Band invalid - No controls availlable[0m
+[33m[ WARN] [1749835006.101789951, 14.929000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 34 of 204 in collision. Plan invalid[0m
+[33m[ WARN] [1749835006.101821216, 14.929000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+[33m[ WARN] [1749835006.156187570, 14.979000000]: Calculation of Distance between bubble and nearest obstacle failed. Frame 30 of 204 in collision. Plan invalid[0m
+[33m[ WARN] [1749835006.156216807, 14.979000000]: Conversion from plan to elastic band failed. Plan probably not collision free. Plan not set for optimization[0m
+Time: 0.01 (s), x: -2.25 (m), y: 3.11 (m)Time: 0.11 (s), x: -2.25 (m), y: 3.15 (m)Time: 0.22 (s), x: -2.25 (m), y: 3.20 (m)Time: 0.32 (s), x: -2.24 (m), y: 3.25 (m)Time: 0.43 (s), x: -2.22 (m), y: 3.30 (m)Time: 0.53 (s), x: -2.21 (m), y: 3.34 (m)Time: 0.64 (s), x: -2.21 (m), y: 3.38 (m)Time: 0.75 (s), x: -2.21 (m), y: 3.42 (m)Time: 0.85 (s), x: -2.21 (m), y: 3.46 (m)Time: 0.95 (s), x: -2.20 (m), y: 3.52 (m)Time: 1.06 (s), x: -2.19 (m), y: 3.56 (m)Time: 1.17 (s), x: -2.17 (m), y: 3.61 (m)Time: 1.27 (s), x: -2.16 (m), y: 3.66 (m)Time: 1.37 (s), x: -2.14 (m), y: 3.70 (m)Time: 1.48 (s), x: -2.13 (m), y: 3.75 (m)Time: 1.59 (s), x: -2.12 (m), y: 3.80 (m)Time: 1.69 (s), x: -2.11 (m), y: 3.85 (m)Time: 1.79 (s), x: -2.10 (m), y: 3.89 (m)Time: 1.90 (s), x: -2.10 (m), y: 3.93 (m)Time: 2.01 (s), x: -2.09 (m), y: 3.96 (m)Time: 2.11 (s), x: -2.08 (m), y: 4.00 (m)Time: 2.22 (s), x: -2.07 (m), y: 4.05 (m)Time: 2.32 (s), x: -2.06 (m), y: 4.11 (m)Time: 2.43 (s), x: -2.05 (m), y: 4.16 (m)Time: 2.54 (s), x: -2.03 (m), y: 4.21 (m)Time: 2.64 (s), x: -2.02 (m), y: 4.26 (m)Time: 2.75 (s), x: -2.01 (m), y: 4.31 (m)Time: 2.85 (s), x: -1.99 (m), y: 4.35 (m)Time: 2.96 (s), x: -1.97 (m), y: 4.40 (m)Time: 3.06 (s), x: -1.96 (m), y: 4.44 (m)Time: 3.17 (s), x: -1.95 (m), y: 4.49 (m)Time: 3.27 (s), x: -1.95 (m), y: 4.52 (m)Time: 3.38 (s), x: -1.95 (m), y: 4.56 (m)Time: 3.48 (s), x: -1.95 (m), y: 4.60 (m)Time: 3.59 (s), x: -1.95 (m), y: 4.65 (m)Time: 3.70 (s), x: -1.93 (m), y: 4.70 (m)Time: 3.80 (s), x: -1.91 (m), y: 4.75 (m)Time: 3.91 (s), x: -1.89 (m), y: 4.80 (m)Time: 4.02 (s), x: -1.87 (m), y: 4.84 (m)Time: 4.12 (s), x: -1.85 (m), y: 4.89 (m)Time: 4.22 (s), x: -1.84 (m), y: 4.92 (m)Time: 4.33 (s), x: -1.82 (m), y: 4.96 (m)Time: 4.44 (s), x: -1.81 (m), y: 5.01 (m)Time: 4.54 (s), x: -1.79 (m), y: 5.05 (m)Time: 4.65 (s), x: -1.78 (m), y: 5.10 (m)Time: 4.75 (s), x: -1.76 (m), y: 5.13 (m)Time: 4.86 (s), x: -1.74 (m), y: 5.18 (m)Time: 4.97 (s), x: -1.73 (m), y: 5.23 (m)Time: 5.07 (s), x: -1.73 (m), y: 5.28 (m)Time: 5.18 (s), x: -1.73 (m), y: 5.33 (m)Time: 5.28 (s), x: -1.74 (m), y: 5.38 (m)Time: 5.39 (s), x: -1.75 (m), y: 5.42 (m)Time: 5.50 (s), x: -1.75 (m), y: 5.45 (m)Time: 5.60 (s), x: -1.75 (m), y: 5.48 (m)Time: 5.70 (s), x: -1.75 (m), y: 5.53 (m)Time: 5.81 (s), x: -1.75 (m), y: 5.59 (m)Time: 5.91 (s), x: -1.75 (m), y: 5.65 (m)Time: 6.02 (s), x: -1.74 (m), y: 5.69 (m)Time: 6.13 (s), x: -1.73 (m), y: 5.72 (m)Time: 6.23 (s), x: -1.71 (m), y: 5.72 (m)Time: 6.34 (s), x: -1.71 (m), y: 5.72 (m)Time: 6.44 (s), x: -1.70 (m), y: 5.73 (m)Time: 6.55 (s), x: -1.69 (m), y: 5.74 (m)Time: 6.65 (s), x: -1.67 (m), y: 5.75 (m)Time: 6.76 (s), x: -1.66 (m), y: 5.77 (m)Time: 6.87 (s), x: -1.66 (m), y: 5.80 (m)Time: 6.97 (s), x: -1.66 (m), y: 5.82 (m)Time: 7.08 (s), x: -1.67 (m), y: 5.83 (m)Time: 7.18 (s), x: -1.67 (m), y: 5.84 (m)Time: 7.29 (s), x: -1.68 (m), y: 5.85 (m)Time: 7.39 (s), x: -1.67 (m), y: 5.84 (m)Time: 7.50 (s), x: -1.67 (m), y: 5.85 (m)Time: 7.61 (s), x: -1.69 (m), y: 5.88 (m)Time: 7.71 (s), x: -1.69 (m), y: 5.89 (m)Time: 7.82 (s), x: -1.71 (m), y: 5.92 (m)Time: 7.92 (s), x: -1.72 (m), y: 5.94 (m)Time: 8.03 (s), x: -1.73 (m), y: 5.96 (m)Time: 8.13 (s), x: -1.73 (m), y: 5.98 (m)Time: 8.24 (s), x: -1.72 (m), y: 5.99 (m)Time: 8.35 (s), x: -1.73 (m), y: 6.01 (m)Time: 8.45 (s), x: -1.75 (m), y: 6.03 (m)Time: 8.56 (s), x: -1.77 (m), y: 6.06 (m)Time: 8.66 (s), x: -1.80 (m), y: 6.09 (m)Time: 8.77 (s), x: -1.82 (m), y: 6.11 (m)Time: 8.87 (s), x: -1.85 (m), y: 6.13 (m)Time: 8.98 (s), x: -1.89 (m), y: 6.16 (m)Time: 9.09 (s), x: -1.92 (m), y: 6.18 (m)Time: 9.19 (s), x: -1.94 (m), y: 6.21 (m)Time: 9.29 (s), x: -1.97 (m), y: 6.23 (m)Time: 9.40 (s), x: -2.00 (m), y: 6.26 (m)Time: 9.51 (s), x: -2.05 (m), y: 6.28 (m)Time: 9.62 (s), x: -2.09 (m), y: 6.30 (m)Time: 9.72 (s), x: -2.11 (m), y: 6.30 (m)Time: 9.82 (s), x: -2.12 (m), y: 6.29 (m)Time: 9.93 (s), x: -2.13 (m), y: 6.30 (m)Time: 10.03 (s), x: -2.16 (m), y: 6.31 (m)Time: 10.14 (s), x: -2.19 (m), y: 6.32 (m)Time: 10.25 (s), x: -2.23 (m), y: 6.33 (m)Time: 10.35 (s), x: -2.26 (m), y: 6.34 (m)Time: 10.46 (s), x: -2.28 (m), y: 6.34 (m)Time: 10.56 (s), x: -2.32 (m), y: 6.35 (m)Time: 10.67 (s), x: -2.36 (m), y: 6.36 (m)Time: 10.77 (s), x: -2.40 (m), y: 6.37 (m)Time: 10.88 (s), x: -2.45 (m), y: 6.38 (m)Time: 10.99 (s), x: -2.49 (m), y: 6.37 (m)Time: 11.10 (s), x: -2.55 (m), y: 6.36 (m)Time: 11.20 (s), x: -2.62 (m), y: 6.35 (m)Time: 11.31 (s), x: -2.69 (m), y: 6.34 (m)Time: 11.42 (s), x: -2.76 (m), y: 6.34 (m)Time: 11.52 (s), x: -2.82 (m), y: 6.33 (m)Time: 11.63 (s), x: -2.88 (m), y: 6.32 (m)Time: 11.74 (s), x: -2.92 (m), y: 6.32 (m)Time: 11.84 (s), x: -2.97 (m), y: 6.32 (m)Time: 11.95 (s), x: -3.02 (m), y: 6.32 (m)Time: 12.06 (s), x: -3.07 (m), y: 6.33 (m)Time: 12.16 (s), x: -3.12 (m), y: 6.34 (m)Time: 12.27 (s), x: -3.17 (m), y: 6.35 (m)Time: 12.38 (s), x: -3.21 (m), y: 6.37 (m)Time: 12.48 (s), x: -3.24 (m), y: 6.39 (m)Time: 12.59 (s), x: -3.26 (m), y: 6.41 (m)Time: 12.69 (s), x: -3.29 (m), y: 6.42 (m)Time: 12.80 (s), x: -3.31 (m), y: 6.44 (m)Time: 12.91 (s), x: -3.34 (m), y: 6.45 (m)Time: 13.01 (s), x: -3.36 (m), y: 6.45 (m)Time: 13.12 (s), x: -3.37 (m), y: 6.44 (m)Time: 13.23 (s), x: -3.38 (m), y: 6.46 (m)Time: 13.34 (s), x: -3.40 (m), y: 6.47 (m)Time: 13.44 (s), x: -3.41 (m), y: 6.46 (m)Time: 13.55 (s), x: -3.43 (m), y: 6.47 (m)Time: 13.66 (s), x: -3.45 (m), y: 6.50 (m)Time: 13.76 (s), x: -3.47 (m), y: 6.54 (m)Time: 13.87 (s), x: -3.50 (m), y: 6.57 (m)Time: 13.98 (s), x: -3.52 (m), y: 6.61 (m)Time: 14.08 (s), x: -3.54 (m), y: 6.66 (m)Time: 14.19 (s), x: -3.54 (m), y: 6.71 (m)Time: 14.29 (s), x: -3.54 (m), y: 6.76 (m)Time: 14.40 (s), x: -3.54 (m), y: 6.80 (m)Time: 14.51 (s), x: -3.54 (m), y: 6.82 (m)Time: 14.61 (s), x: -3.54 (m), y: 6.85 (m)Time: 14.71 (s), x: -3.54 (m), y: 6.90 (m)Time: 14.82 (s), x: -3.54 (m), y: 6.95 (m)Time: 14.93 (s), x: -3.53 (m), y: 7.00 (m)Time: 15.03 (s), x: -3.53 (m), y: 7.05 (m)Time: 15.13 (s), x: -3.52 (m), y: 7.10 (m)Time: 15.24 (s), x: -3.52 (m), y: 7.15 (m)Time: 15.35 (s), x: -3.51 (m), y: 7.20 (m)Time: 15.46 (s), x: -3.51 (m), y: 7.25 (m)Time: 15.56 (s), x: -3.50 (m), y: 7.30 (m)Time: 15.66 (s), x: -3.49 (m), y: 7.36 (m)Time: 15.77 (s), x: -3.48 (m), y: 7.41 (m)Time: 15.88 (s), x: -3.47 (m), y: 7.46 (m)Time: 15.98 (s), x: -3.46 (m), y: 7.51 (m)Time: 16.09 (s), x: -3.45 (m), y: 7.56 (m)Time: 16.20 (s), x: -3.44 (m), y: 7.61 (m)Time: 16.31 (s), x: -3.43 (m), y: 7.67 (m)Time: 16.41 (s), x: -3.41 (m), y: 7.73 (m)Time: 16.52 (s), x: -3.40 (m), y: 7.77 (m)Time: 16.62 (s), x: -3.38 (m), y: 7.82 (m)Time: 16.73 (s), x: -3.38 (m), y: 7.87 (m)Time: 16.84 (s), x: -3.38 (m), y: 7.92 (m)Time: 16.95 (s), x: -3.38 (m), y: 7.97 (m)Time: 17.05 (s), x: -3.37 (m), y: 8.02 (m)Time: 17.16 (s), x: -3.37 (m), y: 8.07 (m)Time: 17.27 (s), x: -3.38 (m), y: 8.11 (m)Time: 17.37 (s), x: -3.38 (m), y: 8.16 (m)Time: 17.48 (s), x: -3.38 (m), y: 8.21 (m)Time: 17.59 (s), x: -3.37 (m), y: 8.26 (m)Time: 17.70 (s), x: -3.36 (m), y: 8.31 (m)Time: 17.80 (s), x: -3.36 (m), y: 8.36 (m)Time: 17.91 (s), x: -3.35 (m), y: 8.41 (m)Time: 18.02 (s), x: -3.34 (m), y: 8.46 (m)Time: 18.12 (s), x: -3.34 (m), y: 8.51 (m)Time: 18.23 (s), x: -3.34 (m), y: 8.56 (m)Time: 18.34 (s), x: -3.33 (m), y: 8.61 (m)Time: 18.45 (s), x: -3.32 (m), y: 8.66 (m)Time: 18.55 (s), x: -3.32 (m), y: 8.71 (m)Time: 18.66 (s), x: -3.30 (m), y: 8.76 (m)Time: 18.77 (s), x: -3.30 (m), y: 8.81 (m)Time: 18.88 (s), x: -3.29 (m), y: 8.86 (m)Time: 18.98 (s), x: -3.28 (m), y: 8.92 (m)Time: 19.09 (s), x: -3.27 (m), y: 8.97 (m)Time: 19.20 (s), x: -3.27 (m), y: 9.02 (m)Time: 19.31 (s), x: -3.26 (m), y: 9.07 (m)Time: 19.41 (s), x: -3.26 (m), y: 9.12 (m)Time: 19.52 (s), x: -3.25 (m), y: 9.17 (m)Time: 19.63 (s), x: -3.24 (m), y: 9.22 (m)Time: 19.74 (s), x: -3.23 (m), y: 9.27 (m)Time: 19.85 (s), x: -3.22 (m), y: 9.32 (m)Time: 19.95 (s), x: -3.21 (m), y: 9.37 (m)Time: 20.06 (s), x: -3.20 (m), y: 9.42 (m)Time: 20.17 (s), x: -3.19 (m), y: 9.47 (m)Time: 20.28 (s), x: -3.18 (m), y: 9.52 (m)Time: 20.38 (s), x: -3.17 (m), y: 9.56 (m)[31m[collision_publisher_node-8] escalating to SIGTERM[0m
+[31m[controller_spawner-3] escalating to SIGTERM[0m
+[31m[gazebo-1] escalating to SIGTERM[0m
+[WARN] [1749835037.885650, 30.804000]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-28493.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:41115/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ekf_localization/base_link_frame: base_link
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: False
+ * /ekf_localization/odom0: /jackal_velocity_...
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/predict_to_current_time: True
+ * /ekf_localization/world_frame: odom
+ * /gazebo/enable_ros_network: True
+ * /jackal_joint_publisher/publish_rate: 50
+ * /jackal_joint_publisher/type: joint_state_contr...
+ * /jackal_velocity_controller/angular/z/has_acceleration_limits: True
+ * /jackal_velocity_controller/angular/z/has_velocity_limits: True
+ * /jackal_velocity_controller/angular/z/max_acceleration: 25.0
+ * /jackal_velocity_controller/angular/z/max_velocity: 4.0
+ * /jackal_velocity_controller/cmd_vel_timeout: 0.25
+ * /jackal_velocity_controller/enable_odom_tf: False
+ * /jackal_velocity_controller/k_l: 0.1
+ * /jackal_velocity_controller/k_r: 0.1
+ * /jackal_velocity_controller/left_wheel: ['front_left_whee...
+ * /jackal_velocity_controller/linear/x/has_acceleration_limits: True
+ * /jackal_velocity_controller/linear/x/has_velocity_limits: True
+ * /jackal_velocity_controller/linear/x/max_acceleration: 20.0
+ * /jackal_velocity_controller/linear/x/max_velocity: 2.0
+ * /jackal_velocity_controller/pose_covariance_diagonal: [0.001, 0.001, 10...
+ * /jackal_velocity_controller/publish_rate: 50
+ * /jackal_velocity_controller/right_wheel: ['front_right_whe...
+ * /jackal_velocity_controller/twist_covariance_diagonal: [0.001, 0.001, 0....
+ * /jackal_velocity_controller/type: diff_drive_contro...
+ * /jackal_velocity_controller/wheel_radius_multiplier: 1.0
+ * /jackal_velocity_controller/wheel_separation_multiplier: 1.5
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /twist_mux/locks: [{'topic': 'e_sto...
+ * /twist_mux/topics: [{'topic': 'joy_t...
+ * /use_sim_time: True
+
+NODES
+  /
+    collision_publisher_node (jackal_helper/collision_publisher_node)
+    controller_spawner (controller_manager/spawner)
+    ekf_localization (robot_localization/ekf_localization_node)
+    gazebo (gazebo_ros/gzserver)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    twist_marker_server (interactive_marker_twist_server/marker_server)
+    twist_mux (twist_mux/twist_mux)
+    urdf_spawner (gazebo_ros/spawn_model)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [28542][0m
+[1mprocess[robot_state_publisher-2]: started with pid [28547][0m
+[1mprocess[controller_spawner-3]: started with pid [28548][0m
+[1mprocess[ekf_localization-4]: started with pid [28549][0m
+[1mprocess[twist_mux-5]: started with pid [28554][0m
+[1mprocess[twist_marker_server-6]: started with pid [28557][0m
+[1mprocess[urdf_spawner-7]: started with pid [28565][0m
+[1mprocess[collision_publisher_node-8]: started with pid [28573][0m
+[1m[urdf_spawner-7] process has finished cleanly
+log file: /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/urdf_spawner-7*.log[0m
+[collision_publisher_node-8] killing on exit
+[twist_marker_server-6] killing on exit
+[twist_mux-5] killing on exit
+[ekf_localization-4] killing on exit
+[controller_spawner-3] killing on exit
+[robot_state_publisher-2] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[0m[ INFO] [1749834994.273998943, 3.929000000]: global_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749834994.277250598, 3.932000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749834994.283616771, 3.939000000]: global_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749834994.301119053, 3.956000000]: local_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749834994.303145115, 3.958000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749834994.310104811, 3.965000000]: local_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749834994.333173269, 3.988000000]: Created local_planner eband_local_planner/EBandPlannerROS[0m
+[0m[ INFO] [1749834994.434346407, 4.089000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749834994.436544682, 4.091000000]: Recovery behavior will clear layer 'obstacles'[0m
+p/obstacles_layer/scan/marking: True
+ * /move_base/local_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/local_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/local_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/local_costmap/origin_z: 0.0
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 5.0
+ * /move_base/local_costmap/publish_voxel_map: False
+ * /move_base/local_costmap/raytrace_range: 3.0
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 20.0
+ * /move_base/local_costmap/width: 10.0
+ * /move_base/local_costmap/z_resolution: 1
+ * /move_base/local_costmap/z_voxels: 2
+ * /move_base/oscillation_distance: 0.5
+ * /move_base/oscillation_timeout: 0.0
+ * /move_base/planner_frequency: 20.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: True
+ * /move_base/shutdown_costmaps: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    move_base (move_base/move_base)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_eband.launch http://localhost:11311
+[1mprocess[move_base-1]: started with pid [28898][0m
+[move_base-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Time: 20.48 (s), x: -3.16 (m), y: 9.61 (m)Time: 20.58 (s), x: -3.15 (m), y: 9.66 (m)Time: 20.69 (s), x: -3.14 (m), y: 9.71 (m)Time: 20.80 (s), x: -3.13 (m), y: 9.76 (m)Time: 20.90 (s), x: -3.12 (m), y: 9.80 (m)Time: 21.00 (s), x: -3.11 (m), y: 9.85 (m)Time: 21.11 (s), x: -3.10 (m), y: 9.90 (m)Time: 21.22 (s), x: -3.09 (m), y: 9.95 (m)Time: 21.33 (s), x: -3.08 (m), y: 10.00 (m)Time: 21.43 (s), x: -3.07 (m), y: 10.04 (m)Time: 21.54 (s), x: -3.06 (m), y: 10.09 (m)Time: 21.65 (s), x: -3.05 (m), y: 10.15 (m)Time: 21.76 (s), x: -3.03 (m), y: 10.19 (m)Time: 21.86 (s), x: -3.02 (m), y: 10.24 (m)Time: 21.96 (s), x: -3.01 (m), y: 10.29 (m)Time: 22.07 (s), x: -3.00 (m), y: 10.34 (m)Time: 22.17 (s), x: -2.99 (m), y: 10.38 (m)Time: 22.27 (s), x: -2.98 (m), y: 10.43 (m)Time: 22.38 (s), x: -2.98 (m), y: 10.48 (m)Time: 22.48 (s), x: -2.97 (m), y: 10.52 (m)Time: 22.59 (s), x: -2.96 (m), y: 10.57 (m)Time: 22.70 (s), x: -2.95 (m), y: 10.62 (m)Time: 22.81 (s), x: -2.94 (m), y: 10.67 (m)Time: 22.91 (s), x: -2.93 (m), y: 10.72 (m)Time: 23.02 (s), x: -2.92 (m), y: 10.77 (m)Time: 23.13 (s), x: -2.91 (m), y: 10.82 (m)Time: 23.24 (s), x: -2.90 (m), y: 10.87 (m)Time: 23.35 (s), x: -2.89 (m), y: 10.92 (m)Time: 23.45 (s), x: -2.88 (m), y: 10.96 (m)Time: 23.56 (s), x: -2.87 (m), y: 11.01 (m)Time: 23.67 (s), x: -2.86 (m), y: 11.06 (m)Time: 23.78 (s), x: -2.85 (m), y: 11.11 (m)Time: 23.89 (s), x: -2.84 (m), y: 11.16 (m)Time: 23.99 (s), x: -2.83 (m), y: 11.21 (m)Time: 24.09 (s), x: -2.82 (m), y: 11.26 (m)Time: 24.19 (s), x: -2.81 (m), y: 11.30 (m)Time: 24.29 (s), x: -2.81 (m), y: 11.35 (m)Time: 24.40 (s), x: -2.80 (m), y: 11.40 (m)Time: 24.50 (s), x: -2.79 (m), y: 11.44 (m)Time: 24.61 (s), x: -2.78 (m), y: 11.49 (m)Time: 24.71 (s), x: -2.77 (m), y: 11.54 (m)Time: 24.82 (s), x: -2.76 (m), y: 11.59 (m)Time: 24.93 (s), x: -2.75 (m), y: 11.64 (m)Time: 25.03 (s), x: -2.74 (m), y: 11.68 (m)Time: 25.13 (s), x: -2.73 (m), y: 11.73 (m)Time: 25.23 (s), x: -2.72 (m), y: 11.78 (m)Time: 25.34 (s), x: -2.71 (m), y: 11.82 (m)Time: 25.45 (s), x: -2.70 (m), y: 11.87 (m)Time: 25.55 (s), x: -2.69 (m), y: 11.92 (m)Time: 25.66 (s), x: -2.68 (m), y: 11.97 (m)Time: 25.76 (s), x: -2.68 (m), y: 12.02 (m)Time: 25.87 (s), x: -2.67 (m), y: 12.07 (m)Time: 25.98 (s), x: -2.66 (m), y: 12.12 (m)>>>>>>>>>>>>>>>>>> Test finished! <<<<<<<<<<<<<<<<<<

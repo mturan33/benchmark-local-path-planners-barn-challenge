@@ -1,0 +1,798 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[0m[ INFO] [1749844352.871016022]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1749844352.871941375]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1749844353.983904864]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [true] with [false].
+[1;33mWarning [parser_urdf.cc:1119][0m multiple inconsistent <gravity> exists due to fixed joint reduction overwriting previous value [false] with [true].
+[31m[ERROR] [1749844354.396836589, 0.006000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_left_wheel[0m
+[31m[ERROR] [1749844354.397260267, 0.006000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/front_right_wheel[0m
+[31m[ERROR] [1749844354.397518098, 0.006000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_left_wheel[0m
+[31m[ERROR] [1749844354.397753756, 0.006000000]: No p gain specified for pid.  Namespace: /gazebo_ros_control/pid_gains/rear_right_wheel[0m
+🔁 Terminal çıktısı hem terminale hem dosyaya kaydediliyor: /home/turan/3v3/experiments/terminal_logs/run_teb_w142.txt
+>>>>>>>>>>>>>>>>>> Loading Gazebo Simulation with BARN/world_142.world <<<<<<<<<<<<<<<<<<
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-18694.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_teb.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:39415/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /move_base/TebLocalPlannerROS/acc_lim_theta: 3.5
+ * /move_base/TebLocalPlannerROS/acc_lim_x: 3.0
+ * /move_base/TebLocalPlannerROS/allow_init_with_backwards_motion: True
+ * /move_base/TebLocalPlannerROS/costmap_obstacles_behind_robot_dist: 0.5
+ * /move_base/TebLocalPlannerROS/disable_optimizations: False
+ * /move_base/TebLocalPlannerROS/dt_hysteresis: 0.1
+ * /move_base/TebLocalPlannerROS/dt_ref: 0.2
+ * /move_base/TebLocalPlannerROS/footprint_model/type: polygon
+ * /move_base/TebLocalPlannerROS/footprint_model/vertices: [[-0.21, -0.165],...
+ * /move_base/TebLocalPlannerROS/free_goal_vel: False
+ * /move_base/TebLocalPlannerROS/global_plan_overwrite_orientation: True
+ * /move_base/TebLocalPlannerROS/global_plan_prune_distance: 1.5
+ * /move_base/TebLocalPlannerROS/global_plan_viapoint_sep: 0.4
+ * /move_base/TebLocalPlannerROS/include_costmap_obstacles: True
+ * /move_base/TebLocalPlannerROS/inflation_dist: 0.2
+ * /move_base/TebLocalPlannerROS/map_frame: odom
+ * /move_base/TebLocalPlannerROS/max_global_plan_lookahead_dist: 3.0
+ * /move_base/TebLocalPlannerROS/max_samples: 500
+ * /move_base/TebLocalPlannerROS/max_vel_theta: 2.2
+ * /move_base/TebLocalPlannerROS/max_vel_x: 1.5
+ * /move_base/TebLocalPlannerROS/max_vel_x_backwards: 0.2
+ * /move_base/TebLocalPlannerROS/min_obstacle_dist: 0.15
+ * /move_base/TebLocalPlannerROS/no_inner_iterations: 10
+ * /move_base/TebLocalPlannerROS/no_outer_iterations: 4
+ * /move_base/TebLocalPlannerROS/obstacle_poses_affected: 50
+ * /move_base/TebLocalPlannerROS/odom_topic: odometry/filtered
+ * /move_base/TebLocalPlannerROS/optimization_activate: True
+ * /move_base/TebLocalPlannerROS/optimization_verbose: False
+ * /move_base/TebLocalPlannerROS/oscillation_recovery: False
+ * /move_base/TebLocalPlannerROS/penalty_epsilon: 0.1
+ * /move_base/TebLocalPlannerROS/publish_feedback: True
+ * /move_base/TebLocalPlannerROS/publish_via_points: True
+ * /move_base/TebLocalPlannerROS/switching_blocking_period: 1.0
+ * /move_base/TebLocalPlannerROS/teb_autosize: True
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_acc_lim_x: 1
+ * /move_base/TebLocalPlannerROS/weight_kinematics_forward_drive: 0.0
+ * /move_base/TebLocalPlannerROS/weight_kinematics_nh: 300
+ * /move_base/TebLocalPlannerROS/weight_max_vel_theta: 1
+ * /move_base/TebLocalPlannerROS/weight_max_vel_x: 2
+ * /move_base/TebLocalPlannerROS/weight_obstacle: 15
+ * /move_base/TebLocalPlannerROS/weight_optimaltime: 3.0
+ * /move_base/TebLocalPlannerROS/weight_shortest_path: 0.2
+ * /move_base/TebLocalPlannerROS/xy_goal_tolerance: 0.25
+ * /move_base/TebLocalPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/base_global_planner: navfn/NavfnROS
+ * /move_base/base_local_planner: teb_local_planner...
+ * /move_base/clearing_rotation_allowed: True
+ * /move_base/controller_frequency: 20.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/controller_patience: 2.0
+ * /move_base/global_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/global_costmap/footprint_padding: 0.05
+ * /move_base/global_costmap/global_frame: odom
+ * /move_base/global_costmap/height: 40.0
+ * /move_base/global_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/meter_scoring: True
+ * /move_base/global_costmap/obstacle_range: 5.5
+ * /move_base/global_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacles_layer/scan/marking: True
+ * /mo[31m[ERROR] [1749844358.543284278]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[31m[ERROR] [1749844358.547949079]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[33m[ WARN] [1749844358.645955162, 4.183000000]: global_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749844358.646167278, 4.183000000]: global_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749844358.679544832, 4.216000000]: local_costmap: Pre-Hydro parameter "static_map" unused since "plugins" is provided[0m
+[33m[ WARN] [1749844358.679730830, 4.216000000]: local_costmap: Pre-Hydro parameter "map_type" unused since "plugins" is provided[0m
+[33m[ WARN] [1749844359.191731855, 4.709000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0357 seconds[0m
+[33m[ WARN] [1749844359.890276865, 5.362000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0900 seconds[0m
+[33m[ WARN] [1749844359.890400284, 5.362000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0887 seconds[0m
+[33m[ WARN] [1749844359.907680031, 5.378000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749844360.292351387, 5.731000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0590 seconds[0m
+[33m[ WARN] [1749844360.292507603, 5.732000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0367 seconds[0m
+[33m[ WARN] [1749844360.326861057, 5.764000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0353 seconds[0m
+[33m[ WARN] [1749844360.499182197, 5.922000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1000 seconds[0m
+[33m[ WARN] [1749844360.499341900, 5.922000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0933 seconds[0m
+[33m[ WARN] [1749844360.550241168, 5.970000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0980 seconds[0m
+[33m[ WARN] [1749844360.550490659, 5.970000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0480 seconds[0m
+[33m[ WARN] [1749844360.594923827, 6.010000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0880 seconds[0m
+[33m[ WARN] [1749844360.635961170, 6.047000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0750 seconds[0m
+[33m[ WARN] [1749844360.743949242, 6.146000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1240 seconds[0m
+[33m[ WARN] [1749844360.744173609, 6.146000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0907 seconds[0m
+[33m[ WARN] [1749844360.856811077, 6.251000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0550 seconds[0m
+[33m[ WARN] [1749844360.856980662, 6.251000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0383 seconds[0m
+[33m[ WARN] [1749844360.894458827, 6.287000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0400 seconds[0m
+[33m[ WARN] [1749844361.126925987, 6.499000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1030 seconds[0m
+[33m[ WARN] [1749844361.127085199, 6.499000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0863 seconds[0m
+[33m[ WARN] [1749844361.169693316, 6.537000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749844361.385364935, 6.742000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0430 seconds[0m
+[33m[ WARN] [1749844361.564695968, 6.911000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0620 seconds[0m
+[33m[ WARN] [1749844361.564865141, 6.911000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0453 seconds[0m
+[33m[ WARN] [1749844361.614425285, 6.957000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749844361.614593283, 6.957000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0580 seconds[0m
+[33m[ WARN] [1749844361.638579409, 6.979000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0467 seconds[0m
+[33m[ WARN] [1749844362.032322622, 7.352000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0530 seconds[0m
+[33m[ WARN] [1749844362.032542184, 7.352000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0530 seconds[0m
+[33m[ WARN] [1749844362.084489327, 7.401000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749844362.084699033, 7.402000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0697 seconds[0m
+[33m[ WARN] [1749844362.129996174, 7.444000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0420 seconds[0m
+[33m[ WARN] [1749844362.320847135, 7.626000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1270 seconds[0m
+[33m[ WARN] [1749844362.320985785, 7.627000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1250 seconds[0m
+[33m[ WARN] [1749844362.362171020, 7.664000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844362.487947869, 7.783000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749844362.488114300, 7.784000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749844362.567452400, 7.855000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0790 seconds[0m
+[33m[ WARN] [1749844362.567633371, 7.855000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0947 seconds[0m
+[33m[ WARN] [1749844362.654568613, 7.933000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1070 seconds[0m
+[33m[ WARN] [1749844362.654754679, 7.933000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0780 seconds[0m
+[33m[ WARN] [1749844362.752450927, 8.024000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749844362.752692444, 8.024000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0910 seconds[0m
+[33m[ WARN] [1749844362.826144311, 8.092000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1090 seconds[0m
+[33m[ WARN] [1749844362.826453314, 8.092000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0680 seconds[0m
+[33m[ WARN] [1749844362.909955121, 8.168000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0760 seconds[0m
+[33m[ WARN] [1749844362.910133866, 8.168000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0760 seconds[0m
+[33m[ WARN] [1749844362.994333820, 8.246000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1040 seconds[0m
+[33m[ WARN] [1749844362.994569167, 8.246000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0780 seconds[0m
+[33m[ WARN] [1749844363.081384798, 8.327000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0810 seconds[0m
+[33m[ WARN] [1749844363.081756037, 8.327000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0810 seconds[0m
+[33m[ WARN] [1749844363.142993873, 8.383000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0870 seconds[0m
+[33m[ WARN] [1749844363.143230486, 8.383000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749844363.202912907, 8.438000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0920 seconds[0m
+[33m[ WARN] [1749844363.203150845, 8.439000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0787 seconds[0m
+[33m[ WARN] [1749844363.287030883, 8.516000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1200 seconds[0m
+[33m[ WARN] [1749844363.287244835, 8.517000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0780 seconds[0m
+[33m[ WARN] [1749844363.349678472, 8.574000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0580 seconds[0m
+[33m[ WARN] [1749844363.349903934, 8.574000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749844363.417430208, 8.632000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0660 seconds[0m
+[33m[ WARN] [1749844363.417706953, 8.632000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0817 seconds[0m
+[33m[ WARN] [1749844363.491699183, 8.698000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0820 seconds[0m
+[33m[ WARN] [1749844363.491991698, 8.698000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0660 seconds[0m
+[33m[ WARN] [1749844363.578696235, 8.775000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1090 seconds[0m
+[33m[ WARN] [1749844363.578925775, 8.775000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1097 seconds[0m
+[33m[ WARN] [1749844363.639051690, 8.831000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749844363.639255771, 8.831000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0560 seconds[0m
+[33m[ WARN] [1749844363.684751108, 8.872000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0637 seconds[0m
+[33m[ WARN] [1749844363.741212649, 8.925000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0500 seconds[0m
+[33m[ WARN] [1749844363.816803215, 8.992000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0670 seconds[0m
+[33m[ WARN] [1749844363.817036832, 8.992000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0837 seconds[0m
+[33m[ WARN] [1749844363.953458244, 9.113000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1380 seconds[0m
+[33m[ WARN] [1749844363.953663091, 9.113000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1210 seconds[0m
+[33m[ WARN] [1749844364.066370220, 9.218000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1050 seconds[0m
+[33m[ WARN] [1749844364.066559276, 9.218000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1050 seconds[0m
+[33m[ WARN] [1749844364.316171371, 9.450000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2320 seconds[0m
+[33m[ WARN] [1749844364.316311832, 9.451000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2330 seconds[0m
+[33m[ WARN] [1749844364.616464034, 9.724000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2730 seconds[0m
+[33m[ WARN] [1749844364.616692782, 9.724000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2730 seconds[0m
+[33m[ WARN] [1749844364.947749124, 10.025000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.3020 seconds[0m
+[33m[ WARN] [1749844364.947972216, 10.026000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.3020 seconds[0m
+[33m[ WARN] [1749844365.250983684, 10.308000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2820 seconds[0m
+[33m[ WARN] [1749844365.251132946, 10.308000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2820 seconds[0m
+[33m[ WARN] [1749844365.306841356, 10.359000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749844365.307036428, 10.359000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0510 seconds[0m
+[33m[ WARN] [1749844365.415950891, 10.459000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1020 seconds[0m
+[33m[ WARN] [1749844365.416126922, 10.459000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1177 seconds[0m
+[33m[ WARN] [1749844365.567757718, 10.599000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749844365.567984430, 10.599000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749844365.663469376, 10.685000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0860 seconds[0m
+[33m[ WARN] [1749844365.663678115, 10.685000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0860 seconds[0m
+[33m[ WARN] [1749844365.751022955, 10.766000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1170 seconds[0m
+[33m[ WARN] [1749844365.751212141, 10.766000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0810 seconds[0m
+[33m[ WARN] [1749844365.820757662, 10.831000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0650 seconds[0m
+[33m[ WARN] [1749844365.820953364, 10.831000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0650 seconds[0m
+[33m[ WARN] [1749844365.900754598, 10.904000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0880 seconds[0m
+[33m[ WARN] [1749844365.900934063, 10.905000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1057 seconds[0m
+[33m[ WARN] [1749844366.026295077, 11.017000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1510 seconds[0m
+[33m[ WARN] [1749844366.026537513, 11.018000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1130 seconds[0m
+[33m[ WARN] [1749844366.113974481, 11.096000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0790 seconds[0m
+[33m[ WARN] [1749844366.114146311, 11.096000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0780 seconds[0m
+[33m[ WARN] [1749844366.250184178, 11.219000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1520 seconds[0m
+[33m[ WARN] [1749844366.250418205, 11.219000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1230 seconds[0m
+[33m[ WARN] [1749844366.392786551, 11.351000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1320 seconds[0m
+[33m[ WARN] [1749844366.392989446, 11.351000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1320 seconds[0m
+[33m[ WARN] [1749844366.639448939, 11.577000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2260 seconds[0m
+[33m[ WARN] [1749844366.639659338, 11.577000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2260 seconds[0m
+[33m[ WARN] [1749844366.716711940, 11.647000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0700 seconds[0m
+[33m[ WARN] [1749844366.716902459, 11.647000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0700 seconds[0m
+[33m[ WARN] [1749844366.802123506, 11.721000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0940 seconds[0m
+[33m[ WARN] [1749844366.802329938, 11.722000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0750 seconds[0m
+[33m[ WARN] [1749844366.905715510, 11.816000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1380 seconds[0m
+[33m[ WARN] [1749844366.905888753, 11.816000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0940 seconds[0m
+[33m[ WARN] [1749844367.037366373, 11.936000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1210 seconds[0m
+[33m[ WARN] [1749844367.037549759, 11.936000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1200 seconds[0m
+[33m[ WARN] [1749844367.349996592, 12.221000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2850 seconds[0m
+[33m[ WARN] [1749844367.350160989, 12.221000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2850 seconds[0m
+[33m[ WARN] [1749844367.504457738, 12.359000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1380 seconds[0m
+[33m[ WARN] [1749844367.504651159, 12.359000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1380 seconds[0m
+[33m[ WARN] [1749844367.662180747, 12.499000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749844367.662396469, 12.500000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1410 seconds[0m
+[33m[ WARN] [1749844367.769495478, 12.592000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0930 seconds[0m
+[33m[ WARN] [1749844367.769726776, 12.592000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0920 seconds[0m
+[33m[ WARN] [1749844367.999314941, 12.796000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2470 seconds[0m
+[33m[ WARN] [1749844367.999545677, 12.796000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2040 seconds[0m
+[33m[ WARN] [1749844368.263754325, 13.023000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.2270 seconds[0m
+[33m[ WARN] [1749844368.264039207, 13.023000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.2270 seconds[0m
+[33m[ WARN] [1749844368.385904287, 13.138000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1150 seconds[0m
+[33m[ WARN] [1749844368.386036811, 13.138000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1150 seconds[0m
+[33m[ WARN] [1749844368.472529390, 13.219000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0810 seconds[0m
+[33m[ WARN] [1749844368.472701009, 13.220000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0820 seconds[0m
+[33m[ WARN] [1749844368.574614430, 13.316000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1280 seconds[0m
+[33m[ WARN] [1749844368.574818067, 13.317000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0970 seconds[0m
+[33m[ WARN] [1749844368.641529147, 13.376000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749844368.641811222, 13.377000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0600 seconds[0m
+[33m[ WARN] [1749844368.743350979, 13.471000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1050 seconds[0m
+[33m[ WARN] [1749844368.743593187, 13.471000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1207 seconds[0m
+[33m[ WARN] [1749844368.799651957, 13.523000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749844368.799868634, 13.523000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0520 seconds[0m
+[33m[ WARN] [1749844368.865664708, 13.584000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0630 seconds[0m
+[33m[ WARN] [1749844368.865911238, 13.585000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0807 seconds[0m
+[33m[ WARN] [1749844368.908079308, 13.624000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0530 seconds[0m
+[33m[ WARN] [1749844368.908298797, 13.624000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0390 seconds[0m
+[33m[ WARN] [1749844368.945831449, 13.660000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0417 seconds[0m
+[33m[ WARN] [1749844369.254482748, 13.950000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0790 seconds[0m
+[33m[ WARN] [1749844369.254654341, 13.950000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0650 seconds[0m
+[33m[ WARN] [1749844369.295110273, 13.988000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844369.295405321, 13.989000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0707 seconds[0m
+[33m[ WARN] [1749844369.399302624, 14.088000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.0670 seconds[0m
+[33m[ WARN] [1749844369.399436847, 14.088000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0657 seconds[0m
+[33m[ WARN] [1749844369.530409166, 14.212000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1410 seconds[0m
+[33m[ WARN] [1749844369.530594682, 14.212000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1563 seconds[0m
+[33m[ WARN] [1749844369.649744955, 14.324000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1120 seconds[0m
+[33m[ WARN] [1749844369.649916422, 14.324000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1120 seconds[0m
+[33m[ WARN] [1749844369.787531655, 14.451000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1270 seconds[0m
+[33m[ WARN] [1749844369.787750123, 14.451000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1270 seconds[0m
+[33m[ WARN] [1749844369.932891178, 14.584000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1330 seconds[0m
+[33m[ WARN] [1749844369.933092924, 14.584000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1330 seconds[0m
+[33m[ WARN] [1749844370.090625691, 14.724000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749844370.090815444, 14.724000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1400 seconds[0m
+[33m[ WARN] [1749844370.269822291, 14.885000000]: Control loop missed its desired rate of 20.0000Hz... the loop actually took 0.1610 seconds[0m
+[33m[ WARN] [1749844370.270184463, 14.885000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1610 seconds[0m
+[33m[ WARN] [1749844370.324274263, 14.931000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.324680504, 14.931000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0460 seconds[0m
+[33m[ WARN] [1749844370.381197123, 14.982000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.428775820, 15.024000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.429126940, 15.025000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0400 seconds[0m
+[33m[ WARN] [1749844370.495069691, 15.084000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.535340401, 15.122000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.535613100, 15.122000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844370.598664872, 15.180000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.641082307, 15.219000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.641412039, 15.219000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0340 seconds[0m
+[33m[ WARN] [1749844370.696891943, 15.270000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.753828763, 15.322000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.754283555, 15.322000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844370.821364911, 15.382000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.874519097, 15.426000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.874929347, 15.426000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0410 seconds[0m
+[33m[ WARN] [1749844370.933815844, 15.480000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844370.973734727, 15.517000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.048584574, 15.586000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.048857245, 15.586000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0343 seconds[0m
+[33m[ WARN] [1749844371.162403007, 15.688000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.162770976, 15.688000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0363 seconds[0m
+[33m[ WARN] [1749844371.243726445, 15.766000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.310978825, 15.827000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.311347476, 15.827000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0420 seconds[0m
+[33m[ WARN] [1749844371.376005522, 15.884000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.376387180, 15.885000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0333 seconds[0m
+[33m[ WARN] [1749844371.489885896, 15.984000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.490248033, 15.985000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0333 seconds[0m
+[33m[ WARN] [1749844371.581211521, 16.067000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.635919119, 16.117000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.693628468, 16.171000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.747298495, 16.221000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.815556838, 16.282000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.866078595, 16.323000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.918034187, 16.372000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844371.967201933, 16.416000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.022032810, 16.468000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.075300686, 16.519000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.075537259, 16.520000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844372.126881505, 16.568000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.174172157, 16.614000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.228451700, 16.667000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.280119539, 16.715000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.335474359, 16.768000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.391661105, 16.819000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.391910195, 16.820000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844372.436913388, 16.863000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.489793532, 16.913000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.545413450, 16.967000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.598286074, 17.017000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.647227704, 17.064000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.699399657, 17.113000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.756088378, 17.168000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.821876937, 17.228000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.822128455, 17.228000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0430 seconds[0m
+[33m[ WARN] [1749844372.862940075, 17.267000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.915831636, 17.317000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844372.969526301, 17.368000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.025927628, 17.420000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.026252728, 17.420000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844373.082189291, 17.471000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.128016656, 17.514000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.177532403, 17.563000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.231562011, 17.615000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.286923864, 17.668000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.338536113, 17.717000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.402814312, 17.775000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.453283420, 17.823000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.453514899, 17.823000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749844373.495749805, 17.864000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.546874721, 17.912000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.606459648, 17.969000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.675326171, 18.033000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.675627393, 18.034000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0490 seconds[0m
+[33m[ WARN] [1749844373.727811597, 18.083000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.766790453, 18.117000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.825786722, 18.170000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.887141990, 18.228000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.887366337, 18.228000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0430 seconds[0m
+[33m[ WARN] [1749844373.929209953, 18.268000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.989568733, 18.323000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844373.989780300, 18.323000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749844374.033952669, 18.364000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.097066891, 18.422000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.097314411, 18.422000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844374.157048862, 18.471000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.212385628, 18.524000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.260243682, 18.569000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.322471601, 18.629000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.322778942, 18.629000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0440 seconds[0m
+[33m[ WARN] [1749844374.396246700, 18.695000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.396553235, 18.695000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0433 seconds[0m
+[33m[ WARN] [1749844374.474839680, 18.770000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.523583642, 18.815000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.586536575, 18.874000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.644098009, 18.926000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.644409835, 18.926000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0410 seconds[0m
+[33m[ WARN] [1749844374.689460625, 18.968000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.738575018, 19.014000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.794219265, 19.068000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.853809410, 19.122000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.902606522, 19.167000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844374.950161031, 19.213000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.005594484, 19.265000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.056624170, 19.313000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.120115315, 19.373000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.182907952, 19.432000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.228773011, 19.473000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.278017736, 19.518000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.278286595, 19.519000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0340 seconds[0m
+[33m[ WARN] [1749844375.335763955, 19.573000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.448731657, 19.676000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.448975041, 19.677000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0587 seconds[0m
+[33m[ WARN] [1749844375.488230565, 19.713000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.547828023, 19.770000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.604982376, 19.823000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.666686991, 19.880000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.703180318, 19.914000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.757181287, 19.966000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.838848098, 20.042000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.839261257, 20.042000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749844375.930070097, 20.123000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844375.977192520, 20.167000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.033888736, 20.220000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.034122868, 20.220000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844376.104282369, 20.285000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.104524172, 20.285000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0333 seconds[0m
+[33m[ WARN] [1749844376.193820739, 20.369000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.248952904, 20.419000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.249227365, 20.420000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844376.309856544, 20.476000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.354086125, 20.517000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.444843808, 20.599000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.445115372, 20.599000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0473 seconds[0m
+[33m[ WARN] [1749844376.513324426, 20.664000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.564501935, 20.713000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.621506210, 20.767000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.679718913, 20.823000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.679966548, 20.823000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749844376.731995235, 20.872000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.783097023, 20.919000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.833080481, 20.966000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.884902557, 21.014000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.941352063, 21.068000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844376.991807828, 21.115000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.053315635, 21.173000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.103376692, 21.221000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.103613210, 21.221000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0360 seconds[0m
+[33m[ WARN] [1749844377.146828351, 21.262000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.205431425, 21.317000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.258996514, 21.368000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.328590262, 21.433000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.328874109, 21.433000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0480 seconds[0m
+[33m[ WARN] [1749844377.433580829, 21.531000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.433835782, 21.531000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0793 seconds[0m
+[33m[ WARN] [1749844377.471814672, 21.567000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.519315241, 21.613000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.573915090, 21.664000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.628226316, 21.715000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.678805933, 21.764000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.748094087, 21.829000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.805389599, 21.882000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.844136146, 21.916000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.902378057, 21.972000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844377.951421846, 22.017000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.001148907, 22.064000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.054604733, 22.115000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.107135670, 22.164000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.167124365, 22.220000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.229213505, 22.276000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.276162830, 22.319000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.330537953, 22.371000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.376692346, 22.416000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.429076084, 22.464000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.490590866, 22.522000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.548160594, 22.577000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.595178782, 22.621000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.648029035, 22.671000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.706408430, 22.720000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.759881860, 22.770000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.817427709, 22.823000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.863847681, 22.867000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.932684055, 22.930000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844378.932980268, 22.931000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0333 seconds[0m
+[33m[ WARN] [1749844378.972689388, 22.967000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.032411628, 23.021000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.082045053, 23.067000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.148069375, 23.128000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.201349144, 23.177000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.247611134, 23.221000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.294113773, 23.265000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.350159278, 23.317000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.406232091, 23.370000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.465399262, 23.422000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.519502857, 23.472000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.571687729, 23.520000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.674155968, 23.617000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.674390696, 23.617000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0527 seconds[0m
+[33m[ WARN] [1749844379.762019094, 23.695000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.838157042, 23.767000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.896919957, 23.823000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844379.953612080, 23.877000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.008720483, 23.927000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.047249464, 23.964000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.119840718, 24.035000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.120041193, 24.035000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0373 seconds[0m
+[33m[ WARN] [1749844380.212286265, 24.121000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.271060292, 24.175000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.325115963, 24.223000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.372335285, 24.268000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.424556595, 24.316000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.530194254, 24.415000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.530454877, 24.415000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0507 seconds[0m
+[33m[ WARN] [1749844380.585506315, 24.467000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.640279265, 24.519000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.695324299, 24.569000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.758251256, 24.626000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.805558036, 24.670000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.864136722, 24.725000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.907200607, 24.764000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844380.969712332, 24.822000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.026532213, 24.876000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.079123021, 24.924000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.124085506, 24.966000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.181922043, 25.021000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.243011955, 25.075000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.296867775, 25.121000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+Time: 0.01 (s), x: -2.25 (m), y: 3.12 (m)Time: 0.12 (s), x: -2.25 (m), y: 3.22 (m)Time: 0.22 (s), x: -2.25 (m), y: 3.36 (m)Time: 0.33 (s), x: -2.25 (m), y: 3.52 (m)Time: 0.44 (s), x: -2.26 (m), y: 3.68 (m)Time: 0.54 (s), x: -2.28 (m), y: 3.83 (m)Time: 0.64 (s), x: -2.31 (m), y: 3.97 (m)Time: 0.75 (s), x: -2.34 (m), y: 4.13 (m)Time: 0.86 (s), x: -2.36 (m), y: 4.29 (m)Time: 0.96 (s), x: -2.36 (m), y: 4.44 (m)Time: 1.07 (s), x: -2.35 (m), y: 4.60 (m)Time: 1.17 (s), x: -2.33 (m), y: 4.75 (m)Time: 1.28 (s), x: -2.30 (m), y: 4.90 (m)Time: 1.38 (s), x: -2.28 (m), y: 5.06 (m)Time: 1.49 (s), x: -2.27 (m), y: 5.22 (m)Time: 1.59 (s), x: -2.28 (m), y: 5.37 (m)Time: 1.69 (s), x: -2.31 (m), y: 5.52 (m)Time: 1.80 (s), x: -2.35 (m), y: 5.67 (m)Time: 1.91 (s), x: -2.40 (m), y: 5.82 (m)Time: 2.02 (s), x: -2.44 (m), y: 5.97 (m)Time: 2.12 (s), x: -2.47 (m), y: 6.13 (m)Time: 2.23 (s), x: -2.46 (m), y: 6.29 (m)Time: 2.34 (s), x: -2.44 (m), y: 6.44 (m)Time: 2.45 (s), x: -2.41 (m), y: 6.60 (m)Time: 2.55 (s), x: -2.39 (m), y: 6.75 (m)Time: 2.66 (s), x: -2.37 (m), y: 6.88 (m)Time: 2.77 (s), x: -2.37 (m), y: 6.98 (m)Time: 2.88 (s), x: -2.38 (m), y: 7.05 (m)Time: 2.98 (s), x: -2.38 (m), y: 7.10 (m)Time: 3.09 (s), x: -2.39 (m), y: 7.16 (m)Time: 3.19 (s), x: -2.40 (m), y: 7.25 (m)Time: 3.30 (s), x: -2.40 (m), y: 7.35 (m)Time: 3.41 (s), x: -2.41 (m), y: 7.46 (m)Time: 3.51 (s), x: -2.41 (m), y: 7.59 (m)Time: 3.62 (s), x: -2.41 (m), y: 7.72 (m)Time: 3.72 (s), x: -2.41 (m), y: 7.84 (m)Time: 3.82 (s), x: -2.40 (m), y: 7.93 (m)Time: 3.92 (s), x: -2.40 (m), y: 8.00 (m)Time: 4.03 (s), x: -2.39 (m), y: 8.05 (m)Time: 4.13 (s), x: -2.40 (m), y: 8.08 (m)Time: 4.23 (s), x: -2.42 (m), y: 8.09 (m)Time: 4.34 (s), x: -2.44 (m), y: 8.11 (m)Time: 4.44 (s), x: -2.45 (m), y: 8.12 (m)Time: 4.55 (s), x: -2.46 (m), y: 8.12 (m)Time: 4.66 (s), x: -2.45 (m), y: 8.13 (m)Time: 4.76 (s), x: -2.43 (m), y: 8.13 (m)Time: 4.86 (s), x: -2.42 (m), y: 8.13 (m)Time: 4.96 (s), x: -2.42 (m), y: 8.12 (m)Time: 5.07 (s), x: -2.43 (m), y: 8.11 (m)Time: 5.18 (s), x: -2.44 (m), y: 8.10 (m)Time: 5.28 (s), x: -2.45 (m), y: 8.09 (m)Time: 5.39 (s), x: -2.46 (m), y: 8.07 (m)Time: 5.49 (s), x: -2.47 (m), y: 8.05 (m)Time: 5.60 (s), x: -2.48 (m), y: 8.03 (m)Time: 5.70 (s), x: -2.49 (m), y: 8.01 (m)Time: 5.81 (s), x: -2.51 (m), y: 7.98 (m)Time: 5.91 (s), x: -2.52 (m), y: 7.94 (m)Time: 6.02 (s), x: -2.52 (m), y: 7.92 (m)Time: 6.12 (s), x: -2.53 (m), y: 7.91 (m)Time: 6.22 (s), x: -2.52 (m), y: 7.90 (m)Time: 6.33 (s), x: -2.52 (m), y: 7.89 (m)Time: 6.43 (s), x: -2.52 (m), y: 7.90 (m)Time: 6.53 (s), x: -2.53 (m), y: 7.91 (m)Time: 6.64 (s), x: -2.55 (m), y: 7.93 (m)Time: 6.75 (s), x: -2.57 (m), y: 7.96 (m)Time: 6.86 (s), x: -2.58 (m), y: 7.98 (m)Time: 6.96 (s), x: -2.59 (m), y: 7.99 (m)Time: 7.06 (s), x: -2.59 (m), y: 8.01 (m)Time: 7.17 (s), x: -2.58 (m), y: 8.01 (m)Time: 7.27 (s), x: -2.58 (m), y: 8.01 (m)Time: 7.38 (s), x: -2.57 (m), y: 8.02 (m)Time: 7.49 (s), x: -2.56 (m), y: 8.01 (m)Time: 7.59 (s), x: -2.56 (m), y: 8.01 (m)Time: 7.70 (s), x: -2.55 (m), y: 8.01 (m)Time: 7.80 (s), x: -2.53 (m), y: 7.99 (m)Time: 7.91 (s), x: -2.53 (m), y: 7.97 (m)Time: 8.02 (s), x: -2.52 (m), y: 7.96 (m)Time: 8.12 (s), x: -2.53 (m), y: 7.94 (m)Time: 8.22 (s), x: -2.54 (m), y: 7.94 (m)Time: 8.33 (s), x: -2.57 (m), y: 7.96 (m)Time: 8.44 (s), x: -2.61 (m), y: 8.01 (m)Time: 8.54 (s), x: -2.66 (m), y: 8.08 (m)Time: 8.65 (s), x: -2.72 (m), y: 8.16 (m)Time: 8.75 (s), x: -2.77 (m), y: 8.24 (m)Time: 8.86 (s), x: -2.83 (m), y: 8.33 (m)Time: 8.97 (s), x: -2.87 (m), y: 8.40 (m)Time: 9.08 (s), x: -2.89 (m), y: 8.43 (m)Time: 9.18 (s), x: -2.90 (m), y: 8.46 (m)Time: 9.29 (s), x: -2.91 (m), y: 8.46 (m)Time: 9.40 (s), x: -2.92 (m), y: 8.45 (m)Time: 9.50 (s), x: -2.93 (m), y: 8.44 (m)Time: 9.60 (s), x: -2.93 (m), y: 8.45 (m)Time: 9.71 (s), x: -2.92 (m), y: 8.47 (m)Time: 9.81 (s), x: -2.90 (m), y: 8.50 (m)Time: 9.91 (s), x: -2.87 (m), y: 8.54 (m)Time: 10.02 (s), x: -2.85 (m), y: 8.56 (m)Time: 10.12 (s), x: -2.83 (m), y: 8.60 (m)Time: 10.23 (s), x: -2.82 (m), y: 8.62 (m)Time: 10.34 (s), x: -2.82 (m), y: 8.63 (m)Time: 10.44 (s), x: -2.82 (m), y: 8.63 (m)Time: 10.54 (s), x: -2.82 (m), y: 8.63 (m)Time: 10.64 (s), x: -2.82 (m), y: 8.63 (m)Time: 10.75 (s), x: -2.82 (m), y: 8.63 (m)Time: 10.85 (s), x: -2.82 (m), y: 8.63 (m)Time: 10.96 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.06 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.16 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.27 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.37 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.48 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.59 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.70 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.80 (s), x: -2.82 (m), y: 8.63 (m)Time: 11.91 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.02 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.13 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.24 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.34 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.44 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.55 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.66 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.76 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.86 (s), x: -2.82 (m), y: 8.63 (m)Time: 12.97 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.07 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.18 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.28 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.39 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.49 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.60 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.71 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.81 (s), x: -2.82 (m), y: 8.63 (m)Time: 13.92 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.03 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.13 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.24 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.35 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.45 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.56 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.66 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.77 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.88 (s), x: -2.82 (m), y: 8.63 (m)Time: 14.98 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.09 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.19 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.30 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.41 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.51 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.62 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.72 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.83 (s), x: -2.82 (m), y: 8.63 (m)Time: 15.94 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.04 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.15 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.26 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.37 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.48 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.58 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.69 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.80 (s), x: -2.82 (m), y: 8.63 (m)Time: 16.91 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.01 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.12 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.22 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.33 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.43 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.54 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.65 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.76 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.86 (s), x: -2.82 (m), y: 8.63 (m)Time: 17.96 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.07 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.17 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.28 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.39 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.50 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.60 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.70 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.81 (s), x: -2.82 (m), y: 8.63 (m)Time: 18.92 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.02 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.13 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.24 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.34 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.45 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.56 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.66 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.77 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.87 (s), x: -2.82 (m), y: 8.63 (m)Time: 19.98 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.09 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.19 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.29 (s), x: -2.82 (m), y: 8.63 (m)[33m[ WARN] [1749844381.348766180, 25.170000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.398257943, 25.216000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.456092215, 25.270000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.513632459, 25.322000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.563107749, 25.368000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.616650686, 25.418000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.678726174, 25.477000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.728510503, 25.523000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.781631305, 25.572000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.832779427, 25.620000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.889848820, 25.671000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844381.942549052, 25.719000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.002045870, 25.774000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.050575903, 25.819000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.102456384, 25.867000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.153030029, 25.916000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.204215445, 25.964000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.272680434, 26.024000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.330377293, 26.079000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.371632077, 26.113000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.432558175, 26.173000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.478104589, 26.216000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.544456547, 26.278000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.588767389, 26.319000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.639450817, 26.366000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.688864549, 26.413000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.744099847, 26.466000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.798227614, 26.515000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844382.853765624, 26.570000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.059850577, 26.757000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.060118053, 26.757000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.1593 seconds[0m
+[33m[ WARN] [1749844383.151548888, 26.845000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.208061990, 26.897000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.208334115, 26.898000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0400 seconds[0m
+[33m[ WARN] [1749844383.251337163, 26.936000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.312650700, 26.994000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.312905620, 26.994000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844383.363449498, 27.040000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.415524709, 27.091000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.415810468, 27.091000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0340 seconds[0m
+[33m[ WARN] [1749844383.474030586, 27.147000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.532561282, 27.200000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.532851813, 27.201000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0440 seconds[0m
+[33m[ WARN] [1749844383.578215243, 27.243000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.634866559, 27.294000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.635217475, 27.295000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749844383.686690899, 27.343000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.760185353, 27.414000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.760400351, 27.414000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0570 seconds[0m
+[33m[ WARN] [1749844383.837504607, 27.487000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.893242724, 27.539000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844383.942637570, 27.583000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.001964999, 27.639000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.062416383, 27.696000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.062748123, 27.696000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0390 seconds[0m
+[33m[ WARN] [1749844384.110880317, 27.738000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.169067754, 27.795000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.169329122, 27.795000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0380 seconds[0m
+[33m[ WARN] [1749844384.225708646, 27.848000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.283865558, 27.898000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.284163558, 27.899000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0420 seconds[0m
+[33m[ WARN] [1749844384.331735953, 27.941000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.383354730, 27.989000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.439744950, 28.040000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.496539061, 28.094000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.583944837, 28.176000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.584197507, 28.176000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0523 seconds[0m
+[33m[ WARN] [1749844384.657650051, 28.244000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.710466675, 28.293000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.710699315, 28.293000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0360 seconds[0m
+[33m[ WARN] [1749844384.761110664, 28.339000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.816004276, 28.392000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.816262221, 28.392000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844384.871970771, 28.443000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.927517430, 28.494000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844384.927807412, 28.494000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844384.985677159, 28.547000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.029819726, 28.588000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.096773149, 28.650000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.144431023, 28.694000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.144683179, 28.694000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844385.194922125, 28.740000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.251574570, 28.794000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.251831821, 28.794000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0370 seconds[0m
+[33m[ WARN] [1749844385.309280866, 28.846000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.356864494, 28.889000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.427599923, 28.956000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.427834439, 28.957000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0333 seconds[0m
+[33m[ WARN] [1749844385.461863895, 28.990000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.519975580, 29.041000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.577332657, 29.092000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.577610093, 29.093000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0360 seconds[0m
+[33m[ WARN] [1749844385.642860288, 29.152000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.684264208, 29.192000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.684499792, 29.192000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0350 seconds[0m
+[33m[ WARN] [1749844385.738602903, 29.244000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.786708869, 29.286000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.857213412, 29.353000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.897737098, 29.392000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844385.898015842, 29.393000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0360 seconds[0m
+[33m[ WARN] [1749844385.954119684, 29.445000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.013496532, 29.502000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.013834895, 29.503000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0460 seconds[0m
+[33m[ WARN] [1749844386.064156122, 29.547000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.123553720, 29.600000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.123772726, 29.601000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0440 seconds[0m
+[33m[ WARN] [1749844386.167209805, 29.642000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.224730681, 29.694000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.285309549, 29.751000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.336980418, 29.800000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.337280171, 29.800000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0430 seconds[0m
+[33m[ WARN] [1749844386.402819894, 29.861000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.403070917, 29.861000000]: Map update loop missed its desired rate of 30.0000Hz... the loop actually took 0.0373 seconds[0m
+[33m[ WARN] [1749844386.486479175, 29.939000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.505273680, 29.957000000]: Clearing both costmaps to unstuck robot (3.00m).[0m
+[33m[ WARN] [1749844386.593376432, 30.040000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.611526592, 30.057000000]: Rotate recovery behavior started.[0m
+[31m[ERROR] [1749844386.611685464, 30.057000000]: Rotate recovery can't rotate in place because there is a potential collision. Cost: -1.00[0m
+[33m[ WARN] [1749844386.701789548, 30.141000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.721900355, 30.157000000]: Clearing both costmaps to unstuck robot (1.84m).[0m
+[33m[ WARN] [1749844386.803987730, 30.237000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[33m[ WARN] [1749844386.826390272, 30.257000000]: Rotate recovery behavior started.[0m
+[31m[ERROR] [1749844386.826554176, 30.257000000]: Rotate recovery can't rotate in place because there is a potential collision. Cost: -1.00[0m
+[33m[ WARN] [1749844386.910053764, 30.337000000]: TebLocalPlannerROS: trajectory is not feasible. Resetting planner...[0m
+[31m[ERROR] [1749844386.930890694, 30.357000000]: Aborting because a valid control could not be found. Even after executing all recovery behaviors[0m
+Time: 20.40 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.50 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.61 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.72 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.82 (s), x: -2.82 (m), y: 8.63 (m)Time: 20.93 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.03 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.14 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.24 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.35 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.46 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.57 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.67 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.78 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.88 (s), x: -2.82 (m), y: 8.63 (m)Time: 21.99 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.09 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.20 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.30 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.41 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.51 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.62 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.73 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.83 (s), x: -2.82 (m), y: 8.63 (m)Time: 22.94 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.04 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.15 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.25 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.36 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.46 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.57 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.68 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.78 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.89 (s), x: -2.82 (m), y: 8.63 (m)Time: 23.99 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.10 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.20 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.31 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.41 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.52 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.62 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.72 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.83 (s), x: -2.82 (m), y: 8.63 (m)Time: 24.94 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.05 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.15 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.26 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.37 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.47 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.58 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.69 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.79 (s), x: -2.82 (m), y: 8.63 (m)Time: 25.90 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.01 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.12 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.22 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.33 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.43 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.54 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.65 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.76 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.86 (s), x: -2.82 (m), y: 8.63 (m)Time: 26.96 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.07 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.17 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.27 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.38 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.48 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.59 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.70 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.80 (s), x: -2.82 (m), y: 8.63 (m)Time: 27.91 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.01 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.12 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.22 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.33 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.44 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.54 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.64 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.75 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.85 (s), x: -2.82 (m), y: 8.63 (m)Time: 28.95 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.06 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.16 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.27 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.38 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.48 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.59 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.70 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.80 (s), x: -2.82 (m), y: 8.63 (m)Time: 29.91 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.02 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.12 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.22 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.33 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.44 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.55 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.65 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.76 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.86 (s), x: -2.82 (m), y: 8.63 (m)Time: 30.97 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.08 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.18 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.29 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.39 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.49 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.59 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.70 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.80 (s), x: -2.82 (m), y: 8.63 (m)Time: 31.90 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.01 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.12 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.22 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.33 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.44 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.54 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.65 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.75 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.85 (s), x: -2.82 (m), y: 8.63 (m)Time: 32.96 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.07 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.17 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.28 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.39 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.49 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.60 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.71 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.82 (s), x: -2.82 (m), y: 8.63 (m)Time: 33.93 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.03 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.14 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.24 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.34 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.45 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.55 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.66 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.77 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.88 (s), x: -2.82 (m), y: 8.63 (m)Time: 34.99 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.09 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.20 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.30 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.41 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.51 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.62 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.73 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.83 (s), x: -2.82 (m), y: 8.63 (m)Time: 35.94 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.05 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.16 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.27 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.38 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.48 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.58 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.68 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.79 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.89 (s), x: -2.82 (m), y: 8.63 (m)Time: 36.99 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.10 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.20 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.30 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.41 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.52 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.62 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.72 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.82 (s), x: -2.82 (m), y: 8.63 (m)Time: 37.92 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.03 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.35 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.45 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.56 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.67 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.78 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.88 (s), x: -2.82 (m), y: 8.64 (m)Time: 38.98 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.09 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.30 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.61 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.71 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.81 (s), x: -2.82 (m), y: 8.64 (m)Time: 39.91 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.02 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.12 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.23 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.34 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.44 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.55 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.65 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.76 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.86 (s), x: -2.82 (m), y: 8.64 (m)Time: 40.96 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.06 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.16 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.27 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.37 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.47 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.89 (s), x: -2.82 (m), y: 8.64 (m)Time: 41.99 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.09 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.52 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.83 (s), x: -2.82 (m), y: 8.64 (m)Time: 42.94 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.04 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.24 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.34 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.45 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.55 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.65 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.75 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.85 (s), x: -2.82 (m), y: 8.64 (m)Time: 43.96 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.07 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.18 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.28 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.39 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.50 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.60 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.70 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.80 (s), x: -2.82 (m), y: 8.64 (m)Time: 44.91 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.01 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.12 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.22 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.32 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.43 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.54 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.64 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.74 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.85 (s), x: -2.82 (m), y: 8.64 (m)Time: 45.95 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.06 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.17 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.28 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.38 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.48 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.69 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 46.90 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.11 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.21 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.62 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.72 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.82 (s), x: -2.82 (m), y: 8.64 (m)Time: 47.92 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.02 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.13 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.23 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.34 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.45 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.56 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.66 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.77 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.87 (s), x: -2.82 (m), y: 8.64 (m)Time: 48.98 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.09 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.62 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.72 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.83 (s), x: -2.82 (m), y: 8.64 (m)Time: 49.93 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.04 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.35 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.46 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.57 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.67 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.77 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.88 (s), x: -2.82 (m), y: 8.64 (m)Time: 50.99 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.09 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.19 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.30 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.40 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.61 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.72 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.82 (s), x: -2.82 (m), y: 8.64 (m)Time: 51.93 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.03 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.35 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.46 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.56 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.67 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.77 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.88 (s), x: -2.82 (m), y: 8.64 (m)Time: 52.99 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.10 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.21 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.32 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.42 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.52 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.62 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.84 (s), x: -2.82 (m), y: 8.64 (m)Time: 53.95 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.06 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.16 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.27 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.38 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.48 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.69 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.89 (s), x: -2.82 (m), y: 8.64 (m)Time: 54.99 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.09 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.52 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.83 (s), x: -2.82 (m), y: 8.64 (m)Time: 55.93 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.04 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.15 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.35 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.46 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.57 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 56.89 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.10 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.21 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.42 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.53 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.84 (s), x: -2.82 (m), y: 8.64 (m)Time: 57.94 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.05 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.16 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.26 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.37 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.48 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.69 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.80 (s), x: -2.82 (m), y: 8.64 (m)Time: 58.91 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.01 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.12 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.23 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.33 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.44 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.55 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.65 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.76 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.86 (s), x: -2.82 (m), y: 8.64 (m)Time: 59.97 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.08 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.19 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.30 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.40 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.62 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.72 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.83 (s), x: -2.82 (m), y: 8.64 (m)Time: 60.94 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.04 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.15 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.26 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.37 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.47 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 61.90 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.11 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.22 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.32 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.42 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.53 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.74 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.84 (s), x: -2.82 (m), y: 8.64 (m)Time: 62.95 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.06 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.16 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.27 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.37 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.48 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 63.90 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.10 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.52 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.84 (s), x: -2.82 (m), y: 8.64 (m)Time: 64.94 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.05 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.15 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.26 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.37 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.48 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.69 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.80 (s), x: -2.82 (m), y: 8.64 (m)Time: 65.90 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.01 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.11 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.22 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.32 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.43 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.53 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.64 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.74 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.85 (s), x: -2.82 (m), y: 8.64 (m)Time: 66.96 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.06 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.17 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.27 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.38 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.49 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.60 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.70 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.81 (s), x: -2.82 (m), y: 8.64 (m)Time: 67.91 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.02 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.13 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.23 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.34 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.45 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.55 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.66 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.76 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.87 (s), x: -2.82 (m), y: 8.64 (m)Time: 68.97 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.08 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.18 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.28 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.39 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.50 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.61 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.71 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.81 (s), x: -2.82 (m), y: 8.64 (m)Time: 69.92 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.03 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.24 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.35 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.45 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.56 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.67 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.77 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.88 (s), x: -2.82 (m), y: 8.64 (m)Time: 70.98 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.08 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.19 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.30 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.62 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.72 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.83 (s), x: -2.82 (m), y: 8.64 (m)Time: 71.94 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.05 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.15 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.36 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.46 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.56 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.67 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.77 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.88 (s), x: -2.82 (m), y: 8.64 (m)Time: 72.99 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.09 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.30 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.62 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.72 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.83 (s), x: -2.82 (m), y: 8.64 (m)Time: 73.93 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.04 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.36 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.46 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.57 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.78 (s), x: -2.82 (m), y: 8.64 (m)Time: 74.89 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.10 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.21 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.42 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.52 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.84 (s), x: -2.82 (m), y: 8.64 (m)Time: 75.95 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.05 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.16 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.26 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.37 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.48 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.79 (s), x: -2.82 (m), y: 8.64 (m)Time: 76.90 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.11 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.21 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.32 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.42 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.52 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.63 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.73 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.84 (s), x: -2.82 (m), y: 8.64 (m)Time: 77.94 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.05 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.15 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.26 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.36 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.47 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.58 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.68 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.78 (s), x: -2.82 (m), y: 8.64 (m)Time: 78.89 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.00 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.10 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.20 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.31 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.41 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.51 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.61 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.71 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.82 (s), x: -2.82 (m), y: 8.64 (m)Time: 79.93 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.04 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.14 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.25 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.35 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.46 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.57 (s), x: -2.82 (m), y: 8.64 (m)Time: 80.68 (s), x: -2.81 (m), y: 8.64 (m)[31m[ERROR] [1749844465.592517558, 105.007000000]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[31m[ERROR] [1749844465.593726856, 105.007000000]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[31m[ERROR] [1749844465.760653049, 105.007000000]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[31m[ERROR] [1749844465.761202518, 105.007000000]: a header of over a gigabyte was predicted in tcpros. that seems highly unlikely, so I'll assume protocol synchronization is lost.[0m
+[31m[collision_publisher_node-8] escalating to SIGTERM[0m
+[31m[controller_spawner-3] escalating to SIGTERM[0m
+[31m[gazebo-1] escalating to SIGTERM[0m
+[WARN] [1749844480.556302, 105.007000]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
+... logging to /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/roslaunch-turan-TULPAR-T5-V20-3-18324.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch
+[1mstarted roslaunch server http://turan-TULPAR-T5-V20-3:42021/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ekf_localization/base_link_frame: base_link
+ * /ekf_localization/frequency: 50
+ * /ekf_localization/imu0: /imu/data
+ * /ekf_localization/imu0_config: [False, False, Fa...
+ * /ekf_localization/imu0_differential: False
+ * /ekf_localization/odom0: /jackal_velocity_...
+ * /ekf_localization/odom0_config: [False, False, Fa...
+ * /ekf_localization/odom0_differential: False
+ * /ekf_localization/odom_frame: odom
+ * /ekf_localization/predict_to_current_time: True
+ * /ekf_localization/world_frame: odom
+ * /gazebo/enable_ros_network: True
+ * /jackal_joint_publisher/publish_rate: 50
+ * /jackal_joint_publisher/type: joint_state_contr...
+ * /jackal_velocity_controller/angular/z/has_acceleration_limits: True
+ * /jackal_velocity_controller/angular/z/has_velocity_limits: True
+ * /jackal_velocity_controller/angular/z/max_acceleration: 25.0
+ * /jackal_velocity_controller/angular/z/max_velocity: 4.0
+ * /jackal_velocity_controller/cmd_vel_timeout: 0.25
+ * /jackal_velocity_controller/enable_odom_tf: False
+ * /jackal_velocity_controller/k_l: 0.1
+ * /jackal_velocity_controller/k_r: 0.1
+ * /jackal_velocity_controller/left_wheel: ['front_left_whee...
+ * /jackal_velocity_controller/linear/x/has_acceleration_limits: True
+ * /jackal_velocity_controller/linear/x/has_velocity_limits: True
+ * /jackal_velocity_controller/linear/x/max_acceleration: 20.0
+ * /jackal_velocity_controller/linear/x/max_velocity: 2.0
+ * /jackal_velocity_controller/pose_covariance_diagonal: [0.001, 0.001, 10...
+ * /jackal_velocity_controller/publish_rate: 50
+ * /jackal_velocity_controller/right_wheel: ['front_right_whe...
+ * /jackal_velocity_controller/twist_covariance_diagonal: [0.001, 0.001, 0....
+ * /jackal_velocity_controller/type: diff_drive_contro...
+ * /jackal_velocity_controller/wheel_radius_multiplier: 1.0
+ * /jackal_velocity_controller/wheel_separation_multiplier: 1.5
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /twist_mux/locks: [{'topic': 'e_sto...
+ * /twist_mux/topics: [{'topic': 'joy_t...
+ * /use_sim_time: True
+
+NODES
+  /
+    collision_publisher_node (jackal_helper/collision_publisher_node)
+    controller_spawner (controller_manager/spawner)
+    ekf_localization (robot_localization/ekf_localization_node)
+    gazebo (gazebo_ros/gzserver)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    twist_marker_server (interactive_marker_twist_server/marker_server)
+    twist_mux (twist_mux/twist_mux)
+    urdf_spawner (gazebo_ros/spawn_model)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/launch/gazebo_launch.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [18373][0m
+[1mprocess[robot_state_publisher-2]: started with pid [18378][0m
+[1mprocess[controller_spawner-3]: started with pid [18379][0m
+[1mprocess[ekf_localization-4]: started with pid [18380][0m
+[1mprocess[twist_mux-5]: started with pid [18385][0m
+[1mprocess[twist_marker_server-6]: started with pid [18387][0m
+[1mprocess[urdf_spawner-7]: started with pid [18396][0m
+[1mprocess[collision_publisher_node-8]: started with pid [18404][0m
+[1m[urdf_spawner-7] process has finished cleanly
+log file: /home/turan/.ros/log/a30266d2-47b0-11f0-b754-845cf33563a8/urdf_spawner-7*.log[0m
+[collision_publisher_node-8] killing on exit
+[twist_marker_server-6] killing on exit
+[twist_mux-5] killing on exit
+[ekf_localization-4] killing on exit
+[controller_spawner-3] killing on exit
+[robot_state_publisher-2] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+[0m[ INFO] [1749844358.646546711, 4.183000000]: global_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749844358.650959459, 4.188000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749844358.660068228, 4.197000000]: global_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749844358.680073837, 4.217000000]: local_costmap: Using plugin "obstacles_layer"[0m
+[0m[ INFO] [1749844358.682608604, 4.219000000]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1749844358.690325043, 4.227000000]: local_costmap: Using plugin "inflater_layer"[0m
+[0m[ INFO] [1749844358.711164258, 4.248000000]: Created local_planner teb_local_planner/TebLocalPlannerROS[0m
+[0m[ INFO] [1749844358.755878249, 4.292000000]: Footprint model 'polygon' loaded for trajectory optimization.[0m
+[0m[ INFO] [1749844358.755934370, 4.292000000]: Parallel planning in distinctive topologies enabled.[0m
+[0m[ INFO] [1749844358.755953016, 4.292000000]: No costmap conversion plugin specified. All occupied costmap cells are treaten as point obstacles.[0m
+[0m[ INFO] [1749844358.883773839, 4.418000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749844358.886340443, 4.421000000]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1749844358.947871171, 4.480000000]: odom received![0m
+ve_base/global_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/global_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/global_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/global_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/global_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/global_costmap/origin_x: -20.0
+ * /move_base/global_costmap/origin_y: -20.0
+ * /move_base/global_costmap/origin_z: 0.0
+ * /move_base/global_costmap/oscillation_distance: 0.2
+ * /move_base/global_costmap/oscillation_timeout: 3.0
+ * /move_base/global_costmap/planner_patience: 3.0
+ * /move_base/global_costmap/plugins: [{'type': 'costma...
+ * /move_base/global_costmap/publish_frequency: 5
+ * /move_base/global_costmap/publish_voxel_map: False
+ * /move_base/global_costmap/raytrace_range: 7.0
+ * /move_base/global_costmap/resolution: 0.1
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/rolling_window: True
+ * /move_base/global_costmap/static_map: False
+ * /move_base/global_costmap/transform_tolerance: 0.2
+ * /move_base/global_costmap/update_frequency: 30
+ * /move_base/global_costmap/width: 40.0
+ * /move_base/global_costmap/z_resolution: 1
+ * /move_base/global_costmap/z_voxels: 2
+ * /move_base/local_costmap/controller_patience: 2.0
+ * /move_base/local_costmap/footprint: [[-0.21, -0.165],...
+ * /move_base/local_costmap/footprint_padding: 0.05
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 40.0
+ * /move_base/local_costmap/inflater_layer/inflation_radius: 0.25
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/meter_scoring: True
+ * /move_base/local_costmap/obstacle_range: 5.5
+ * /move_base/local_costmap/obstacles_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacles_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacles_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacles_layer/scan/marking: True
+ * /move_base/local_costmap/obstacles_layer/scan/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacles_layer/scan/min_obstacle_height: -2.0
+ * /move_base/local_costmap/obstacles_layer/scan/obstacle_range: 2.5
+ * /move_base/local_costmap/obstacles_layer/scan/raytrace_range: 3.0
+ * /move_base/local_costmap/obstacles_layer/scan/sensor_frame: front_laser
+ * /move_base/local_costmap/obstacles_layer/scan/topic: front/scan
+ * /move_base/local_costmap/origin_x: -20.0
+ * /move_base/local_costmap/origin_y: -20.0
+ * /move_base/local_costmap/origin_z: 0.0
+ * /move_base/local_costmap/oscillation_distance: 0.2
+ * /move_base/local_costmap/oscillation_timeout: 3.0
+ * /move_base/local_costmap/planner_patience: 3.0
+ * /move_base/local_costmap/plugins: [{'type': 'costma...
+ * /move_base/local_costmap/publish_frequency: 5
+ * /move_base/local_costmap/publish_voxel_map: False
+ * /move_base/local_costmap/raytrace_range: 7.0
+ * /move_base/local_costmap/resolution: 0.1
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.2
+ * /move_base/local_costmap/update_frequency: 30
+ * /move_base/local_costmap/width: 40.0
+ * /move_base/local_costmap/z_resolution: 1
+ * /move_base/local_costmap/z_voxels: 2
+ * /move_base/oscillation_distance: 0.5
+ * /move_base/oscillation_timeout: 0.0
+ * /move_base/planner_frequency: 20.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: True
+ * /move_base/shutdown_costmaps: False
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    move_base (move_base/move_base)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/turan/3v3/ws_barn_dwa_eband_teb/src/the-barn-challenge/jackal_helper/../jackal_helper/launch/move_base_teb.launch http://localhost:11311
+[1mprocess[move_base-1]: started with pid [18728][0m
+[move_base-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+Time: 80.79 (s), x: -2.81 (m), y: 8.64 (m)Time: 80.90 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.01 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.12 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.22 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.33 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.43 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.54 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.65 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.75 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.86 (s), x: -2.81 (m), y: 8.64 (m)Time: 81.97 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.07 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.18 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.28 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.39 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.50 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.60 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.70 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.80 (s), x: -2.81 (m), y: 8.64 (m)Time: 82.91 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.01 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.12 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.23 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.33 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.44 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.55 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.65 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.75 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.86 (s), x: -2.81 (m), y: 8.64 (m)Time: 83.97 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.08 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.19 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.30 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.41 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.52 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.63 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.74 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.85 (s), x: -2.81 (m), y: 8.64 (m)Time: 84.96 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.06 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.17 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.27 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.38 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.48 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.59 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.69 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.80 (s), x: -2.81 (m), y: 8.64 (m)Time: 85.90 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.01 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.11 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.22 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.33 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.44 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.54 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.65 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.75 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.85 (s), x: -2.81 (m), y: 8.64 (m)Time: 86.96 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.07 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.17 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.28 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.39 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.49 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.60 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.70 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.81 (s), x: -2.81 (m), y: 8.64 (m)Time: 87.91 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.02 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.13 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.24 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.34 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.44 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.55 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.65 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.76 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.86 (s), x: -2.81 (m), y: 8.64 (m)Time: 88.97 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.07 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.18 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.29 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.39 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.50 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.60 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.70 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.81 (s), x: -2.81 (m), y: 8.64 (m)Time: 89.91 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.02 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.12 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.22 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.33 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.43 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.53 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.64 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.75 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.86 (s), x: -2.81 (m), y: 8.65 (m)Time: 90.97 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.08 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.19 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.30 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.40 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.51 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.62 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.73 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.83 (s), x: -2.81 (m), y: 8.65 (m)Time: 91.94 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.05 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.16 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.27 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.38 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.48 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.58 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.69 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.80 (s), x: -2.81 (m), y: 8.65 (m)Time: 92.91 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.02 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.13 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.24 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.35 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.46 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.56 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.67 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.77 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.87 (s), x: -2.81 (m), y: 8.65 (m)Time: 93.98 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.08 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.18 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.29 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.40 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.51 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.61 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.72 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.83 (s), x: -2.81 (m), y: 8.65 (m)Time: 94.93 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.04 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.15 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.25 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.36 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.47 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.58 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.68 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.79 (s), x: -2.81 (m), y: 8.65 (m)Time: 95.89 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.00 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.11 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.21 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.32 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.42 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.53 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.64 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.74 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.85 (s), x: -2.81 (m), y: 8.65 (m)Time: 96.95 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.05 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.16 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.27 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.38 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.49 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.60 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.71 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.81 (s), x: -2.81 (m), y: 8.65 (m)Time: 97.92 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.03 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.13 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.23 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.33 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.44 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.55 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.65 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.75 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.86 (s), x: -2.81 (m), y: 8.65 (m)Time: 98.96 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.07 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.17 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.27 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.38 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.49 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.60 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.71 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.81 (s), x: -2.81 (m), y: 8.65 (m)Time: 99.92 (s), x: -2.81 (m), y: 8.65 (m)Time: 100.02 (s), x: -2.81 (m), y: 8.65 (m)>>>>>>>>>>>>>>>>>> Test finished! <<<<<<<<<<<<<<<<<<

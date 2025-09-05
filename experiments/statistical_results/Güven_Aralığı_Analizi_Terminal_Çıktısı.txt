@@ -1,0 +1,82 @@
+"C:\Users\mehme\Desktop\Bitirme Tezim\3v3\.venv\Scripts\python.exe" "C:\Users\mehme\Desktop\Bitirme Tezim\3v3\experiments\metric_statistics.py" 
+Found files: ['metrics\\metrics_summary_applr.csv', 'metrics\\metrics_summary_dwa.csv', 'metrics\\metrics_summary_eband.csv', 'metrics\\metrics_summary_fastdwa.csv', 'metrics\\metrics_summary_lfh.csv', 'metrics\\metrics_summary_sac.csv', 'metrics\\metrics_summary_teb.csv']
+
+Initial total number of data rows: 1975
+Number of successful runs (Collision == 0): 1616
+Outliers cleaned. 251 rows removed. Remaining rows: 1365
+
+--- Metric Summaries (Mean and 95% Confidence Interval) ---
+
+Metric: Total_Time
+                   Mean ± 95% CI
+Algorithm                       
+LFH           4.83 [3.43 - 6.24]
+TEB        12.64 [11.86 - 13.41]
+EBAND      20.98 [20.70 - 21.26]
+APPLR      25.39 [22.09 - 28.69]
+SAC        25.68 [23.03 - 28.33]
+FASTDWA    27.04 [25.31 - 28.76]
+DWA        28.35 [26.69 - 30.01]
+
+Metric: Path_Efficiency
+                  Mean ± 95% CI
+Algorithm                      
+APPLR        0.93 [0.85 - 1.00]
+FASTDWA      1.01 [0.98 - 1.03]
+DWA          1.07 [1.05 - 1.09]
+TEB          1.09 [1.07 - 1.10]
+EBAND        1.19 [1.18 - 1.19]
+LFH          3.16 [1.69 - 4.63]
+SAC        11.32 [7.99 - 14.65]
+
+Metric: Control_Effort
+                         Mean ± 95% CI
+Algorithm                             
+LFH           266.38 [152.24 - 380.53]
+SAC           525.73 [426.94 - 624.52]
+EBAND         628.10 [562.31 - 693.89]
+APPLR         651.18 [557.92 - 744.44]
+DWA        1228.43 [1133.55 - 1323.31]
+FASTDWA    1595.56 [1467.16 - 1723.96]
+TEB        1986.60 [1846.03 - 2127.17]
+
+Metric: Avg_Jerk
+                                        Mean ± 95% CI
+Algorithm                                            
+LFH            11285376.67 [2326352.02 - 20244401.32]
+APPLR         22707051.63 [12809990.26 - 32604113.00]
+SAC           47899500.02 [32907529.18 - 62891470.86]
+EBAND         59954888.14 [49245185.96 - 70664590.32]
+DWA        135253318.27 [119044355.43 - 151462281.12]
+FASTDWA    167333918.29 [143676682.34 - 190991154.25]
+TEB        185588972.92 [162305250.49 - 208872695.34]
+
+Metric: My_Recovery_Count
+                 Mean ± 95% CI
+Algorithm                     
+EBAND      0.01 [-0.01 - 0.03]
+LFH        0.05 [-0.02 - 0.11]
+TEB         0.17 [0.08 - 0.27]
+APPLR       0.44 [0.29 - 0.59]
+SAC         0.68 [0.47 - 0.89]
+FASTDWA     0.95 [0.72 - 1.18]
+DWA         1.92 [1.57 - 2.28]
+
+--- Pairwise Comparison (Wilcoxon Test + Holm Correction) ---
+
+*** Comparison Results for: Total_Time ***
+Heatmap saved to 'statistical_results/heatmap_Total_Time.png' and p-values to 'statistical_results/heatmap_Total_Time.csv'.
+
+*** Comparison Results for: Path_Efficiency ***
+Heatmap saved to 'statistical_results/heatmap_Path_Efficiency.png' and p-values to 'statistical_results/heatmap_Path_Efficiency.csv'.
+
+*** Comparison Results for: Control_Effort ***
+Heatmap saved to 'statistical_results/heatmap_Control_Effort.png' and p-values to 'statistical_results/heatmap_Control_Effort.csv'.
+
+*** Comparison Results for: Avg_Jerk ***
+Heatmap saved to 'statistical_results/heatmap_Avg_Jerk.png' and p-values to 'statistical_results/heatmap_Avg_Jerk.csv'.
+
+*** Comparison Results for: My_Recovery_Count ***
+Heatmap saved to 'statistical_results/heatmap_My_Recovery_Count.png' and p-values to 'statistical_results/heatmap_My_Recovery_Count.csv'.
+
+Process finished with exit code 0
