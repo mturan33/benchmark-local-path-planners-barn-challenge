@@ -1,7 +1,7 @@
 
 # Benchmark of Local Path Planners in the BARN Challenge Dataset
 
-This repository provides a complete experimental framework for benchmarking and comparing various classical and learning-based local path planning algorithms on the BARN Challenge simulation environments using 2D LiDAR point clouds.
+This repository provides a complete experimental framework for benchmarking and comparing various classical and learning-based local path planning algorithms on the BARN Challenge simulation environments using 2D LiDAR point clouds.  A related paper will be published soon. Stay tuned!
 
 ## Features
 
