@@ -1,3 +1,5 @@
+<img width="1644" height="928" alt="Figure11" src="https://github.com/user-attachments/assets/22d543e7-b657-4ca0-bd57-44f9ff2dc5ee" />
+<img width="4096" height="1572" alt="Figure7" src="https://github.com/user-attachments/assets/52121c44-d66f-4e9b-b239-3c58913ea7f4" />
 
 # Benchmark of Local Path Planners in the BARN Challenge Dataset
 
