@@ -169,9 +169,9 @@ This script will:
 
 ## How to Cite
 
-If you use this framework, code, or results in your research, please consider citing our upcoming paper (placeholder below) and the original BARN dataset paper.
+If you use this framework, code, or results in your research, please consider citing our upcoming paper and the original BARN dataset paper.
 
-**Our Paper (Placeholder) Coming Soon:**
+**Our Paper Coming Soon:**
 ```bibtex
 @article{YardimciCogurcu2025,
   title={Benchmarking Local Path Planners in ROS using the BARN Dataset},
